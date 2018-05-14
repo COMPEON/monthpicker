@@ -10,7 +10,13 @@ import format from 'date-fns/format'
 import ArrowRight from './ArrowRight'
 import ArrowLeft from './ArrowLeft'
 import Header from './Header'
-import { MONTHS } from './utils'
+import {
+  MONTHS,
+  getHoverColor,
+  getPrimaryColor,
+  getSecondaryColor,
+  getStyleProps
+} from './utils'
 
 const fadeIn = keyframes`
   from {
@@ -30,7 +36,7 @@ const Tooltip = styled.div`
   animation: ${fadeIn} .2s;
   position: absolute;
   box-shadow: 0 0 8px 0px rgba(0,0,0,0.12);
-  border: 1px solid #29708c;
+  border: 1px solid ${getPrimaryColor};
 `
 
 const Container = styled.div`
@@ -50,7 +56,7 @@ const Month = styled.div`
       cursor: pointer;
 
       &:hover {
-        background-color: #d3d3d396;
+        background-color: ${getHoverColor};
       }
     `
   }
@@ -60,17 +66,16 @@ const Month = styled.div`
   }
 
   ${props => !props.selected && props.focussed && css`
-    border: 1px solid #29708c;
-    background-color: #d3d3d330;
+    border: 1px solid ${getPrimaryColor};
+      background-color: ${getHoverColor};
   `}
 
   padding: 12px 0;
   transition: background-color .1s, color .1s;
   border-radius: 1px;
-  font-weight: bold;
   font-size: 14px;
-  background-color: ${props => props.selected ? '#29708c' : 'white'}
-  color: ${props => props.selected ? 'white' : '#29708c'}
+  background-color: ${props => props.selected ? getPrimaryColor(props) : getSecondaryColor(props)};
+  color: ${props => props.selected ? getSecondaryColor(props) : getPrimaryColor(props)};
   height: 42px;
   display: flex;
   justify-content: center;
@@ -80,6 +85,9 @@ const Month = styled.div`
 
 class MonthPicker extends React.Component {
   static defaultProps = {
+    hoverColor: '#d3d3d330',
+    primaryColor: '#29708',
+    secondaryColor: 'white',
     initialYear: getYear(new Date()),
     month: getMonth(new Date()),
     year: getYear(new Date())
@@ -246,18 +254,19 @@ class MonthPicker extends React.Component {
 
   render () {
     const { year, open } = this.state
+    const { primaryColor, secondaryColor } = this.props
 
     return (
       <Container tabIndex={-1} innerRef={this.setWrapperRef} onKeyDown={this.handleKeyDown}>
         <div onClick={this.toggleOpen}>{this.props.children}</div>
         {open && (
           <Tooltip>
-            <Header>
-              <ArrowLeft onClick={this.previousYear} />
+            <Header {...getStyleProps(this.props)}>
+              <ArrowLeft onClick={this.previousYear} {...getStyleProps(this.props)} />
               {year}
-              <ArrowRight onClick={this.nextYear} />
+              <ArrowRight onClick={this.nextYear} {...getStyleProps(this.props)} />
             </Header>
-            <MonthContainer>
+            <MonthContainer {...getStyleProps(this.props)}>
               {MONTHS.map(this.renderMonth)}
             </MonthContainer>
           </Tooltip>
@@ -268,6 +277,9 @@ class MonthPicker extends React.Component {
 }
 
 MonthPicker.propTypes = {
+  primaryColor: PropTypes.string.isRequired,
+  secondaryColor: PropTypes.string.isRequired,
+  hoverColor: PropTypes.string.isRequired,
   month: PropTypes.number.isRequired,
   year: PropTypes.number.isRequired,
   format: PropTypes.string,

@@ -1,9 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import { getSecondaryColor } from './utils'
+
 const SVG = styled.svg`
   cursor: pointer;
   fill: white;
+  fill: ${getSecondaryColor};
 `
 
 export default props => (
