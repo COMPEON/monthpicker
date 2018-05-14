@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import styled, { keyframes, css } from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 import getMonth from 'date-fns/get_month'
 import getYear from 'date-fns/get_year'
 import addMonths from 'date-fns/add_months'
