@@ -232,12 +232,12 @@ MonthPicker.propTypes = {
   month: PropTypes.number.isRequired,
   year: PropTypes.number.isRequired,
   format: PropTypes.string,
-  initialYear: PropTypes.number,
+  initialYear: PropTypes.number.isRequired,
   onChange: PropTypes.func.isRequired,
   children: PropTypes.oneOfType([
     PropTypes.node,
     PropTypes.arrayOf(PropTypes.node)
-  ])
+  ]).isRequired
 }
 
 export default MonthPicker
