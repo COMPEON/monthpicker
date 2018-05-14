@@ -7,6 +7,8 @@ import addMonths from 'date-fns/add_months'
 import subMonths from 'date-fns/sub_months'
 import format from 'date-fns/format'
 
+import TooltipContainer from './TooltipContainer'
+import Month from './Month'
 import ArrowRight from './ArrowRight'
 import ArrowLeft from './ArrowLeft'
 import Header from './Header'
@@ -18,27 +20,6 @@ import {
   getStyleProps
 } from './utils'
 
-const fadeIn = keyframes`
-  from {
-    transform: scaleY(0.95);
-    opacity: 0;
-  }
-
-  to {
-    transform: scaleY(1);
-    opacity: 1;
-  }
-`
-
-const Tooltip = styled.div`
-  margin-top: 8px;
-  transform-origin: top center;
-  animation: ${fadeIn} .2s;
-  position: absolute;
-  box-shadow: 0 0 8px 0px rgba(0,0,0,0.12);
-  border: 1px solid ${getPrimaryColor};
-`
-
 const Container = styled.div`
   &:focus {
     outline: none;
@@ -49,38 +30,6 @@ const MonthContainer = styled.div`
   width: 300px;
   display: flex;
   flex-wrap: wrap;
-`
-
-const Month = styled.div`
-  ${props => !props.selected && css`
-      cursor: pointer;
-
-      &:hover {
-        background-color: ${getHoverColor};
-      }
-    `
-  }
-
-  &:focus {
-    outline: none;
-  }
-
-  ${props => !props.selected && props.focussed && css`
-    border: 1px solid ${getPrimaryColor};
-      background-color: ${getHoverColor};
-  `}
-
-  padding: 12px 0;
-  transition: background-color .1s, color .1s;
-  border-radius: 1px;
-  font-size: 14px;
-  background-color: ${props => props.selected ? getPrimaryColor(props) : getSecondaryColor(props)};
-  color: ${props => props.selected ? getSecondaryColor(props) : getPrimaryColor(props)};
-  height: 42px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex: 0 0 33.33%;
 `
 
 class MonthPicker extends React.Component {
@@ -260,7 +209,7 @@ class MonthPicker extends React.Component {
       <Container tabIndex={-1} innerRef={this.setWrapperRef} onKeyDown={this.handleKeyDown}>
         <div onClick={this.toggleOpen}>{this.props.children}</div>
         {open && (
-          <Tooltip>
+          <TooltipContainer>
             <Header {...getStyleProps(this.props)}>
               <ArrowLeft onClick={this.previousYear} {...getStyleProps(this.props)} />
               {year}
@@ -269,7 +218,7 @@ class MonthPicker extends React.Component {
             <MonthContainer {...getStyleProps(this.props)}>
               {MONTHS.map(this.renderMonth)}
             </MonthContainer>
-          </Tooltip>
+          </TooltipContainer>
         )}
       </Container>
     )
