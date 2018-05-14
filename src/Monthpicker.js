@@ -195,6 +195,7 @@ class MonthPicker extends React.Component {
         key={monthName}
         selected={month && this.state.year === year && month - 1  === index}
         onClick={this.handleChange(index)}
+        {...getStyleProps(this.props)}
       >
         {monthName.substr(0, 3)}
       </Month>
@@ -203,7 +204,6 @@ class MonthPicker extends React.Component {
 
   render () {
     const { year, open } = this.state
-    const { primaryColor, secondaryColor } = this.props
 
     return (
       <Container tabIndex={-1} innerRef={this.setWrapperRef} onKeyDown={this.handleKeyDown}>
