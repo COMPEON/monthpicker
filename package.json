@@ -12,7 +12,7 @@
     "Gerrit Seger <gseger@compeon.de>"
   ],
   "scripts": {
-    "start": "babel src -d dist"
+    "compile": "babel src -d dist"
   },
   "peerDependencies": {
     "react": "^16.3.2",

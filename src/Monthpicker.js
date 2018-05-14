@@ -9,7 +9,7 @@ import format from 'date-fns/format'
 
 import ArrowRight from './ArrowRight'
 import ArrowLeft from './ArrowLeft'
-import { Header } from './Calender'
+import Header from './Header'
 import { MONTHS } from './utils'
 
 const fadeIn = keyframes`
