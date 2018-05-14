@@ -1,0 +1,31 @@
+{
+  "name": "@compeon/monthpicker",
+  "version": "0.0.1",
+  "description": "Simple monthpicker using react & date-fns",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "authors": [
+    "Bastian Ahrens <bahrens@compeon.de>",
+    "Gerrit Seger <gseger@compeon.de>"
+  ],
+  "scripts": {
+    "start": "babel src -d dist"
+  },
+  "peerDependencies": {
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "styled-components": "^3.2.6"
+  },
+  "dependencies": {
+    "date-fns": "^1.29.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1"
+  }
+}
