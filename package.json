@@ -45,6 +45,7 @@
     "setupFiles": [
       "<rootDir>/jestSetup.js"
     ],
+    "setupTestFrameworkScriptFile": "<rootDir>/jestPlugins.js",
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
     ],
