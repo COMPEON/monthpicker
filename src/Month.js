@@ -37,6 +37,8 @@ const Month = styled.div`
   justify-content: center;
   align-items: center;
   flex: 0 0 33.33%;
+  border-bottom-right-radius: ${props => props.index === 11 ? '4px' : 'none'};
+  border-bottom-left-radius: ${props => props.index === 9 ? '4px' : 'none'};
 `
 
 export default Month

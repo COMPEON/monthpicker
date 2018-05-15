@@ -10,4 +10,6 @@ export default styled.div`
   align-items: center;
   background-color: ${getPrimaryColor};
   color: ${getSecondaryColor};
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
 `

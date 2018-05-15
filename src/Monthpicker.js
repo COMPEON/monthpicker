@@ -199,6 +199,7 @@ class MonthPicker extends React.Component {
         key={monthName}
         selected={month && this.state.year === year && month - 1  === index}
         onClick={this.handleChange(index)}
+        index={index}
         {...getStyleProps(this.props)}
       >
         {monthName.substr(0, 3)}
