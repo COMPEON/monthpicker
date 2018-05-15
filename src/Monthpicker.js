@@ -36,6 +36,12 @@ const MonthContainer = styled.div`
   flex-wrap: wrap;
 `
 
+const Divider = styled.div`
+  height: 8px;
+  background-color: white;
+  width: 100%;
+`
+
 class MonthPicker extends React.Component {
   static defaultProps = {
     hoverColor: '#d3d3d330',
@@ -220,6 +226,7 @@ class MonthPicker extends React.Component {
               {year}
               <ArrowRight onClick={this.nextYear} {...getStyleProps(this.props)} />
             </Header>
+            <Divider />
             <MonthContainer {...getStyleProps(this.props)}>
               {MONTHS.map(this.renderMonth)}
             </MonthContainer>

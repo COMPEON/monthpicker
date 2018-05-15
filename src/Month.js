@@ -23,12 +23,12 @@ const Month = styled.div`
 
   ${props => !props.selected && props.focussed && css`
     border: 1px solid ${getPrimaryColor};
-      background-color: ${getHoverColor};
+    background-color: ${getHoverColor};
   `}
+  ${props => props.selected && '1px solid #d3d3d37a'};
 
   padding: 12px 0;
   transition: background-color .1s, color .1s;
-  border-radius: 1px;
   font-size: 14px;
   background-color: ${props => props.selected ? getPrimaryColor(props) : getSecondaryColor(props)};
   color: ${props => props.selected ? getSecondaryColor(props) : getPrimaryColor(props)};
@@ -37,8 +37,23 @@ const Month = styled.div`
   justify-content: center;
   align-items: center;
   flex: 0 0 33.33%;
-  border-bottom-right-radius: ${props => props.index === 11 ? '4px' : 'none'};
-  border-bottom-left-radius: ${props => props.index === 9 ? '4px' : 'none'};
+
+  ${props => props.focussed && css`
+    &:nth-child(3n) {
+      border-right: 1px solid ${getSecondaryColor};
+    }
+
+    &:nth-child(3n+1) {
+      border-left: 1px solid ${getSecondaryColor};
+    }
+
+    &:nth-last-child(-n+3) {
+      border-bottom: 1px solid ${getSecondaryColor};
+    }
+  `}
+
+  border-bottom-right-radius: ${props => props.index === 11 && '4px'};
+  border-bottom-left-radius: ${props => props.index === 9 && '4px'};
 `
 
 export default Month
