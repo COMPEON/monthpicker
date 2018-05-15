@@ -11,7 +11,6 @@ describe('<Monthpicker />', () => {
   })
 
   describe('event handling: ', () => {
-
     it('opens the overlay when clicking on the child', () => {
       const wrapper = mount(
         <Monthpicker initialYear={2010} month={1} year={2010} onChange={jest.fn()}>
@@ -108,5 +107,61 @@ describe('<Monthpicker />', () => {
       const focussedMonth = wrapper.findWhere(node => node.key() === 'Januar')
       expect(focussedMonth).toMatchSnapshot()
     })
+
+    it('adjusts the background color when hovering over a month', () => {
+    })
+  })
+
+  it('calls onChange with the selected month and year', () => {
+    const handleChange = jest.fn()
+    const wrapper = mount(
+      <Monthpicker month={1} year={2018} onChange={handleChange}>
+        <div className='child'>Child</div>
+      </Monthpicker>
+    )
+
+    const child = wrapper.find('.child').first()
+    child.simulate('click')
+
+    wrapper.findWhere(node => node.key() === 'Mai').simulate('click')
+
+    expect(handleChange).toHaveBeenCalledWith({ month: 5, year: 2018 }, expect.anything())
+  })
+
+  it('calls onChange with the given format', () => {
+    const handleChange = jest.fn()
+    const targetFormat = 'MM.YYYY'
+
+    const wrapper = mount(
+      <Monthpicker format={targetFormat} month={1} year={2018} onChange={handleChange}>
+        <div className='child'>Child</div>
+      </Monthpicker>
+    )
+
+    const child = wrapper.find('.child').first()
+    child.simulate('click')
+
+    wrapper.findWhere(node => node.key() === 'Mai').simulate('click')
+
+    expect(handleChange).toHaveBeenCalledWith('05.2018', expect.anything())
+  })
+
+  it('allows specifiyng the primary and secondary colors', () => {
+    const wrapper = mount(
+      <Monthpicker
+        primaryColor='green'
+        secondaryColor='red'
+        month={1}
+        year={2018}
+        onChange={jest.fn()}
+      >
+        <div className='child'>Child</div>
+      </Monthpicker>
+    )
+
+    const child = wrapper.find('.child').first()
+    child.simulate('click')
+
+    expect(wrapper).toMatchSnapshot()
   })
 })
