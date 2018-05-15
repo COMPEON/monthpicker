@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow, mount } from 'enzyme'
-import Monthpicker from '.'
+import Monthpicker from '..'
 
 describe('<Monthpicker />', () => {
   it('renders its children', () => {
