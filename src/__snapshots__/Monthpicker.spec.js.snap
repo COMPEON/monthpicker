@@ -1,12 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Monthpicker /> event handling:  closes the overlay when clicking anywhere outside the overlay 1`] = `
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c0:focus {
+  outline: none;
+}
+
 <MonthPicker
   hoverColor="#d3d3d330"
   initialYear={2010}
   month={1}
   onChange={[MockFunction]}
-  primaryColor="#29708"
+  primaryColor="#27718c"
   secondaryColor="white"
   year={2010}
 >
@@ -16,7 +24,7 @@ exports[`<Monthpicker /> event handling:  closes the overlay when clicking anywh
     tabIndex={-1}
   >
     <div
-      className="sc-EHOje cOmnXb"
+      className="c0"
       onKeyDown={[Function]}
       tabIndex={-1}
     >
@@ -35,12 +43,138 @@ exports[`<Monthpicker /> event handling:  closes the overlay when clicking anywh
 `;
 
 exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the child 1`] = `
+.c1 {
+  margin-top: 8px;
+  -webkit-transform-origin: top center;
+  -ms-transform-origin: top center;
+  transform-origin: top center;
+  -webkit-animation: dXhcnZ .2s;
+  animation: dXhcnZ .2s;
+  position: absolute;
+  box-shadow: 0 0 8px 0px rgba(0,0,0,0.12);
+  border: 1px solid;
+}
+
+.c6 {
+  padding: 12px 0;
+  -webkit-transition: background-color .1s,color .1s;
+  transition: background-color .1s,color .1s;
+  border-radius: 1px;
+  font-size: 14px;
+  background-color: #27718c;
+  color: white;
+  height: 42px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex: 0 0 33.33%;
+  -ms-flex: 0 0 33.33%;
+  flex: 0 0 33.33%;
+}
+
+.c6:focus {
+  outline: none;
+}
+
+.c7 {
+  cursor: pointer;
+  padding: 12px 0;
+  -webkit-transition: background-color .1s,color .1s;
+  transition: background-color .1s,color .1s;
+  border-radius: 1px;
+  font-size: 14px;
+  background-color: white;
+  color: #27718c;
+  height: 42px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex: 0 0 33.33%;
+  -ms-flex: 0 0 33.33%;
+  flex: 0 0 33.33%;
+}
+
+.c7:hover {
+  background-color: #d3d3d330;
+}
+
+.c7:focus {
+  outline: none;
+}
+
+.c4 {
+  cursor: pointer;
+  fill: white;
+}
+
+.c3 {
+  cursor: pointer;
+  fill: white;
+  fill: white;
+}
+
+.c2 {
+  padding: 16px 8px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #27718c;
+  color: white;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c5 {
+  width: 300px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
 <MonthPicker
   hoverColor="#d3d3d330"
   initialYear={2010}
   month={1}
   onChange={[MockFunction]}
-  primaryColor="#29708"
+  primaryColor="#27718c"
   secondaryColor="white"
   year={2010}
 >
@@ -50,7 +184,7 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
     tabIndex={-1}
   >
     <div
-      className="sc-EHOje cOmnXb"
+      className="c0"
       onKeyDown={[Function]}
       tabIndex={-1}
     >
@@ -65,34 +199,34 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
       </div>
       <styled.div>
         <div
-          className="sc-bdVaJa faiqWZ"
+          className="c1"
         >
           <styled.div
             hoverColor="#d3d3d330"
-            primaryColor="#29708"
+            primaryColor="#27718c"
             secondaryColor="white"
           >
             <div
-              className="sc-ifAKCX kPVWGh"
+              className="c2"
             >
               <Component
                 hoverColor="#d3d3d330"
                 onClick={[Function]}
-                primaryColor="#29708"
+                primaryColor="#27718c"
                 secondaryColor="white"
               >
                 <styled.svg
                   height="24"
                   hoverColor="#d3d3d330"
                   onClick={[Function]}
-                  primaryColor="#29708"
+                  primaryColor="#27718c"
                   secondaryColor="white"
                   viewBox="0 0 24 24"
                   width="24"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <svg
-                    className="sc-bxivhb lmFZJE"
+                    className="c3"
                     height="24"
                     onClick={[Function]}
                     viewBox="0 0 24 24"
@@ -113,21 +247,21 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
               <Component
                 hoverColor="#d3d3d330"
                 onClick={[Function]}
-                primaryColor="#29708"
+                primaryColor="#27718c"
                 secondaryColor="white"
               >
                 <styled.svg
                   height="24"
                   hoverColor="#d3d3d330"
                   onClick={[Function]}
-                  primaryColor="#29708"
+                  primaryColor="#27718c"
                   secondaryColor="white"
                   viewBox="0 0 24 24"
                   width="24"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <svg
-                    className="sc-htpNat komwJT"
+                    className="c4"
                     height="24"
                     onClick={[Function]}
                     viewBox="0 0 24 24"
@@ -148,23 +282,23 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
           </styled.div>
           <styled.div
             hoverColor="#d3d3d330"
-            primaryColor="#29708"
+            primaryColor="#27718c"
             secondaryColor="white"
           >
             <div
-              className="sc-bZQynM jehZPX"
+              className="c5"
             >
               <styled.div
                 focussed={true}
                 hoverColor="#d3d3d330"
                 key="Januar"
                 onClick={[Function]}
-                primaryColor="#29708"
+                primaryColor="#27718c"
                 secondaryColor="white"
                 selected={true}
               >
                 <div
-                  className="sc-bwzfXH fkBSSR"
+                  className="c6"
                   onClick={[Function]}
                   selected={true}
                 >
@@ -176,12 +310,12 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
                 hoverColor="#d3d3d330"
                 key="Februar"
                 onClick={[Function]}
-                primaryColor="#29708"
+                primaryColor="#27718c"
                 secondaryColor="white"
                 selected={false}
               >
                 <div
-                  className="sc-bwzfXH hfFRuC"
+                  className="c7"
                   onClick={[Function]}
                   selected={false}
                 >
@@ -193,12 +327,12 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
                 hoverColor="#d3d3d330"
                 key="März"
                 onClick={[Function]}
-                primaryColor="#29708"
+                primaryColor="#27718c"
                 secondaryColor="white"
                 selected={false}
               >
                 <div
-                  className="sc-bwzfXH hfFRuC"
+                  className="c7"
                   onClick={[Function]}
                   selected={false}
                 >
@@ -210,12 +344,12 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
                 hoverColor="#d3d3d330"
                 key="April"
                 onClick={[Function]}
-                primaryColor="#29708"
+                primaryColor="#27718c"
                 secondaryColor="white"
                 selected={false}
               >
                 <div
-                  className="sc-bwzfXH hfFRuC"
+                  className="c7"
                   onClick={[Function]}
                   selected={false}
                 >
@@ -227,12 +361,12 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
                 hoverColor="#d3d3d330"
                 key="Mai"
                 onClick={[Function]}
-                primaryColor="#29708"
+                primaryColor="#27718c"
                 secondaryColor="white"
                 selected={false}
               >
                 <div
-                  className="sc-bwzfXH hfFRuC"
+                  className="c7"
                   onClick={[Function]}
                   selected={false}
                 >
@@ -244,12 +378,12 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
                 hoverColor="#d3d3d330"
                 key="Juni"
                 onClick={[Function]}
-                primaryColor="#29708"
+                primaryColor="#27718c"
                 secondaryColor="white"
                 selected={false}
               >
                 <div
-                  className="sc-bwzfXH hfFRuC"
+                  className="c7"
                   onClick={[Function]}
                   selected={false}
                 >
@@ -261,12 +395,12 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
                 hoverColor="#d3d3d330"
                 key="Juli"
                 onClick={[Function]}
-                primaryColor="#29708"
+                primaryColor="#27718c"
                 secondaryColor="white"
                 selected={false}
               >
                 <div
-                  className="sc-bwzfXH hfFRuC"
+                  className="c7"
                   onClick={[Function]}
                   selected={false}
                 >
@@ -278,12 +412,12 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
                 hoverColor="#d3d3d330"
                 key="August"
                 onClick={[Function]}
-                primaryColor="#29708"
+                primaryColor="#27718c"
                 secondaryColor="white"
                 selected={false}
               >
                 <div
-                  className="sc-bwzfXH hfFRuC"
+                  className="c7"
                   onClick={[Function]}
                   selected={false}
                 >
@@ -295,12 +429,12 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
                 hoverColor="#d3d3d330"
                 key="September"
                 onClick={[Function]}
-                primaryColor="#29708"
+                primaryColor="#27718c"
                 secondaryColor="white"
                 selected={false}
               >
                 <div
-                  className="sc-bwzfXH hfFRuC"
+                  className="c7"
                   onClick={[Function]}
                   selected={false}
                 >
@@ -312,12 +446,12 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
                 hoverColor="#d3d3d330"
                 key="Oktober"
                 onClick={[Function]}
-                primaryColor="#29708"
+                primaryColor="#27718c"
                 secondaryColor="white"
                 selected={false}
               >
                 <div
-                  className="sc-bwzfXH hfFRuC"
+                  className="c7"
                   onClick={[Function]}
                   selected={false}
                 >
@@ -329,12 +463,12 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
                 hoverColor="#d3d3d330"
                 key="November"
                 onClick={[Function]}
-                primaryColor="#29708"
+                primaryColor="#27718c"
                 secondaryColor="white"
                 selected={false}
               >
                 <div
-                  className="sc-bwzfXH hfFRuC"
+                  className="c7"
                   onClick={[Function]}
                   selected={false}
                 >
@@ -346,12 +480,12 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
                 hoverColor="#d3d3d330"
                 key="Dezember"
                 onClick={[Function]}
-                primaryColor="#29708"
+                primaryColor="#27718c"
                 secondaryColor="white"
                 selected={false}
               >
                 <div
-                  className="sc-bwzfXH hfFRuC"
+                  className="c7"
                   onClick={[Function]}
                   selected={false}
                 >
@@ -368,17 +502,54 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
 `;
 
 exports[`<Monthpicker /> event handling:  sets the focussed date to 1 month earlier when hitting ArrowLeft 1`] = `
+.c0 {
+  cursor: pointer;
+  border: 1px solid #27718c;
+  background-color: #d3d3d330;
+  padding: 12px 0;
+  -webkit-transition: background-color .1s,color .1s;
+  transition: background-color .1s,color .1s;
+  border-radius: 1px;
+  font-size: 14px;
+  background-color: white;
+  color: #27718c;
+  height: 42px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex: 0 0 33.33%;
+  -ms-flex: 0 0 33.33%;
+  flex: 0 0 33.33%;
+}
+
+.c0:hover {
+  background-color: #d3d3d330;
+}
+
+.c0:focus {
+  outline: none;
+}
+
 <styled.div
   focussed={true}
   hoverColor="#d3d3d330"
   key="Januar"
   onClick={[Function]}
-  primaryColor="#29708"
+  primaryColor="#27718c"
   secondaryColor="white"
   selected={false}
 >
   <div
-    className="sc-bwzfXH BcYyz"
+    className="c0"
     onClick={[Function]}
     selected={false}
   >
@@ -388,17 +559,54 @@ exports[`<Monthpicker /> event handling:  sets the focussed date to 1 month earl
 `;
 
 exports[`<Monthpicker /> event handling:  sets the focussed date to 1 month later when hitting ArrowRight 1`] = `
+.c0 {
+  cursor: pointer;
+  border: 1px solid #27718c;
+  background-color: #d3d3d330;
+  padding: 12px 0;
+  -webkit-transition: background-color .1s,color .1s;
+  transition: background-color .1s,color .1s;
+  border-radius: 1px;
+  font-size: 14px;
+  background-color: white;
+  color: #27718c;
+  height: 42px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex: 0 0 33.33%;
+  -ms-flex: 0 0 33.33%;
+  flex: 0 0 33.33%;
+}
+
+.c0:hover {
+  background-color: #d3d3d330;
+}
+
+.c0:focus {
+  outline: none;
+}
+
 <styled.div
   focussed={true}
   hoverColor="#d3d3d330"
   key="Februar"
   onClick={[Function]}
-  primaryColor="#29708"
+  primaryColor="#27718c"
   secondaryColor="white"
   selected={false}
 >
   <div
-    className="sc-bwzfXH BcYyz"
+    className="c0"
     onClick={[Function]}
     selected={false}
   >
@@ -408,17 +616,54 @@ exports[`<Monthpicker /> event handling:  sets the focussed date to 1 month late
 `;
 
 exports[`<Monthpicker /> event handling:  sets the focussed date to 3 month earlier when hitting ArrowUp 1`] = `
+.c0 {
+  cursor: pointer;
+  border: 1px solid #27718c;
+  background-color: #d3d3d330;
+  padding: 12px 0;
+  -webkit-transition: background-color .1s,color .1s;
+  transition: background-color .1s,color .1s;
+  border-radius: 1px;
+  font-size: 14px;
+  background-color: white;
+  color: #27718c;
+  height: 42px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex: 0 0 33.33%;
+  -ms-flex: 0 0 33.33%;
+  flex: 0 0 33.33%;
+}
+
+.c0:hover {
+  background-color: #d3d3d330;
+}
+
+.c0:focus {
+  outline: none;
+}
+
 <styled.div
   focussed={true}
   hoverColor="#d3d3d330"
   key="Januar"
   onClick={[Function]}
-  primaryColor="#29708"
+  primaryColor="#27718c"
   secondaryColor="white"
   selected={false}
 >
   <div
-    className="sc-bwzfXH BcYyz"
+    className="c0"
     onClick={[Function]}
     selected={false}
   >
@@ -428,17 +673,54 @@ exports[`<Monthpicker /> event handling:  sets the focussed date to 3 month earl
 `;
 
 exports[`<Monthpicker /> event handling:  sets the focussed date to 3 month later when hitting ArrowDown 1`] = `
+.c0 {
+  cursor: pointer;
+  border: 1px solid #27718c;
+  background-color: #d3d3d330;
+  padding: 12px 0;
+  -webkit-transition: background-color .1s,color .1s;
+  transition: background-color .1s,color .1s;
+  border-radius: 1px;
+  font-size: 14px;
+  background-color: white;
+  color: #27718c;
+  height: 42px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex: 0 0 33.33%;
+  -ms-flex: 0 0 33.33%;
+  flex: 0 0 33.33%;
+}
+
+.c0:hover {
+  background-color: #d3d3d330;
+}
+
+.c0:focus {
+  outline: none;
+}
+
 <styled.div
   focussed={true}
   hoverColor="#d3d3d330"
   key="April"
   onClick={[Function]}
-  primaryColor="#29708"
+  primaryColor="#27718c"
   secondaryColor="white"
   selected={false}
 >
   <div
-    className="sc-bwzfXH BcYyz"
+    className="c0"
     onClick={[Function]}
     selected={false}
   >
