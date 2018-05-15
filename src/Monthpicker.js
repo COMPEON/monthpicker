@@ -21,6 +21,10 @@ import {
 } from './utils'
 
 const Container = styled.div`
+  * {
+    box-sizing: border-box;
+  }
+
   &:focus {
     outline: none;
   }
@@ -35,7 +39,7 @@ const MonthContainer = styled.div`
 class MonthPicker extends React.Component {
   static defaultProps = {
     hoverColor: '#d3d3d330',
-    primaryColor: '#29708',
+    primaryColor: '#27718c',
     secondaryColor: 'white',
     initialYear: getYear(new Date()),
     month: getMonth(new Date()),
