@@ -38,7 +38,7 @@ const Month = styled.div`
   align-items: center;
   flex: 0 0 33.33%;
 
-  ${props => props.focussed && css`
+  ${props => props.focussed && !props.selected && css`
     &:nth-child(3n) {
       border-right: 1px solid ${getSecondaryColor};
     }
