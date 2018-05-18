@@ -216,18 +216,20 @@ class MonthPicker extends React.Component {
   render () {
     const { year, open } = this.state
 
+    const styleProps = getStyleProps(this.props)
+
     return (
       <Container tabIndex={-1} innerRef={this.setWrapperRef} onKeyDown={this.handleKeyDown}>
         <div onClick={this.toggleOpen}>{this.props.children}</div>
         {open && (
-          <TooltipContainer>
-            <Header {...getStyleProps(this.props)}>
-              <ArrowLeft onClick={this.previousYear} {...getStyleProps(this.props)} />
+          <TooltipContainer {...styleProps}>
+            <Header {...styleProps}>
+              <ArrowLeft onClick={this.previousYear} {...styleProps} />
               {year}
-              <ArrowRight onClick={this.nextYear} {...getStyleProps(this.props)} />
+              <ArrowRight onClick={this.nextYear} {...styleProps} />
             </Header>
             <Divider />
-            <MonthContainer {...getStyleProps(this.props)}>
+            <MonthContainer {...styleProps}>
               {MONTHS.map(this.renderMonth)}
             </MonthContainer>
           </TooltipContainer>
