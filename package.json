@@ -12,7 +12,7 @@
     "Gerrit Seger <gseger@compeon.de>"
   ],
   "scripts": {
-    "compile": "babel src -d dist",
+    "compile": "babel src -d dist --ignore **/*.spec.js",
     "start": "start-storybook -p 9001 -c .storybook",
     "test": "jest"
   },
