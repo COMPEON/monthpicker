@@ -28,9 +28,12 @@ const Container = styled.div`
   &:focus {
     outline: none;
   }
+
+  z-index: 10;
 `
 
 const MonthContainer = styled.div`
+  background-color: white;
   width: 300px;
   display: flex;
   flex-wrap: wrap;

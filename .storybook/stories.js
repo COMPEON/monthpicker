@@ -13,6 +13,24 @@ storiesOf('Monthpicker', module)
   .add('with an initial year set', () => (
     <Monthpicker initialYear={2017} month={2} year={2018} onChange={console.log}>Test</Monthpicker>
   ))
+  .add('with content below', () => (
+    <div>
+      <Monthpicker initialYear={2017} month={2} year={2018} onChange={console.log}>Test</Monthpicker>
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet, ea vel viderer inimicus assentior, cum ex illud debet impedit.
+          Ut cum legimus mandamus, cu sed atqui postea. An essent perpetua pri.
+          Has eu error saperet pericula, vitae petentium efficiendi quo in, no regione virtute constituam vim.
+        </p>
+
+        <p>
+          Nec et persecuti sententiae, mea ad dicunt apeirian, altera salutatus ut est.
+          Doming vocibus est no. Labore malorum copiosae pri no. Nec tritani deseruisse ad, per ad tibique perfecto facilisis.
+          Has epicurei forensibus in, ignota deserunt persecuti eu mei, vis at malis minim harum. Qui elit nulla repudiare no, in maiestatis suscipiantur contentiones eam.
+        </p>
+      </div>
+    </div>
+  ))
   .add('with different colors', () => (
     <Monthpicker
       month={5}
