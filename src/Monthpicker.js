@@ -20,6 +20,10 @@ import {
   getStyleProps
 } from './utils'
 
+const Year = styled.span`
+  user-select: none;
+`
+
 const Container = styled.div`
   * {
     box-sizing: border-box;
@@ -226,7 +230,7 @@ class MonthPicker extends React.Component {
           <TooltipContainer {...styleProps}>
             <Header {...styleProps}>
               <ArrowLeft onClick={this.previousYear} {...styleProps} />
-              {year}
+              <Year>{year}</Year>
               <ArrowRight onClick={this.nextYear} {...styleProps} />
             </Header>
             <Divider />
