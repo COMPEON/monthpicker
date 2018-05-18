@@ -23,6 +23,7 @@ const TooltipContainer = styled.div`
   box-shadow: 0 0 8px 0px rgba(0,0,0,0.12);
   border: 1px solid ${getPrimaryColor};
   border-radius: 4px;
+  z-index: 10;
 `
 
 export default TooltipContainer

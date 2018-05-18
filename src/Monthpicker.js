@@ -28,8 +28,6 @@ const Container = styled.div`
   &:focus {
     outline: none;
   }
-
-  z-index: 10;
 `
 
 const MonthContainer = styled.div`
