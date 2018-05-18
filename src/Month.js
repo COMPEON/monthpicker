@@ -25,7 +25,10 @@ const Month = styled.div`
     border: 1px solid ${getPrimaryColor};
     background-color: ${getHoverColor};
   `}
-  ${props => props.selected && '1px solid #d3d3d37a'};
+
+  ${props => props.selected && css`
+    border: 1px solid #d3d3d37a;
+  `};
 
   padding: 12px 0;
   transition: background-color .1s, color .1s;
