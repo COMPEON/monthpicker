@@ -36,6 +36,7 @@ const Container = styled.div`
 
 const MonthContainer = styled.div`
   background-color: white;
+  border-radius: 4px;
   width: 300px;
   display: flex;
   flex-wrap: wrap;
