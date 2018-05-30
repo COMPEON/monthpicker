@@ -20,10 +20,6 @@ import {
   getStyleProps
 } from './utils'
 
-const Year = styled.span`
-  user-select: none;
-`
-
 const Container = styled.div`
   * {
     box-sizing: border-box;
@@ -32,6 +28,15 @@ const Container = styled.div`
   &:focus {
     outline: none;
   }
+`
+
+const YearInput = styled.input`
+  background-color: #27718c;
+  border: 0;
+  color: white;
+  outline: none;
+  font-size: 18px;
+  width: 60px;
 `
 
 const MonthContainer = styled.div`
@@ -84,6 +89,14 @@ class MonthPicker extends React.Component {
     const element = event.target
     if (this.wrapperRef && !this.wrapperRef.contains(element)) {
       this.close()
+    }
+  }
+
+  setYear = event => {
+    const year = event.target.value
+
+    if (/^\d{0,4}$/g.test(year)) {
+      this.setState({ year: year ? parseInt(year) : undefined })
     }
   }
 
@@ -188,14 +201,22 @@ class MonthPicker extends React.Component {
         event.preventDefault()
         event.persist()
 
-        if (focussedDate) this.changeValue(focussedDate)
-
-        break
+        if (focussedDate) return this.changeValue(focussedDate, event)
       }
 
       default: {
         break
       }
+    }
+  }
+
+  handleInputKeyDown = event => {
+    if (event.key === 'Enter') {
+      event.persist()
+      event.stopPropagation()
+
+      const focussedMonth = getMonth(this.state.focussedDate)
+      this.changeValue(new Date(this.state.year, focussedMonth), event)
     }
   }
 
@@ -231,7 +252,7 @@ class MonthPicker extends React.Component {
           <TooltipContainer {...styleProps}>
             <Header {...styleProps}>
               <ArrowLeft onClick={this.previousYear} {...styleProps} />
-              <Year>{year}</Year>
+              <YearInput type='number' onKeyDown={this.handleInputKeyDown} onChange={this.setYear} value={year} />
               <ArrowRight onClick={this.nextYear} {...styleProps} />
             </Header>
             <Divider />

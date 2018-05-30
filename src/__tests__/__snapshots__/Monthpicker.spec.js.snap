@@ -9,7 +9,7 @@ exports[`<Monthpicker /> allows specifiyng the primary and secondary colors 1`] 
   -webkit-animation: dXhcnZ .2s;
   animation: dXhcnZ .2s;
   position: absolute;
-  box-shadow: 0 0 8px 0px rgba(0,0,0,0.12);
+  box-shadow: 0 1px 3px #d3d3d380,0 1px 3px #d3d3d380;
   border: 1px solid green;
   border-radius: 4px;
   z-index: 10;
@@ -181,19 +181,21 @@ exports[`<Monthpicker /> allows specifiyng the primary and secondary colors 1`] 
   border-top-right-radius: 4px;
 }
 
-.c4 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
 .c0 * {
   box-sizing: border-box;
 }
 
 .c0:focus {
   outline: none;
+}
+
+.c4 {
+  background-color: #27718c;
+  border: 0;
+  color: white;
+  outline: none;
+  font-size: 16px;
+  width: 60px;
 }
 
 .c7 {
@@ -293,13 +295,20 @@ exports[`<Monthpicker /> allows specifiyng the primary and secondary colors 1`] 
                   </svg>
                 </styled.svg>
               </Component>
-              <styled.span>
-                <span
+              <styled.input
+                onChange={[Function]}
+                onKeyDown={[Function]}
+                type="number"
+                value={2018}
+              >
+                <input
                   className="c4"
-                >
-                  2018
-                </span>
-              </styled.span>
+                  onChange={[Function]}
+                  onKeyDown={[Function]}
+                  type="number"
+                  value={2018}
+                />
+              </styled.input>
               <Component
                 hoverColor="#d3d3d330"
                 onClick={[Function]}
@@ -625,7 +634,7 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
   -webkit-animation: dXhcnZ .2s;
   animation: dXhcnZ .2s;
   position: absolute;
-  box-shadow: 0 0 8px 0px rgba(0,0,0,0.12);
+  box-shadow: 0 1px 3px #d3d3d380,0 1px 3px #d3d3d380;
   border: 1px solid #27718c;
   border-radius: 4px;
   z-index: 10;
@@ -797,19 +806,21 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
   border-top-right-radius: 4px;
 }
 
-.c4 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
 .c0 * {
   box-sizing: border-box;
 }
 
 .c0:focus {
   outline: none;
+}
+
+.c4 {
+  background-color: #27718c;
+  border: 0;
+  color: white;
+  outline: none;
+  font-size: 16px;
+  width: 60px;
 }
 
 .c7 {
@@ -909,13 +920,20 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
                   </svg>
                 </styled.svg>
               </Component>
-              <styled.span>
-                <span
+              <styled.input
+                onChange={[Function]}
+                onKeyDown={[Function]}
+                type="number"
+                value={2010}
+              >
+                <input
                   className="c4"
-                >
-                  2010
-                </span>
-              </styled.span>
+                  onChange={[Function]}
+                  onKeyDown={[Function]}
+                  type="number"
+                  value={2010}
+                />
+              </styled.input>
               <Component
                 hoverColor="#d3d3d330"
                 onClick={[Function]}
