@@ -36,6 +36,7 @@ const YearInput = styled.input`
   color: white;
   outline: none;
   font-size: 16px;
+  width: 60px;
 `
 
 const MonthContainer = styled.div`
