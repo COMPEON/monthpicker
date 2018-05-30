@@ -201,7 +201,7 @@ class MonthPicker extends React.Component {
         event.preventDefault()
         event.persist()
 
-        if (focussedDate) return this.changeValue(focussedDate)
+        if (focussedDate) return this.changeValue(focussedDate, event)
       }
 
       default: {
@@ -212,6 +212,7 @@ class MonthPicker extends React.Component {
 
   handleInputKeyDown = event => {
     if (event.key === 'Enter') {
+      event.persist()
       event.stopPropagation()
 
       const focussedMonth = getMonth(this.state.focussedDate)
