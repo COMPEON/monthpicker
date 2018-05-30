@@ -35,7 +35,7 @@ const YearInput = styled.input`
   border: 0;
   color: white;
   outline: none;
-  font-size: 16px;
+  font-size: 18px;
   width: 60px;
 `
 
