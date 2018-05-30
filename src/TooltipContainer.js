@@ -20,7 +20,7 @@ const TooltipContainer = styled.div`
   transform-origin: top center;
   animation: ${fadeIn} .2s;
   position: absolute;
-  box-shadow: 0 0 8px 0px rgba(0,0,0,0.12);
+  box-shadow: 0 1px 3px #d3d3d380, 0 1px 3px #d3d3d380;
   border: 1px solid ${getPrimaryColor};
   border-radius: 4px;
   z-index: 10;
