@@ -83,6 +83,8 @@ class MonthPicker extends React.Component {
   handleClickOutside = (event: MouseEvent) => {
     const element = event.target
     if (this.wrapperRef && !this.wrapperRef.contains(element)) {
+      const { onBlur } = this.props
+
       this.close()
     }
   }
@@ -100,7 +102,11 @@ class MonthPicker extends React.Component {
   }
 
   close = () => {
+    const { onBlur } = this.props
+
     this.setState({ open: false })
+
+    if (onBlur) onBlur(event)
   }
 
   setWrapperRef = node => {
@@ -115,7 +121,7 @@ class MonthPicker extends React.Component {
   }
 
   changeValue = (date, event) => {
-    const { onChange, format: dateFormat } = this.props
+    const { onChange, format: dateFormat, onBlur } = this.props
 
     const formattedDate = dateFormat
       ? format(date, dateFormat)
@@ -253,6 +259,7 @@ MonthPicker.propTypes = {
   year: PropTypes.number.isRequired,
   format: PropTypes.string,
   initialYear: PropTypes.number.isRequired,
+  onBlur: PropTypes.func,
   onChange: PropTypes.func.isRequired,
   children: PropTypes.oneOfType([
     PropTypes.node,
