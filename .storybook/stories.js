@@ -5,7 +5,7 @@ import Monthpicker from '../src'
 
 storiesOf('Monthpicker', module)
   .add('without an initial date', () => (
-    <Monthpicker onChange={console.log}>Test</Monthpicker>
+    <Monthpicker onBlur={console.log} onChange={console.log}>Test</Monthpicker>
   ))
   .add('with an initial date', () => (
     <Monthpicker month={2} year={2018} onChange={console.log}>Test</Monthpicker>
