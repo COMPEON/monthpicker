@@ -82,9 +82,7 @@ class MonthPicker extends React.Component {
 
   handleClickOutside = (event: MouseEvent) => {
     const element = event.target
-    if (this.wrapperRef && !this.wrapperRef.contains(element)) {
-      const { onBlur } = this.props
-
+    if (this.wrapperRef && !this.wrapperRef.contains(element) && this.state.open) {
       this.close()
     }
   }
