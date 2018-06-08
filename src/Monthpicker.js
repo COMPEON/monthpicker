@@ -59,6 +59,13 @@ class MonthPicker extends React.Component {
   }
 
   static propTypes = {
+    allowedYears: PropTypes.oneOfType([
+      PropTypes.arrayOf(PropTypes.number),
+      PropTypes.shape({
+        before: PropTypes.number,
+        after: PropTypes.number
+      })
+    ]),
     primaryColor: PropTypes.string.isRequired,
     secondaryColor: PropTypes.string.isRequired,
     hoverColor: PropTypes.string.isRequired,
@@ -191,20 +198,32 @@ class MonthPicker extends React.Component {
   }
 
   // Other functions
-  nextYear = () => {
-    this.setState(({ year }) => ({ year: year + 1 }))
-  }
+  nextYear = () => this.setState(({ year }) => {
+    const nextYear = year + 1
+    if (this.isAllowedYear(nextYear)) {
+      return { year: nextYear }
+    }
 
-  previousYear = () => {
-    this.setState(({ year }) => ({ year: year - 1 }))
-  }
+    return null
+  })
+
+  previousYear = () => this.setState(({ year }) => {
+    const previousYear = year - 1
+    if (this.isAllowedYear(previousYear)) {
+      return { year: previousYear }
+    }
+
+    return null
+  })
 
   toggleOpen = () => {
     this.setState(({ open }) => ({ open: !open }))
   }
 
   setFocussedMonth = date => {
-    this.setState({ focussedDate: date })
+    if (this.isAllowedYear(getYear(date))) {
+      this.setState({ focussedDate: date })
+    }
   }
 
   close = event => {
@@ -233,6 +252,27 @@ class MonthPicker extends React.Component {
     this.setFocussedMonth(date)
 
     this.close(event)
+  }
+
+  isAllowedYear = year => {
+    const { allowedYears } = this.props
+
+    if (!allowedYears) return true
+
+    if (Array.isArray(allowedYears)) {
+      return allowedYears.indexOf(year) >= 0
+    }
+
+    const { before, after } = allowedYears
+
+    if (before && after) {
+      return year < before && year > after
+    }
+
+    if (before) return year < before
+    if (after) return year > after
+
+    return false
   }
 
   // Render functions
