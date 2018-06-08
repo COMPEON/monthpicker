@@ -5,17 +5,45 @@ import Monthpicker from '../src'
 
 storiesOf('Monthpicker', module)
   .add('without an initial date', () => (
-    <Monthpicker onBlur={console.log} onChange={console.log}>Test</Monthpicker>
+    <Monthpicker
+      onBlur={action('blur')}
+      onChange={action('change')}
+    >
+      Test
+    </Monthpicker>
   ))
   .add('with an initial date', () => (
-    <Monthpicker month={2} year={2018} onChange={console.log}>Test</Monthpicker>
+    <Monthpicker
+      month={2}
+      year={2018}
+      onBlur={action('blur')}
+      onChange={action('change')}
+    >
+      Test
+    </Monthpicker>
   ))
   .add('with an initial year set', () => (
-    <Monthpicker initialYear={2017} month={2} year={2018} onChange={console.log}>Test</Monthpicker>
+    <Monthpicker
+      initialYear={2017}
+      month={2}
+      year={2018}
+      onBlur={action('blur')}
+      onChange={action('change')}
+    >
+      Test
+    </Monthpicker>
   ))
   .add('with content below', () => (
     <div>
-      <Monthpicker initialYear={2017} month={2} year={2018} onChange={console.log}>Test</Monthpicker>
+      <Monthpicker
+        initialYear={2017}
+        month={2}
+        year={2018}
+        onBlur={action('blur')}
+        onChange={action('change')}
+      >
+        Test
+      </Monthpicker>
       <div>
         <p>
           Lorem ipsum dolor sit amet, ea vel viderer inimicus assentior, cum ex illud debet impedit.
@@ -35,7 +63,8 @@ storiesOf('Monthpicker', module)
     <Monthpicker
       month={5}
       year={2018}
-      onChange={console.log}
+      onBlur={action('blur')}
+      onChange={action('change')}
       primaryColor='#fab400'
       secondaryColor='#550000'
       hoverColor='red'
