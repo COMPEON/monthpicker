@@ -9,7 +9,7 @@ exports[`<Monthpicker /> allows specifiyng the primary and secondary colors 1`] 
   -webkit-animation: dXhcnZ .2s;
   animation: dXhcnZ .2s;
   position: absolute;
-  box-shadow: 0 0 8px 0px rgba(0,0,0,0.12);
+  box-shadow: 0 1px 3px #d3d3d380,0 1px 3px #d3d3d380;
   border: 1px solid green;
   border-radius: 4px;
   z-index: 10;
@@ -625,7 +625,7 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
   -webkit-animation: dXhcnZ .2s;
   animation: dXhcnZ .2s;
   position: absolute;
-  box-shadow: 0 0 8px 0px rgba(0,0,0,0.12);
+  box-shadow: 0 1px 3px #d3d3d380,0 1px 3px #d3d3d380;
   border: 1px solid #27718c;
   border-radius: 4px;
   z-index: 10;
