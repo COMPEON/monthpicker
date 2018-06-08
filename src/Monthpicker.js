@@ -58,6 +58,24 @@ class MonthPicker extends React.Component {
     year: getYear(new Date())
   }
 
+  static propTypes = {
+    primaryColor: PropTypes.string.isRequired,
+    secondaryColor: PropTypes.string.isRequired,
+    hoverColor: PropTypes.string.isRequired,
+    month: PropTypes.number.isRequired,
+    year: PropTypes.number.isRequired,
+    format: PropTypes.string,
+    initialYear: PropTypes.number.isRequired,
+    onBlur: PropTypes.func,
+    onFocus: PropTypes.func,
+    onChange: PropTypes.func.isRequired,
+    children: PropTypes.oneOfType([
+      PropTypes.node,
+      PropTypes.arrayOf(PropTypes.node)
+    ]).isRequired
+  }
+
+  // Lifecycle methods
   constructor(props) {
     super(props)
 
@@ -80,37 +98,12 @@ class MonthPicker extends React.Component {
     document.removeEventListener('mousedown', this.handleClickOutside)
   }
 
-  handleClickOutside = (event: MouseEvent) => {
+  // Event handlers
+  handleClickOutside = event => {
     const element = event.target
     if (this.wrapperRef && !this.wrapperRef.contains(element)) {
-      this.close()
+      this.close(event)
     }
-  }
-
-  nextYear = () => {
-    this.setState(({ year }) => ({ year: year + 1 }))
-  }
-
-  previousYear = () => {
-    this.setState(({ year }) => ({ year: year - 1 }))
-  }
-
-  toggleOpen = () => {
-    this.setState(({ open }) => ({ open: !open }))
-  }
-
-  close = () => {
-    const { onBlur } = this.props
-
-    if (!this.state.open) return
-
-    this.setState({ open: false })
-
-    if (onBlur) onBlur()
-  }
-
-  setWrapperRef = node => {
-    this.wrapperRef = node
   }
 
   handleChange = index => event => {
@@ -120,22 +113,14 @@ class MonthPicker extends React.Component {
     this.changeValue(date, event)
   }
 
-  changeValue = (date, event) => {
-    const { onChange, format: dateFormat, onBlur } = this.props
+  handleTriggerClick = event => {
+    const { onFocus, onBlur } = this.props
+    const { open } = this.state
 
-    const formattedDate = dateFormat
-      ? format(date, dateFormat)
-      : { month: getMonth(date) + 1, year: getYear(date) }
+    this.toggleOpen()
 
-    if (onChange) onChange(formattedDate, event)
-
-    this.setFocussedMonth(date)
-
-    this.close()
-  }
-
-  setFocussedMonth = date => {
-    this.setState({ focussedDate: date })
+    if (!open && onFocus) onFocus(event)
+    if (open && onBlur) onBlur(event)
   }
 
   handleKeyDown = event => {
@@ -194,7 +179,7 @@ class MonthPicker extends React.Component {
         event.preventDefault()
         event.persist()
 
-        if (focussedDate) this.changeValue(focussedDate)
+        if (focussedDate) this.changeValue(focussedDate, event)
 
         break
       }
@@ -205,8 +190,55 @@ class MonthPicker extends React.Component {
     }
   }
 
+  // Other functions
+  nextYear = () => {
+    this.setState(({ year }) => ({ year: year + 1 }))
+  }
+
+  previousYear = () => {
+    this.setState(({ year }) => ({ year: year - 1 }))
+  }
+
+  toggleOpen = () => {
+    this.setState(({ open }) => ({ open: !open }))
+  }
+
+  setFocussedMonth = date => {
+    this.setState({ focussedDate: date })
+  }
+
+  close = event => {
+    const { onBlur } = this.props
+
+    if (!this.state.open) return
+
+    this.setState({ open: false })
+
+    if (onBlur) onBlur(event)
+  }
+
+  setWrapperRef = node => {
+    this.wrapperRef = node
+  }
+
+  changeValue = (date, event) => {
+    const { onChange, format: dateFormat, onBlur } = this.props
+
+    const formattedDate = dateFormat
+      ? format(date, dateFormat)
+      : { month: getMonth(date) + 1, year: getYear(date) }
+
+    if (onChange) onChange(formattedDate, event)
+
+    this.setFocussedMonth(date)
+
+    this.close(event)
+  }
+
+  // Render functions
   renderMonths = () => {
     const { month, year, locale } = this.props
+
     const monthNameFormatter = Intl.DateTimeFormat(locale, { month: 'short' })
     const formatDate = new Date()
 
@@ -242,7 +274,7 @@ class MonthPicker extends React.Component {
 
     return (
       <Container tabIndex={-1} innerRef={this.setWrapperRef} onKeyDown={this.handleKeyDown}>
-        <div onClick={this.toggleOpen}>{this.props.children}</div>
+        <div onClick={this.handleTriggerClick}>{this.props.children}</div>
         {open && (
           <TooltipContainer {...styleProps}>
             <Header {...styleProps}>
@@ -259,22 +291,6 @@ class MonthPicker extends React.Component {
       </Container>
     )
   }
-}
-
-MonthPicker.propTypes = {
-  primaryColor: PropTypes.string.isRequired,
-  secondaryColor: PropTypes.string.isRequired,
-  hoverColor: PropTypes.string.isRequired,
-  month: PropTypes.number.isRequired,
-  year: PropTypes.number.isRequired,
-  format: PropTypes.string,
-  initialYear: PropTypes.number.isRequired,
-  onBlur: PropTypes.func,
-  onChange: PropTypes.func.isRequired,
-  children: PropTypes.oneOfType([
-    PropTypes.node,
-    PropTypes.arrayOf(PropTypes.node)
-  ]).isRequired
 }
 
 export default MonthPicker

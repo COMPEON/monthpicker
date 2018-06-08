@@ -1,6 +1,6 @@
 {
   "name": "@compeon/monthpicker",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Simple monthpicker using react & date-fns",
   "main": "dist/index.js",
   "license": "MIT",
@@ -14,7 +14,7 @@
   "scripts": {
     "compile": "babel src -d dist --ignore **/*.spec.js",
     "start": "start-storybook -p 9001 -c .storybook",
-    "test": "jest"
+    "test": "jest --watch"
   },
   "peerDependencies": {
     "react": "^16.3.2",
@@ -34,8 +34,9 @@
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "enzyme-to-json": "^3.3.3",
-    "jest": "^22.4.3",
+    "jest": "^23.1.0",
     "jest-styled-components": "^5.0.1",
+    "prop-types": "^15.6.1",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "styled-components": "^3.2.6"
