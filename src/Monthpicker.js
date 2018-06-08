@@ -13,7 +13,6 @@ import ArrowRight from './ArrowRight'
 import ArrowLeft from './ArrowLeft'
 import Header from './Header'
 import {
-  MONTHS,
   getHoverColor,
   getPrimaryColor,
   getSecondaryColor,
@@ -54,6 +53,7 @@ class MonthPicker extends React.Component {
     primaryColor: '#27718c',
     secondaryColor: 'white',
     initialYear: getYear(new Date()),
+    locale: 'de',
     month: getMonth(new Date()),
     year: getYear(new Date())
   }
@@ -205,24 +205,34 @@ class MonthPicker extends React.Component {
     }
   }
 
-  renderMonth = (monthName, index) => {
-    const { month, year } = this.props
+  renderMonths = () => {
+    const { month, year, locale } = this.props
+    const monthNameFormatter = Intl.DateTimeFormat(locale, { month: 'short' })
+    const formatDate = new Date()
 
     const focussedMonth = getMonth(this.state.focussedDate)
     const focussedYear = getYear(this.state.focussedDate)
 
-    return (
-      <Month
-        focussed={focussedYear === this.state.year && index === focussedMonth}
-        key={monthName}
-        selected={month && this.state.year === year && month - 1  === index}
-        onClick={this.handleChange(index)}
-        index={index}
-        {...getStyleProps(this.props)}
-      >
-        {monthName.substr(0, 3)}
-      </Month>
-    )
+    const months = []
+    for (let index = 0; index < 12; index++) {
+      formatDate.setMonth(index)
+      const monthName = monthNameFormatter.format(formatDate)
+
+      months.push(
+        <Month
+          focussed={focussedYear === this.state.year && index === focussedMonth}
+          key={monthName}
+          selected={month && this.state.year === year && month - 1  === index}
+          onClick={this.handleChange(index)}
+          index={index}
+          {...getStyleProps(this.props)}
+        >
+        {monthName}
+        </Month>
+      )
+    }
+
+    return months
   }
 
   render () {
@@ -242,7 +252,7 @@ class MonthPicker extends React.Component {
             </Header>
             <Divider />
             <MonthContainer {...styleProps}>
-              {MONTHS.map(this.renderMonth)}
+              {this.renderMonths()}
             </MonthContainer>
           </TooltipContainer>
         )}
