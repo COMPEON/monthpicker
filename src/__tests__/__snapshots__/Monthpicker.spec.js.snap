@@ -218,6 +218,7 @@ exports[`<Monthpicker /> allows specifiyng the primary and secondary colors 1`] 
 <MonthPicker
   hoverColor="#d3d3d330"
   initialYear={2018}
+  locale="de"
   month={1}
   onChange={[MockFunction]}
   primaryColor="green"
@@ -353,7 +354,7 @@ exports[`<Monthpicker /> allows specifiyng the primary and secondary colors 1`] 
                 focussed={true}
                 hoverColor="#d3d3d330"
                 index={0}
-                key="Januar"
+                key="M01"
                 onClick={[Function]}
                 primaryColor="green"
                 secondaryColor="red"
@@ -364,14 +365,14 @@ exports[`<Monthpicker /> allows specifiyng the primary and secondary colors 1`] 
                   onClick={[Function]}
                   selected={true}
                 >
-                  Jan
+                  M01
                 </div>
               </styled.div>
               <styled.div
                 focussed={false}
                 hoverColor="#d3d3d330"
                 index={1}
-                key="Februar"
+                key="M02"
                 onClick={[Function]}
                 primaryColor="green"
                 secondaryColor="red"
@@ -382,14 +383,14 @@ exports[`<Monthpicker /> allows specifiyng the primary and secondary colors 1`] 
                   onClick={[Function]}
                   selected={false}
                 >
-                  Feb
+                  M02
                 </div>
               </styled.div>
               <styled.div
                 focussed={false}
                 hoverColor="#d3d3d330"
                 index={2}
-                key="März"
+                key="M03"
                 onClick={[Function]}
                 primaryColor="green"
                 secondaryColor="red"
@@ -400,14 +401,14 @@ exports[`<Monthpicker /> allows specifiyng the primary and secondary colors 1`] 
                   onClick={[Function]}
                   selected={false}
                 >
-                  Mär
+                  M03
                 </div>
               </styled.div>
               <styled.div
                 focussed={false}
                 hoverColor="#d3d3d330"
                 index={3}
-                key="April"
+                key="M04"
                 onClick={[Function]}
                 primaryColor="green"
                 secondaryColor="red"
@@ -418,14 +419,14 @@ exports[`<Monthpicker /> allows specifiyng the primary and secondary colors 1`] 
                   onClick={[Function]}
                   selected={false}
                 >
-                  Apr
+                  M04
                 </div>
               </styled.div>
               <styled.div
                 focussed={false}
                 hoverColor="#d3d3d330"
                 index={4}
-                key="Mai"
+                key="M05"
                 onClick={[Function]}
                 primaryColor="green"
                 secondaryColor="red"
@@ -436,14 +437,14 @@ exports[`<Monthpicker /> allows specifiyng the primary and secondary colors 1`] 
                   onClick={[Function]}
                   selected={false}
                 >
-                  Mai
+                  M05
                 </div>
               </styled.div>
               <styled.div
                 focussed={false}
                 hoverColor="#d3d3d330"
                 index={5}
-                key="Juni"
+                key="M06"
                 onClick={[Function]}
                 primaryColor="green"
                 secondaryColor="red"
@@ -454,14 +455,14 @@ exports[`<Monthpicker /> allows specifiyng the primary and secondary colors 1`] 
                   onClick={[Function]}
                   selected={false}
                 >
-                  Jun
+                  M06
                 </div>
               </styled.div>
               <styled.div
                 focussed={false}
                 hoverColor="#d3d3d330"
                 index={6}
-                key="Juli"
+                key="M07"
                 onClick={[Function]}
                 primaryColor="green"
                 secondaryColor="red"
@@ -472,14 +473,14 @@ exports[`<Monthpicker /> allows specifiyng the primary and secondary colors 1`] 
                   onClick={[Function]}
                   selected={false}
                 >
-                  Jul
+                  M07
                 </div>
               </styled.div>
               <styled.div
                 focussed={false}
                 hoverColor="#d3d3d330"
                 index={7}
-                key="August"
+                key="M08"
                 onClick={[Function]}
                 primaryColor="green"
                 secondaryColor="red"
@@ -490,14 +491,14 @@ exports[`<Monthpicker /> allows specifiyng the primary and secondary colors 1`] 
                   onClick={[Function]}
                   selected={false}
                 >
-                  Aug
+                  M08
                 </div>
               </styled.div>
               <styled.div
                 focussed={false}
                 hoverColor="#d3d3d330"
                 index={8}
-                key="September"
+                key="M09"
                 onClick={[Function]}
                 primaryColor="green"
                 secondaryColor="red"
@@ -508,14 +509,14 @@ exports[`<Monthpicker /> allows specifiyng the primary and secondary colors 1`] 
                   onClick={[Function]}
                   selected={false}
                 >
-                  Sep
+                  M09
                 </div>
               </styled.div>
               <styled.div
                 focussed={false}
                 hoverColor="#d3d3d330"
                 index={9}
-                key="Oktober"
+                key="M10"
                 onClick={[Function]}
                 primaryColor="green"
                 secondaryColor="red"
@@ -526,14 +527,14 @@ exports[`<Monthpicker /> allows specifiyng the primary and secondary colors 1`] 
                   onClick={[Function]}
                   selected={false}
                 >
-                  Okt
+                  M10
                 </div>
               </styled.div>
               <styled.div
                 focussed={false}
                 hoverColor="#d3d3d330"
                 index={10}
-                key="November"
+                key="M11"
                 onClick={[Function]}
                 primaryColor="green"
                 secondaryColor="red"
@@ -544,14 +545,14 @@ exports[`<Monthpicker /> allows specifiyng the primary and secondary colors 1`] 
                   onClick={[Function]}
                   selected={false}
                 >
-                  Nov
+                  M11
                 </div>
               </styled.div>
               <styled.div
                 focussed={false}
                 hoverColor="#d3d3d330"
                 index={11}
-                key="Dezember"
+                key="M12"
                 onClick={[Function]}
                 primaryColor="green"
                 secondaryColor="red"
@@ -562,7 +563,7 @@ exports[`<Monthpicker /> allows specifiyng the primary and secondary colors 1`] 
                   onClick={[Function]}
                   selected={false}
                 >
-                  Dez
+                  M12
                 </div>
               </styled.div>
             </div>
@@ -586,6 +587,7 @@ exports[`<Monthpicker /> event handling:  closes the overlay when clicking anywh
 <MonthPicker
   hoverColor="#d3d3d330"
   initialYear={2010}
+  locale="de"
   month={1}
   onChange={[MockFunction]}
   primaryColor="#27718c"
@@ -834,6 +836,7 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
 <MonthPicker
   hoverColor="#d3d3d330"
   initialYear={2010}
+  locale="de"
   month={1}
   onChange={[MockFunction]}
   primaryColor="#27718c"
@@ -969,7 +972,7 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
                 focussed={true}
                 hoverColor="#d3d3d330"
                 index={0}
-                key="Januar"
+                key="M01"
                 onClick={[Function]}
                 primaryColor="#27718c"
                 secondaryColor="white"
@@ -980,14 +983,14 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
                   onClick={[Function]}
                   selected={true}
                 >
-                  Jan
+                  M01
                 </div>
               </styled.div>
               <styled.div
                 focussed={false}
                 hoverColor="#d3d3d330"
                 index={1}
-                key="Februar"
+                key="M02"
                 onClick={[Function]}
                 primaryColor="#27718c"
                 secondaryColor="white"
@@ -998,14 +1001,14 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
                   onClick={[Function]}
                   selected={false}
                 >
-                  Feb
+                  M02
                 </div>
               </styled.div>
               <styled.div
                 focussed={false}
                 hoverColor="#d3d3d330"
                 index={2}
-                key="März"
+                key="M03"
                 onClick={[Function]}
                 primaryColor="#27718c"
                 secondaryColor="white"
@@ -1016,14 +1019,14 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
                   onClick={[Function]}
                   selected={false}
                 >
-                  Mär
+                  M03
                 </div>
               </styled.div>
               <styled.div
                 focussed={false}
                 hoverColor="#d3d3d330"
                 index={3}
-                key="April"
+                key="M04"
                 onClick={[Function]}
                 primaryColor="#27718c"
                 secondaryColor="white"
@@ -1034,14 +1037,14 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
                   onClick={[Function]}
                   selected={false}
                 >
-                  Apr
+                  M04
                 </div>
               </styled.div>
               <styled.div
                 focussed={false}
                 hoverColor="#d3d3d330"
                 index={4}
-                key="Mai"
+                key="M05"
                 onClick={[Function]}
                 primaryColor="#27718c"
                 secondaryColor="white"
@@ -1052,14 +1055,14 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
                   onClick={[Function]}
                   selected={false}
                 >
-                  Mai
+                  M05
                 </div>
               </styled.div>
               <styled.div
                 focussed={false}
                 hoverColor="#d3d3d330"
                 index={5}
-                key="Juni"
+                key="M06"
                 onClick={[Function]}
                 primaryColor="#27718c"
                 secondaryColor="white"
@@ -1070,14 +1073,14 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
                   onClick={[Function]}
                   selected={false}
                 >
-                  Jun
+                  M06
                 </div>
               </styled.div>
               <styled.div
                 focussed={false}
                 hoverColor="#d3d3d330"
                 index={6}
-                key="Juli"
+                key="M07"
                 onClick={[Function]}
                 primaryColor="#27718c"
                 secondaryColor="white"
@@ -1088,14 +1091,14 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
                   onClick={[Function]}
                   selected={false}
                 >
-                  Jul
+                  M07
                 </div>
               </styled.div>
               <styled.div
                 focussed={false}
                 hoverColor="#d3d3d330"
                 index={7}
-                key="August"
+                key="M08"
                 onClick={[Function]}
                 primaryColor="#27718c"
                 secondaryColor="white"
@@ -1106,14 +1109,14 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
                   onClick={[Function]}
                   selected={false}
                 >
-                  Aug
+                  M08
                 </div>
               </styled.div>
               <styled.div
                 focussed={false}
                 hoverColor="#d3d3d330"
                 index={8}
-                key="September"
+                key="M09"
                 onClick={[Function]}
                 primaryColor="#27718c"
                 secondaryColor="white"
@@ -1124,14 +1127,14 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
                   onClick={[Function]}
                   selected={false}
                 >
-                  Sep
+                  M09
                 </div>
               </styled.div>
               <styled.div
                 focussed={false}
                 hoverColor="#d3d3d330"
                 index={9}
-                key="Oktober"
+                key="M10"
                 onClick={[Function]}
                 primaryColor="#27718c"
                 secondaryColor="white"
@@ -1142,14 +1145,14 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
                   onClick={[Function]}
                   selected={false}
                 >
-                  Okt
+                  M10
                 </div>
               </styled.div>
               <styled.div
                 focussed={false}
                 hoverColor="#d3d3d330"
                 index={10}
-                key="November"
+                key="M11"
                 onClick={[Function]}
                 primaryColor="#27718c"
                 secondaryColor="white"
@@ -1160,14 +1163,14 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
                   onClick={[Function]}
                   selected={false}
                 >
-                  Nov
+                  M11
                 </div>
               </styled.div>
               <styled.div
                 focussed={false}
                 hoverColor="#d3d3d330"
                 index={11}
-                key="Dezember"
+                key="M12"
                 onClick={[Function]}
                 primaryColor="#27718c"
                 secondaryColor="white"
@@ -1178,7 +1181,7 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
                   onClick={[Function]}
                   selected={false}
                 >
-                  Dez
+                  M12
                 </div>
               </styled.div>
             </div>
@@ -1243,7 +1246,7 @@ exports[`<Monthpicker /> event handling:  sets the focussed date to 1 month earl
   focussed={true}
   hoverColor="#d3d3d330"
   index={0}
-  key="Januar"
+  key="M01"
   onClick={[Function]}
   primaryColor="#27718c"
   secondaryColor="white"
@@ -1254,7 +1257,7 @@ exports[`<Monthpicker /> event handling:  sets the focussed date to 1 month earl
     onClick={[Function]}
     selected={false}
   >
-    Jan
+    M01
   </div>
 </styled.div>
 `;
@@ -1312,7 +1315,7 @@ exports[`<Monthpicker /> event handling:  sets the focussed date to 1 month late
   focussed={true}
   hoverColor="#d3d3d330"
   index={1}
-  key="Februar"
+  key="M02"
   onClick={[Function]}
   primaryColor="#27718c"
   secondaryColor="white"
@@ -1323,148 +1326,14 @@ exports[`<Monthpicker /> event handling:  sets the focussed date to 1 month late
     onClick={[Function]}
     selected={false}
   >
-    Feb
+    M02
   </div>
 </styled.div>
 `;
 
-exports[`<Monthpicker /> event handling:  sets the focussed date to 3 month earlier when hitting ArrowUp 1`] = `
-.c0 {
-  cursor: pointer;
-  border: 1px solid #27718c;
-  background-color: #d3d3d330;
-  padding: 12px 0;
-  -webkit-transition: background-color .1s,color .1s;
-  transition: background-color .1s,color .1s;
-  font-size: 14px;
-  background-color: white;
-  color: #27718c;
-  height: 42px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex: 0 0 33.33%;
-  -ms-flex: 0 0 33.33%;
-  flex: 0 0 33.33%;
-}
+exports[`<Monthpicker /> event handling:  sets the focussed date to 3 month earlier when hitting ArrowUp 1`] = `null`;
 
-.c0:hover {
-  background-color: #d3d3d330;
-}
-
-.c0:focus {
-  outline: none;
-}
-
-.c0:nth-child(3n) {
-  border-right: 1px solid white;
-}
-
-.c0:nth-child(3n+1) {
-  border-left: 1px solid white;
-}
-
-.c0:nth-last-child(-n+3) {
-  border-bottom: 1px solid white;
-}
-
-<styled.div
-  focussed={true}
-  hoverColor="#d3d3d330"
-  index={0}
-  key="Januar"
-  onClick={[Function]}
-  primaryColor="#27718c"
-  secondaryColor="white"
-  selected={false}
->
-  <div
-    className="c0"
-    onClick={[Function]}
-    selected={false}
-  >
-    Jan
-  </div>
-</styled.div>
-`;
-
-exports[`<Monthpicker /> event handling:  sets the focussed date to 3 month later when hitting ArrowDown 1`] = `
-.c0 {
-  cursor: pointer;
-  border: 1px solid #27718c;
-  background-color: #d3d3d330;
-  padding: 12px 0;
-  -webkit-transition: background-color .1s,color .1s;
-  transition: background-color .1s,color .1s;
-  font-size: 14px;
-  background-color: white;
-  color: #27718c;
-  height: 42px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex: 0 0 33.33%;
-  -ms-flex: 0 0 33.33%;
-  flex: 0 0 33.33%;
-}
-
-.c0:hover {
-  background-color: #d3d3d330;
-}
-
-.c0:focus {
-  outline: none;
-}
-
-.c0:nth-child(3n) {
-  border-right: 1px solid white;
-}
-
-.c0:nth-child(3n+1) {
-  border-left: 1px solid white;
-}
-
-.c0:nth-last-child(-n+3) {
-  border-bottom: 1px solid white;
-}
-
-<styled.div
-  focussed={true}
-  hoverColor="#d3d3d330"
-  index={3}
-  key="April"
-  onClick={[Function]}
-  primaryColor="#27718c"
-  secondaryColor="white"
-  selected={false}
->
-  <div
-    className="c0"
-    onClick={[Function]}
-    selected={false}
-  >
-    Apr
-  </div>
-</styled.div>
-`;
+exports[`<Monthpicker /> event handling:  sets the focussed date to 3 month later when hitting ArrowDown 1`] = `null`;
 
 exports[`<Monthpicker /> renders its children 1`] = `
 <styled.div
