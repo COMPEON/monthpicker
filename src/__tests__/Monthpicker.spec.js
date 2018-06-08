@@ -107,9 +107,6 @@ describe('<Monthpicker />', () => {
       const focussedMonth = wrapper.findWhere(node => node.key() === 'Januar')
       expect(focussedMonth).toMatchSnapshot()
     })
-
-    it('adjusts the background color when hovering over a month', () => {
-    })
   })
 
   it('calls onChange with the selected month and year', () => {
