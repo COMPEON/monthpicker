@@ -194,7 +194,7 @@ class MonthPicker extends React.Component {
         event.preventDefault()
         event.persist()
 
-        if (focussedDate) this.changeValue(focussedDate)
+        if (focussedDate) this.changeValue(focussedDate, event)
 
         break
       }
