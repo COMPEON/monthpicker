@@ -80,10 +80,10 @@ class MonthPicker extends React.Component {
     document.removeEventListener('mousedown', this.handleClickOutside)
   }
 
-  handleClickOutside = (event: MouseEvent) => {
+  handleClickOutside = event => {
     const element = event.target
     if (this.wrapperRef && !this.wrapperRef.contains(element)) {
-      this.close()
+      this.close(event)
     }
   }
 
@@ -99,14 +99,24 @@ class MonthPicker extends React.Component {
     this.setState(({ open }) => ({ open: !open }))
   }
 
-  close = () => {
+  handleTriggerClick = event => {
+    const { onFocus, onBlur } = this.props
+    const { open } = this.state
+
+    this.toggleOpen()
+
+    if (!open && onFocus) onFocus(event)
+    if (open && onBlur) onBlur(event)
+  }
+
+  close = event => {
     const { onBlur } = this.props
 
     if (!this.state.open) return
 
     this.setState({ open: false })
 
-    if (onBlur) onBlur()
+    if (onBlur) onBlur(event)
   }
 
   setWrapperRef = node => {
@@ -131,7 +141,7 @@ class MonthPicker extends React.Component {
 
     this.setFocussedMonth(date)
 
-    this.close()
+    this.close(event)
   }
 
   setFocussedMonth = date => {
@@ -232,7 +242,7 @@ class MonthPicker extends React.Component {
 
     return (
       <Container tabIndex={-1} innerRef={this.setWrapperRef} onKeyDown={this.handleKeyDown}>
-        <div onClick={this.toggleOpen}>{this.props.children}</div>
+        <div onClick={this.handleTriggerClick}>{this.props.children}</div>
         {open && (
           <TooltipContainer {...styleProps}>
             <Header {...styleProps}>
@@ -260,6 +270,7 @@ MonthPicker.propTypes = {
   format: PropTypes.string,
   initialYear: PropTypes.number.isRequired,
   onBlur: PropTypes.func,
+  onFocus: PropTypes.func,
   onChange: PropTypes.func.isRequired,
   children: PropTypes.oneOfType([
     PropTypes.node,

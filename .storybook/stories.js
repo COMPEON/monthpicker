@@ -8,6 +8,7 @@ storiesOf('Monthpicker', module)
     <Monthpicker
       onBlur={action('blur')}
       onChange={action('change')}
+      onFocus={action('focus')}
     >
       Test
     </Monthpicker>
@@ -18,6 +19,7 @@ storiesOf('Monthpicker', module)
       year={2018}
       onBlur={action('blur')}
       onChange={action('change')}
+      onFocus={action('focus')}
     >
       Test
     </Monthpicker>
@@ -29,6 +31,7 @@ storiesOf('Monthpicker', module)
       year={2018}
       onBlur={action('blur')}
       onChange={action('change')}
+      onFocus={action('focus')}
     >
       Test
     </Monthpicker>
@@ -41,6 +44,7 @@ storiesOf('Monthpicker', module)
         year={2018}
         onBlur={action('blur')}
         onChange={action('change')}
+        onFocus={action('focus')}
       >
         Test
       </Monthpicker>
@@ -65,6 +69,7 @@ storiesOf('Monthpicker', module)
       year={2018}
       onBlur={action('blur')}
       onChange={action('change')}
+      onFocus={action('focus')}
       primaryColor='#fab400'
       secondaryColor='#550000'
       hoverColor='red'
