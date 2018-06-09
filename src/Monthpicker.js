@@ -35,7 +35,7 @@ const Container = styled.div`
 `
 
 const MonthContainer = styled.div`
-  background-color: white;
+  background-color: ${getSecondaryColor};
   border-radius: 4px;
   width: 300px;
   display: flex;
@@ -44,7 +44,7 @@ const MonthContainer = styled.div`
 
 const Divider = styled.div`
   height: 8px;
-  background-color: white;
+  background-color: ${getSecondaryColor};
   width: 100%;
 `
 
@@ -312,7 +312,7 @@ class MonthPicker extends React.Component {
               <Year>{year}</Year>
               <ArrowRight onClick={this.nextYear} {...styleProps} />
             </Header>
-            <Divider />
+            <Divider {...styleProps } />
             <MonthContainer {...styleProps}>
               {MONTHS.map(this.renderMonth)}
             </MonthContainer>

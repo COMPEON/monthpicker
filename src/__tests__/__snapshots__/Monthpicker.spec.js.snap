@@ -197,7 +197,7 @@ exports[`<Monthpicker /> allows specifiyng the primary and secondary colors 1`] 
 }
 
 .c7 {
-  background-color: white;
+  background-color: red;
   border-radius: 4px;
   width: 300px;
   display: -webkit-box;
@@ -211,7 +211,7 @@ exports[`<Monthpicker /> allows specifiyng the primary and secondary colors 1`] 
 
 .c6 {
   height: 8px;
-  background-color: white;
+  background-color: red;
   width: 100%;
 }
 
@@ -336,7 +336,11 @@ exports[`<Monthpicker /> allows specifiyng the primary and secondary colors 1`] 
               </Component>
             </div>
           </styled.div>
-          <styled.div>
+          <styled.div
+            hoverColor="#d3d3d330"
+            primaryColor="green"
+            secondaryColor="red"
+          >
             <div
               className="c6"
             />
@@ -952,7 +956,11 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
               </Component>
             </div>
           </styled.div>
-          <styled.div>
+          <styled.div
+            hoverColor="#d3d3d330"
+            primaryColor="#27718c"
+            secondaryColor="white"
+          >
             <div
               className="c6"
             />
