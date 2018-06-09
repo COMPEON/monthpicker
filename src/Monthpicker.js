@@ -48,14 +48,17 @@ const Divider = styled.div`
   width: 100%;
 `
 
+const currentDate = new Date()
+const currentYear = getYear(currentDate)
+
 class MonthPicker extends React.Component {
   static defaultProps = {
     hoverColor: '#d3d3d330',
     primaryColor: '#27718c',
     secondaryColor: 'white',
-    initialYear: getYear(new Date()),
-    month: getMonth(new Date()),
-    year: getYear(new Date())
+    initialYear: currentYear,
+    month: getMonth(currentDate),
+    year: currentYear
   }
 
   static propTypes = {
