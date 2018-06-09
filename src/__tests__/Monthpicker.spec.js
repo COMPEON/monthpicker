@@ -1,5 +1,8 @@
 import React from 'react'
 import { shallow, mount } from 'enzyme'
+import ArrowRight from '../ArrowRight'
+import ArrowLeft from '../ArrowLeft'
+import { Year } from '../Monthpicker'
 import Monthpicker from '..'
 
 describe('<Monthpicker />', () => {
@@ -160,5 +163,131 @@ describe('<Monthpicker />', () => {
     child.simulate('click')
 
     expect(wrapper).toMatchSnapshot()
+  })
+
+  describe('with allowedYears prop set', () => {
+    describe('to an array', () => {
+      it('allows selecting years in the allowedYears array', () => {
+        const onChange = jest.fn()
+        const wrapper = mount(
+          <Monthpicker
+            allowedYears={[2017]}
+            initialYear={2018}
+            onChange={onChange}
+          >
+            <div className='child'>Child</div>
+          </Monthpicker>
+        )
+
+        const child = wrapper.find('.child').first()
+        child.simulate('click')
+
+        wrapper.find(ArrowLeft).simulate('click')
+
+        expect(wrapper.find(Year)).toMatchSnapshot()
+      })
+
+      it('does not allow selecting years not in the allowedYears array', () => {
+        const onChange = jest.fn()
+        const wrapper = mount(
+          <Monthpicker
+            allowedYears={[2019]}
+            initialYear={2018}
+            onChange={onChange}
+          >
+            <div className='child'>Child</div>
+          </Monthpicker>
+        )
+
+        const child = wrapper.find('.child').first()
+        child.simulate('click')
+
+        wrapper.find(ArrowLeft).simulate('click')
+
+        expect(wrapper.find(Year)).toMatchSnapshot()
+      })
+    })
+
+    describe('to an object', () => {
+      it('does allow values before the before key', () => {
+        const onChange = jest.fn()
+        const wrapper = mount(
+          <Monthpicker
+            allowedYears={{ before: 2019 }}
+            initialYear={2018}
+            onChange={onChange}
+          >
+            <div className='child'>Child</div>
+          </Monthpicker>
+        )
+
+        const child = wrapper.find('.child').first()
+        child.simulate('click')
+
+        wrapper.find(ArrowLeft).simulate('click')
+
+        expect(wrapper.find(Year)).toMatchSnapshot()
+      })
+
+      it('does not allow values after the before key', () => {
+        const onChange = jest.fn()
+        const wrapper = mount(
+          <Monthpicker
+            allowedYears={{ before: 2019 }}
+            initialYear={2018}
+            onChange={onChange}
+          >
+            <div className='child'>Child</div>
+          </Monthpicker>
+        )
+
+        const child = wrapper.find('.child').first()
+        child.simulate('click')
+
+        wrapper.find(ArrowRight).simulate('click')
+
+        expect(wrapper.find(Year)).toMatchSnapshot()
+      })
+
+      it('does allow values after the after key', () => {
+        const onChange = jest.fn()
+        const wrapper = mount(
+          <Monthpicker
+            allowedYears={{ after: 2017 }}
+            initialYear={2018}
+            onChange={onChange}
+          >
+            <div className='child'>Child</div>
+          </Monthpicker>
+        )
+
+        const child = wrapper.find('.child').first()
+        child.simulate('click')
+
+        wrapper.find(ArrowRight).simulate('click')
+
+        expect(wrapper.find(Year)).toMatchSnapshot()
+      })
+
+      it('does not allow values before the after key', () => {
+        const onChange = jest.fn()
+        const wrapper = mount(
+          <Monthpicker
+            allowedYears={{ after: 2017 }}
+            initialYear={2018}
+            onChange={onChange}
+          >
+            <div className='child'>Child</div>
+          </Monthpicker>
+        )
+
+        const child = wrapper.find('.child').first()
+        child.simulate('click')
+
+        wrapper.find(ArrowLeft).simulate('click')
+
+        expect(wrapper.find(Year)).toMatchSnapshot()
+      })
+    })
   })
 })

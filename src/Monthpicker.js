@@ -20,7 +20,7 @@ import {
   getStyleProps
 } from './utils'
 
-const Year = styled.span`
+export const Year = styled.span`
   user-select: none;
 `
 
@@ -278,15 +278,16 @@ class MonthPicker extends React.Component {
   // Render functions
   renderMonth = (monthName, index) => {
     const { month, year } = this.props
+    const { year: selectedYear, focussedDate } = this.state
 
-    const focussedMonth = getMonth(this.state.focussedDate)
-    const focussedYear = getYear(this.state.focussedDate)
+    const focussedMonth = getMonth(focussedDate)
+    const focussedYear = getYear(focussedDate)
 
     return (
       <Month
-        focussed={focussedYear === this.state.year && index === focussedMonth}
+        focussed={focussedYear === selectedYear && index === focussedMonth}
         key={monthName}
-        selected={month && this.state.year === year && month - 1  === index}
+        selected={month && selectedYear === year && month - 1  === index}
         onClick={this.handleChange(index)}
         index={index}
         {...getStyleProps(this.props)}
