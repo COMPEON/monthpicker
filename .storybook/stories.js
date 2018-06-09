@@ -87,33 +87,3 @@ storiesOf('Monthpicker', module)
       Test
     </Monthpicker>
   ))
-  .add('with a allowedYears having a "before" key', () => (
-    <Monthpicker
-      onBlur={action('blur')}
-      onChange={action('change')}
-      onFocus={action('focus')}
-      allowedYears={{ before: 2018 }}
-    >
-      Test
-    </Monthpicker>
-  ))
-  .add('with a allowedYears having an "after" key', () => (
-    <Monthpicker
-      onBlur={action('blur')}
-      onChange={action('change')}
-      onFocus={action('focus')}
-      allowedYears={{ after: 2017 }}
-    >
-      Test
-    </Monthpicker>
-  ))
-  .add('with a allowedYears having an "after" and a "before" key', () => (
-    <Monthpicker
-      onBlur={action('blur')}
-      onChange={action('change')}
-      onFocus={action('focus')}
-      allowedYears={{ after: 2017, before: 2022 }}
-    >
-      Test
-    </Monthpicker>
-  ))
