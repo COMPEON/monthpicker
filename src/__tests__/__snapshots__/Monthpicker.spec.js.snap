@@ -1348,3 +1348,578 @@ exports[`<Monthpicker /> renders its children 1`] = `
   </div>
 </styled.div>
 `;
+
+exports[`<Monthpicker /> works with different locales 1`] = `
+.c1 {
+  margin-top: 8px;
+  -webkit-transform-origin: top center;
+  -ms-transform-origin: top center;
+  transform-origin: top center;
+  -webkit-animation: dXhcnZ .2s;
+  animation: dXhcnZ .2s;
+  position: absolute;
+  box-shadow: 0 1px 3px #d3d3d380,0 1px 3px #d3d3d380;
+  border: 1px solid #27718c;
+  border-radius: 4px;
+  z-index: 10;
+}
+
+.c8 {
+  border: 1px solid #d3d3d37a;
+  padding: 12px 0;
+  -webkit-transition: background-color .1s,color .1s;
+  transition: background-color .1s,color .1s;
+  font-size: 14px;
+  background-color: #27718c;
+  color: white;
+  height: 42px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex: 0 0 33.33%;
+  -ms-flex: 0 0 33.33%;
+  flex: 0 0 33.33%;
+}
+
+.c8:focus {
+  outline: none;
+}
+
+.c9 {
+  cursor: pointer;
+  padding: 12px 0;
+  -webkit-transition: background-color .1s,color .1s;
+  transition: background-color .1s,color .1s;
+  font-size: 14px;
+  background-color: white;
+  color: #27718c;
+  height: 42px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex: 0 0 33.33%;
+  -ms-flex: 0 0 33.33%;
+  flex: 0 0 33.33%;
+}
+
+.c9:hover {
+  background-color: #d3d3d330;
+}
+
+.c9:focus {
+  outline: none;
+}
+
+.c10 {
+  cursor: pointer;
+  padding: 12px 0;
+  -webkit-transition: background-color .1s,color .1s;
+  transition: background-color .1s,color .1s;
+  font-size: 14px;
+  background-color: white;
+  color: #27718c;
+  height: 42px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex: 0 0 33.33%;
+  -ms-flex: 0 0 33.33%;
+  flex: 0 0 33.33%;
+  border-bottom-left-radius: 4px;
+}
+
+.c10:hover {
+  background-color: #d3d3d330;
+}
+
+.c10:focus {
+  outline: none;
+}
+
+.c11 {
+  cursor: pointer;
+  padding: 12px 0;
+  -webkit-transition: background-color .1s,color .1s;
+  transition: background-color .1s,color .1s;
+  font-size: 14px;
+  background-color: white;
+  color: #27718c;
+  height: 42px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex: 0 0 33.33%;
+  -ms-flex: 0 0 33.33%;
+  flex: 0 0 33.33%;
+  border-bottom-right-radius: 4px;
+}
+
+.c11:hover {
+  background-color: #d3d3d330;
+}
+
+.c11:focus {
+  outline: none;
+}
+
+.c5 {
+  cursor: pointer;
+  fill: white;
+}
+
+.c3 {
+  cursor: pointer;
+  fill: white;
+  fill: white;
+}
+
+.c2 {
+  padding: 16px 8px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #27718c;
+  color: white;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.c4 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c7 {
+  background-color: white;
+  border-radius: 4px;
+  width: 300px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.c6 {
+  height: 8px;
+  background-color: white;
+  width: 100%;
+}
+
+<MonthPicker
+  hoverColor="#d3d3d330"
+  initialYear={2018}
+  locale="en"
+  month={1}
+  onChange={[MockFunction]}
+  primaryColor="#27718c"
+  secondaryColor="white"
+  year={2018}
+>
+  <styled.div
+    innerRef={[Function]}
+    onKeyDown={[Function]}
+    tabIndex={-1}
+  >
+    <div
+      className="c0"
+      onKeyDown={[Function]}
+      tabIndex={-1}
+    >
+      <div
+        onClick={[Function]}
+      >
+        <div
+          className="child"
+        >
+          Child
+        </div>
+      </div>
+      <styled.div
+        hoverColor="#d3d3d330"
+        primaryColor="#27718c"
+        secondaryColor="white"
+      >
+        <div
+          className="c1"
+        >
+          <styled.div
+            hoverColor="#d3d3d330"
+            primaryColor="#27718c"
+            secondaryColor="white"
+          >
+            <div
+              className="c2"
+            >
+              <Component
+                hoverColor="#d3d3d330"
+                onClick={[Function]}
+                primaryColor="#27718c"
+                secondaryColor="white"
+              >
+                <styled.svg
+                  height="24"
+                  hoverColor="#d3d3d330"
+                  onClick={[Function]}
+                  primaryColor="#27718c"
+                  secondaryColor="white"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <svg
+                    className="c3"
+                    height="24"
+                    onClick={[Function]}
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z"
+                    />
+                    <path
+                      d="M0-.5h24v24H0z"
+                      fill="none"
+                    />
+                  </svg>
+                </styled.svg>
+              </Component>
+              <styled.span>
+                <span
+                  className="c4"
+                >
+                  2018
+                </span>
+              </styled.span>
+              <Component
+                hoverColor="#d3d3d330"
+                onClick={[Function]}
+                primaryColor="#27718c"
+                secondaryColor="white"
+              >
+                <styled.svg
+                  height="24"
+                  hoverColor="#d3d3d330"
+                  onClick={[Function]}
+                  primaryColor="#27718c"
+                  secondaryColor="white"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <svg
+                    className="c5"
+                    height="24"
+                    onClick={[Function]}
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"
+                    />
+                    <path
+                      d="M0-.25h24v24H0z"
+                      fill="none"
+                    />
+                  </svg>
+                </styled.svg>
+              </Component>
+            </div>
+          </styled.div>
+          <styled.div>
+            <div
+              className="c6"
+            />
+          </styled.div>
+          <styled.div
+            hoverColor="#d3d3d330"
+            primaryColor="#27718c"
+            secondaryColor="white"
+          >
+            <div
+              className="c7"
+            >
+              <styled.div
+                focussed={true}
+                hoverColor="#d3d3d330"
+                index={0}
+                key="Jan"
+                onClick={[Function]}
+                primaryColor="#27718c"
+                secondaryColor="white"
+                selected={true}
+              >
+                <div
+                  className="c8"
+                  onClick={[Function]}
+                  selected={true}
+                >
+                  Jan
+                </div>
+              </styled.div>
+              <styled.div
+                focussed={false}
+                hoverColor="#d3d3d330"
+                index={1}
+                key="Feb"
+                onClick={[Function]}
+                primaryColor="#27718c"
+                secondaryColor="white"
+                selected={false}
+              >
+                <div
+                  className="c9"
+                  onClick={[Function]}
+                  selected={false}
+                >
+                  Feb
+                </div>
+              </styled.div>
+              <styled.div
+                focussed={false}
+                hoverColor="#d3d3d330"
+                index={2}
+                key="Mar"
+                onClick={[Function]}
+                primaryColor="#27718c"
+                secondaryColor="white"
+                selected={false}
+              >
+                <div
+                  className="c9"
+                  onClick={[Function]}
+                  selected={false}
+                >
+                  Mar
+                </div>
+              </styled.div>
+              <styled.div
+                focussed={false}
+                hoverColor="#d3d3d330"
+                index={3}
+                key="Apr"
+                onClick={[Function]}
+                primaryColor="#27718c"
+                secondaryColor="white"
+                selected={false}
+              >
+                <div
+                  className="c9"
+                  onClick={[Function]}
+                  selected={false}
+                >
+                  Apr
+                </div>
+              </styled.div>
+              <styled.div
+                focussed={false}
+                hoverColor="#d3d3d330"
+                index={4}
+                key="May"
+                onClick={[Function]}
+                primaryColor="#27718c"
+                secondaryColor="white"
+                selected={false}
+              >
+                <div
+                  className="c9"
+                  onClick={[Function]}
+                  selected={false}
+                >
+                  May
+                </div>
+              </styled.div>
+              <styled.div
+                focussed={false}
+                hoverColor="#d3d3d330"
+                index={5}
+                key="Jun"
+                onClick={[Function]}
+                primaryColor="#27718c"
+                secondaryColor="white"
+                selected={false}
+              >
+                <div
+                  className="c9"
+                  onClick={[Function]}
+                  selected={false}
+                >
+                  Jun
+                </div>
+              </styled.div>
+              <styled.div
+                focussed={false}
+                hoverColor="#d3d3d330"
+                index={6}
+                key="Jul"
+                onClick={[Function]}
+                primaryColor="#27718c"
+                secondaryColor="white"
+                selected={false}
+              >
+                <div
+                  className="c9"
+                  onClick={[Function]}
+                  selected={false}
+                >
+                  Jul
+                </div>
+              </styled.div>
+              <styled.div
+                focussed={false}
+                hoverColor="#d3d3d330"
+                index={7}
+                key="Aug"
+                onClick={[Function]}
+                primaryColor="#27718c"
+                secondaryColor="white"
+                selected={false}
+              >
+                <div
+                  className="c9"
+                  onClick={[Function]}
+                  selected={false}
+                >
+                  Aug
+                </div>
+              </styled.div>
+              <styled.div
+                focussed={false}
+                hoverColor="#d3d3d330"
+                index={8}
+                key="Sep"
+                onClick={[Function]}
+                primaryColor="#27718c"
+                secondaryColor="white"
+                selected={false}
+              >
+                <div
+                  className="c9"
+                  onClick={[Function]}
+                  selected={false}
+                >
+                  Sep
+                </div>
+              </styled.div>
+              <styled.div
+                focussed={false}
+                hoverColor="#d3d3d330"
+                index={9}
+                key="Oct"
+                onClick={[Function]}
+                primaryColor="#27718c"
+                secondaryColor="white"
+                selected={false}
+              >
+                <div
+                  className="c10"
+                  onClick={[Function]}
+                  selected={false}
+                >
+                  Oct
+                </div>
+              </styled.div>
+              <styled.div
+                focussed={false}
+                hoverColor="#d3d3d330"
+                index={10}
+                key="Nov"
+                onClick={[Function]}
+                primaryColor="#27718c"
+                secondaryColor="white"
+                selected={false}
+              >
+                <div
+                  className="c9"
+                  onClick={[Function]}
+                  selected={false}
+                >
+                  Nov
+                </div>
+              </styled.div>
+              <styled.div
+                focussed={false}
+                hoverColor="#d3d3d330"
+                index={11}
+                key="Dec"
+                onClick={[Function]}
+                primaryColor="#27718c"
+                secondaryColor="white"
+                selected={false}
+              >
+                <div
+                  className="c11"
+                  onClick={[Function]}
+                  selected={false}
+                >
+                  Dec
+                </div>
+              </styled.div>
+            </div>
+          </styled.div>
+        </div>
+      </styled.div>
+    </div>
+  </styled.div>
+</MonthPicker>
+`;

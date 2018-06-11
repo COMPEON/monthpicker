@@ -164,4 +164,22 @@ describe('<Monthpicker />', () => {
 
     expect(wrapper).toMatchSnapshot()
   })
+
+  it('works with different locales', () => {
+    const wrapper = mount(
+      <Monthpicker
+        locale='en'
+        month={1}
+        year={2018}
+        onChange={jest.fn()}
+      >
+        <div className='child'>Child</div>
+      </Monthpicker>
+    )
+
+    const child = wrapper.find('.child').first()
+    child.simulate('click')
+
+    expect(wrapper).toMatchSnapshot()
+  })
 })
