@@ -1,18 +1,3 @@
-export const MONTHS = [
-  'Januar',
-  'Februar',
-  'März',
-  'April',
-  'Mai',
-  'Juni',
-  'Juli',
-  'August',
-  'September',
-  'Oktober',
-  'November',
-  'Dezember'
-]
-
 export function getPrimaryColor (props) {
   return props.primaryColor
 }

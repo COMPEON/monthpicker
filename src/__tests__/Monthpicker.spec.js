@@ -56,7 +56,7 @@ describe('<Monthpicker />', () => {
 
       wrapper.simulate('keyDown', { key: 'ArrowRight' })
 
-      const focussedMonth = wrapper.findWhere(node => node.key() === 'Februar')
+      const focussedMonth = wrapper.findWhere(node => node.key() === 'M02')
       expect(focussedMonth).toMatchSnapshot()
     })
 
@@ -73,7 +73,7 @@ describe('<Monthpicker />', () => {
 
       wrapper.simulate('keyDown', { key: 'ArrowLeft' })
 
-      const focussedMonth = wrapper.findWhere(node => node.key() === 'Januar')
+      const focussedMonth = wrapper.findWhere(node => node.key() === 'M01')
       expect(focussedMonth).toMatchSnapshot()
     })
 
@@ -123,7 +123,7 @@ describe('<Monthpicker />', () => {
     const child = wrapper.find('.child').first()
     child.simulate('click')
 
-    wrapper.findWhere(node => node.key() === 'Mai').simulate('click')
+    wrapper.findWhere(node => node.key() === 'M05').simulate('click')
 
     expect(handleChange).toHaveBeenCalledWith({ month: 5, year: 2018 }, expect.anything())
   })
@@ -141,7 +141,7 @@ describe('<Monthpicker />', () => {
     const child = wrapper.find('.child').first()
     child.simulate('click')
 
-    wrapper.findWhere(node => node.key() === 'Mai').simulate('click')
+    wrapper.findWhere(node => node.key() === 'M05').simulate('click')
 
     expect(handleChange).toHaveBeenCalledWith('05.2018', expect.anything())
   })
@@ -151,6 +151,24 @@ describe('<Monthpicker />', () => {
       <Monthpicker
         primaryColor='green'
         secondaryColor='red'
+        month={1}
+        year={2018}
+        onChange={jest.fn()}
+      >
+        <div className='child'>Child</div>
+      </Monthpicker>
+    )
+
+    const child = wrapper.find('.child').first()
+    child.simulate('click')
+
+    expect(wrapper).toMatchSnapshot()
+  })
+
+  it('works with different locales', () => {
+    const wrapper = mount(
+      <Monthpicker
+        locale='en'
         month={1}
         year={2018}
         onChange={jest.fn()}
