@@ -77,3 +77,13 @@ storiesOf('Monthpicker', module)
       Test
     </Monthpicker>
   ))
+  .add('with an array of allowed years', () => (
+    <Monthpicker
+      onBlur={action('blur')}
+      onChange={action('change')}
+      onFocus={action('focus')}
+      allowedYears={[2017, 2018]}
+    >
+      Test
+    </Monthpicker>
+  ))

@@ -1,6 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Monthpicker /> allows specifiyng the primary and secondary colors 1`] = `
+.c5 {
+  cursor: pointer;
+  fill: red;
+}
+
+.c3 {
+  cursor: pointer;
+  fill: white;
+  fill: red;
+}
+
 .c1 {
   margin-top: 8px;
   -webkit-transform-origin: top center;
@@ -149,17 +160,6 @@ exports[`<Monthpicker /> allows specifiyng the primary and secondary colors 1`] 
   outline: none;
 }
 
-.c5 {
-  cursor: pointer;
-  fill: red;
-}
-
-.c3 {
-  cursor: pointer;
-  fill: white;
-  fill: red;
-}
-
 .c2 {
   padding: 16px 8px;
   font-weight: bold;
@@ -197,7 +197,7 @@ exports[`<Monthpicker /> allows specifiyng the primary and secondary colors 1`] 
 }
 
 .c7 {
-  background-color: white;
+  background-color: red;
   border-radius: 4px;
   width: 300px;
   display: -webkit-box;
@@ -211,7 +211,7 @@ exports[`<Monthpicker /> allows specifiyng the primary and secondary colors 1`] 
 
 .c6 {
   height: 8px;
-  background-color: white;
+  background-color: red;
   width: 100%;
 }
 
@@ -337,7 +337,11 @@ exports[`<Monthpicker /> allows specifiyng the primary and secondary colors 1`] 
               </Component>
             </div>
           </styled.div>
-          <styled.div>
+          <styled.div
+            hoverColor="#d3d3d330"
+            primaryColor="green"
+            secondaryColor="red"
+          >
             <div
               className="c6"
             />
@@ -619,6 +623,17 @@ exports[`<Monthpicker /> event handling:  closes the overlay when clicking anywh
 `;
 
 exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the child 1`] = `
+.c5 {
+  cursor: pointer;
+  fill: white;
+}
+
+.c3 {
+  cursor: pointer;
+  fill: white;
+  fill: white;
+}
+
 .c1 {
   margin-top: 8px;
   -webkit-transform-origin: top center;
@@ -765,17 +780,6 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
 
 .c11:focus {
   outline: none;
-}
-
-.c5 {
-  cursor: pointer;
-  fill: white;
-}
-
-.c3 {
-  cursor: pointer;
-  fill: white;
-  fill: white;
 }
 
 .c2 {
@@ -955,7 +959,11 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
               </Component>
             </div>
           </styled.div>
-          <styled.div>
+          <styled.div
+            hoverColor="#d3d3d330"
+            primaryColor="#27718c"
+            secondaryColor="white"
+          >
             <div
               className="c6"
             />
@@ -1349,7 +1357,120 @@ exports[`<Monthpicker /> renders its children 1`] = `
 </styled.div>
 `;
 
+exports[`<Monthpicker /> with allowedYears prop set to an array allows selecting years in the allowedYears array 1`] = `
+.c0 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+<styled.span>
+  <span
+    className="c0"
+  >
+    2017
+  </span>
+</styled.span>
+`;
+
+exports[`<Monthpicker /> with allowedYears prop set to an array does not allow selecting years not in the allowedYears array 1`] = `
+.c0 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+<styled.span>
+  <span
+    className="c0"
+  >
+    2018
+  </span>
+</styled.span>
+`;
+
+exports[`<Monthpicker /> with allowedYears prop set to an object does allow values after the after key 1`] = `
+.c0 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+<styled.span>
+  <span
+    className="c0"
+  >
+    2019
+  </span>
+</styled.span>
+`;
+
+exports[`<Monthpicker /> with allowedYears prop set to an object does allow values before the before key 1`] = `
+.c0 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+<styled.span>
+  <span
+    className="c0"
+  >
+    2017
+  </span>
+</styled.span>
+`;
+
+exports[`<Monthpicker /> with allowedYears prop set to an object does not allow values after the before key 1`] = `
+.c0 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+<styled.span>
+  <span
+    className="c0"
+  >
+    2018
+  </span>
+</styled.span>
+`;
+
+exports[`<Monthpicker /> with allowedYears prop set to an object does not allow values before the after key 1`] = `
+.c0 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+<styled.span>
+  <span
+    className="c0"
+  >
+    2018
+  </span>
+</styled.span>
+`;
+
 exports[`<Monthpicker /> works with different locales 1`] = `
+.c5 {
+  cursor: pointer;
+  fill: white;
+}
+
+.c3 {
+  cursor: pointer;
+  fill: white;
+  fill: white;
+}
+
 .c1 {
   margin-top: 8px;
   -webkit-transform-origin: top center;
@@ -1496,17 +1617,6 @@ exports[`<Monthpicker /> works with different locales 1`] = `
 
 .c11:focus {
   outline: none;
-}
-
-.c5 {
-  cursor: pointer;
-  fill: white;
-}
-
-.c3 {
-  cursor: pointer;
-  fill: white;
-  fill: white;
 }
 
 .c2 {
@@ -1686,7 +1796,11 @@ exports[`<Monthpicker /> works with different locales 1`] = `
               </Component>
             </div>
           </styled.div>
-          <styled.div>
+          <styled.div
+            hoverColor="#d3d3d330"
+            primaryColor="#27718c"
+            secondaryColor="white"
+          >
             <div
               className="c6"
             />

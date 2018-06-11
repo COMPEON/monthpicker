@@ -19,7 +19,7 @@ import {
   getStyleProps
 } from './utils'
 
-const Year = styled.span`
+export const Year = styled.span`
   user-select: none;
 `
 
@@ -34,7 +34,7 @@ const Container = styled.div`
 `
 
 const MonthContainer = styled.div`
-  background-color: white;
+  background-color: ${getSecondaryColor};
   border-radius: 4px;
   width: 300px;
   display: flex;
@@ -43,22 +43,32 @@ const MonthContainer = styled.div`
 
 const Divider = styled.div`
   height: 8px;
-  background-color: white;
+  background-color: ${getSecondaryColor};
   width: 100%;
 `
+
+const currentDate = new Date()
+const currentYear = getYear(currentDate)
 
 class MonthPicker extends React.Component {
   static defaultProps = {
     hoverColor: '#d3d3d330',
     primaryColor: '#27718c',
     secondaryColor: 'white',
-    initialYear: getYear(new Date()),
     locale: 'de',
-    month: getMonth(new Date()),
-    year: getYear(new Date())
+    initialYear: currentYear,
+    month: getMonth(currentDate),
+    year: currentYear
   }
 
   static propTypes = {
+    allowedYears: PropTypes.oneOfType([
+      PropTypes.arrayOf(PropTypes.number),
+      PropTypes.shape({
+        before: PropTypes.number,
+        after: PropTypes.number
+      })
+    ]),
     primaryColor: PropTypes.string.isRequired,
     secondaryColor: PropTypes.string.isRequired,
     hoverColor: PropTypes.string.isRequired,
@@ -191,20 +201,32 @@ class MonthPicker extends React.Component {
   }
 
   // Other functions
-  nextYear = () => {
-    this.setState(({ year }) => ({ year: year + 1 }))
-  }
+  nextYear = () => this.setState(({ year }) => {
+    const nextYear = year + 1
+    if (this.isAllowedYear(nextYear)) {
+      return { year: nextYear }
+    }
 
-  previousYear = () => {
-    this.setState(({ year }) => ({ year: year - 1 }))
-  }
+    return null
+  })
+
+  previousYear = () => this.setState(({ year }) => {
+    const previousYear = year - 1
+    if (this.isAllowedYear(previousYear)) {
+      return { year: previousYear }
+    }
+
+    return null
+  })
 
   toggleOpen = () => {
     this.setState(({ open }) => ({ open: !open }))
   }
 
   setFocussedMonth = date => {
-    this.setState({ focussedDate: date })
+    if (this.isAllowedYear(getYear(date))) {
+      this.setState({ focussedDate: date })
+    }
   }
 
   close = event => {
@@ -235,15 +257,37 @@ class MonthPicker extends React.Component {
     this.close(event)
   }
 
+  isAllowedYear = year => {
+    const { allowedYears } = this.props
+
+    if (!allowedYears) return true
+
+    if (Array.isArray(allowedYears)) {
+      return allowedYears.indexOf(year) >= 0
+    }
+
+    const { before, after } = allowedYears
+
+    if (before && after) {
+      return year < before && year > after
+    }
+
+    if (before) return year < before
+    if (after) return year > after
+
+    return false
+  }
+
   // Render functions
   renderMonths = () => {
     const { month, year, locale } = this.props
+    const { year: selectedYear, focussedDate } = this.state
 
     const monthNameFormatter = Intl.DateTimeFormat(locale, { month: 'short' })
-    const formatDate = new Date()
+    const formatDate = currentDate
 
-    const focussedMonth = getMonth(this.state.focussedDate)
-    const focussedYear = getYear(this.state.focussedDate)
+    const focussedMonth = getMonth(focussedDate)
+    const focussedYear = getYear(focussedDate)
 
     const months = []
     for (let index = 0; index < 12; index++) {
@@ -282,7 +326,7 @@ class MonthPicker extends React.Component {
               <Year>{year}</Year>
               <ArrowRight onClick={this.nextYear} {...styleProps} />
             </Header>
-            <Divider />
+            <Divider {...styleProps } />
             <MonthContainer {...styleProps}>
               {this.renderMonths()}
             </MonthContainer>
