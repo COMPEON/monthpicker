@@ -40,3 +40,12 @@ primaryColor | the primary color that is used | `#27718c`
 secondaryColor | the secondary color that is used | `white`
 hoverColor | the color that is used for hovering over a month | `#d3d3d330`
 
+# Author
+
+[baahrens](https://github.com/baahrens) (bahrens@compeon.de)
+
+[COMPEON](https://compeon.de/)
+
+# License
+
+MIT
