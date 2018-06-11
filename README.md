@@ -1,4 +1,4 @@
-Simple, clean monthpicker component written with styled-components and date-fns
+Simple, clean monthpicker component built with react, styled-components and date-fns
 
 ![Screenshot](screenshot.png)
 
@@ -8,7 +8,7 @@ Simple, clean monthpicker component written with styled-components and date-fns
 yarn add @compeon/monthpicker
 ```
 
-You also need to have `styled-components` installed, so if that's not the case
+You also need to have `styled-components` installed, so if that's not the case already
 ```bash
 yarn add styled-components
 ```
@@ -29,7 +29,7 @@ prop | description | default
 ------------ | ------------- | -------------
 month | the currently selected month | `new Date().getMonth()`
 year | the currently selected year | `new Date().getFullYear()`
-initialYear | the initally shown year | `new Date().getFullYear()`
+initialYear | the initially shown year | `new Date().getFullYear()`
 locale | the locale that is used for displaying monthnames | `de`
 format | format the `onChange` function is called with. Can be anything from [this](https://date-fns.org/v1.29.0/docs/format) list | `MM.YYYY`
 onBlur | function that is called when the picker is blurred | `-`
