@@ -4,6 +4,11 @@
   "description": "Simple monthpicker using react & date-fns",
   "main": "dist/index.js",
   "license": "MIT",
+  "keywords": [
+    "monthpicker",
+    "react",
+    "react-monthpicker"
+  ],
   "files": [
     "dist"
   ],
