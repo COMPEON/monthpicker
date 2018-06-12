@@ -224,6 +224,73 @@ describe('<Monthpicker />', () => {
 
         expect(wrapper.find(Year)).toMatchSnapshot()
       })
+
+      it('goes to the next allowed year when clicking the next button', () => {
+        const onChange = jest.fn()
+        const wrapper = mount(
+          <Monthpicker
+            allowedYears={[2018, 2020]}
+            initialYear={2018}
+            onChange={onChange}
+          >
+            <div className='child'>Child</div>
+          </Monthpicker>
+        )
+
+        const child = wrapper.find('.child').first()
+        child.simulate('click')
+
+        wrapper.find(ArrowRight).simulate('click')
+
+        expect(wrapper.find(Year)).toMatchSnapshot()
+      })
+
+      it('goes to the previous allowed year when clicking the previous button', () => {
+        const onChange = jest.fn()
+        const wrapper = mount(
+          <Monthpicker
+            allowedYears={[2016, 2018]}
+            initialYear={2018}
+            onChange={onChange}
+          >
+            <div className='child'>Child</div>
+          </Monthpicker>
+        )
+
+        const child = wrapper.find('.child').first()
+        child.simulate('click')
+
+        wrapper.find(ArrowLeft).simulate('click')
+
+        expect(wrapper.find(Year)).toMatchSnapshot()
+      })
+
+      it('goes to the correct year with an unsorted array', () => {
+        const onChange = jest.fn()
+        const wrapper = mount(
+          <Monthpicker
+            allowedYears={[2018, 2016, 2020]}
+            initialYear={2018}
+            onChange={onChange}
+          >
+            <div className='child'>Child</div>
+          </Monthpicker>
+        )
+
+        const child = wrapper.find('.child').first()
+        child.simulate('click')
+
+        wrapper.find(ArrowLeft).simulate('click')
+
+        expect(wrapper.find(Year)).toMatchSnapshot()
+
+        const arrowRight = wrapper.find(ArrowRight)
+
+        arrowRight.simulate('click')
+        arrowRight.simulate('click')
+
+        expect(wrapper.find(Year)).toMatchSnapshot()
+      })
     })
 
     describe('to an object', () => {

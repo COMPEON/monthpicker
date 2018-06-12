@@ -1391,6 +1391,74 @@ exports[`<Monthpicker /> with allowedYears prop set to an array does not allow s
 </styled.span>
 `;
 
+exports[`<Monthpicker /> with allowedYears prop set to an array goes to the correct year with an unsorted array 1`] = `
+.c0 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+<styled.span>
+  <span
+    className="c0"
+  >
+    2016
+  </span>
+</styled.span>
+`;
+
+exports[`<Monthpicker /> with allowedYears prop set to an array goes to the correct year with an unsorted array 2`] = `
+.c0 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+<styled.span>
+  <span
+    className="c0"
+  >
+    2020
+  </span>
+</styled.span>
+`;
+
+exports[`<Monthpicker /> with allowedYears prop set to an array goes to the next allowed year when clicking the next button 1`] = `
+.c0 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+<styled.span>
+  <span
+    className="c0"
+  >
+    2020
+  </span>
+</styled.span>
+`;
+
+exports[`<Monthpicker /> with allowedYears prop set to an array goes to the previous allowed year when clicking the previous button 1`] = `
+.c0 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+<styled.span>
+  <span
+    className="c0"
+  >
+    2016
+  </span>
+</styled.span>
+`;
+
 exports[`<Monthpicker /> with allowedYears prop set to an object does allow values after the after key 1`] = `
 .c0 {
   -webkit-user-select: none;
