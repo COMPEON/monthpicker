@@ -82,7 +82,7 @@ storiesOf('Monthpicker', module)
       onBlur={action('blur')}
       onChange={action('change')}
       onFocus={action('focus')}
-      allowedYears={[2017, 2018]}
+      allowedYears={[2016, 2018]}
     >
       Test
     </Monthpicker>

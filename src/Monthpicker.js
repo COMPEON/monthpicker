@@ -105,8 +105,6 @@ class MonthPicker extends React.Component {
 
   // Event handlers
   handleClickOutside = event => {
-    event.persist()
-
     const element = event.target
     if (this.wrapperRef && !this.wrapperRef.contains(element)) {
       this.close(event)
@@ -196,7 +194,17 @@ class MonthPicker extends React.Component {
 
   // Other functions
   nextYear = () => this.setState(({ year }) => {
+    const { allowedYears } = this.props
+
+    if (Array.isArray(allowedYears)) {
+      const sortedYears = allowedYears.sort((a,b) => a - b)
+      const currentIndex = sortedYears.indexOf(year)
+
+      if (currentIndex < sortedYears.length - 1) return { year: sortedYears[currentIndex + 1] }
+    }
+
     const nextYear = year + 1
+
     if (this.isAllowedYear(nextYear)) {
       return { year: nextYear }
     }
@@ -205,7 +213,17 @@ class MonthPicker extends React.Component {
   })
 
   previousYear = () => this.setState(({ year }) => {
+    const { allowedYears } = this.props
+
+    if (Array.isArray(allowedYears)) {
+      const sortedYears = allowedYears.sort((a,b) => a - b)
+      const currentIndex = sortedYears.indexOf(year)
+
+      if (currentIndex > 0) return { year: sortedYears[currentIndex - 1] }
+    }
+
     const previousYear = year - 1
+
     if (this.isAllowedYear(previousYear)) {
       return { year: previousYear }
     }
