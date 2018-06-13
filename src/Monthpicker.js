@@ -1,11 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled, { keyframes } from 'styled-components'
-import getMonth from 'date-fns/get_month'
-import getYear from 'date-fns/get_year'
-import addMonths from 'date-fns/add_months'
-import subMonths from 'date-fns/sub_months'
-import format from 'date-fns/format'
+import { getMonth, getYear, addMonths, subMonths, format } from 'date-fns'
 
 import TooltipContainer from './TooltipContainer'
 import Month from './Month'
