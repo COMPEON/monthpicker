@@ -74,7 +74,8 @@ class MonthPicker extends React.Component {
       PropTypes.node,
       PropTypes.arrayOf(PropTypes.node)
     ]).isRequired,
-    className: PropTypes.string
+    className: PropTypes.string,
+    dialogClassName: PropTypes.string
   }
 
   // Lifecycle methods
@@ -326,7 +327,7 @@ class MonthPicker extends React.Component {
 
   render () {
     const { year, open } = this.state
-    const { className, children } = this.props
+    const { className, dialogClassName, children } = this.props
 
     const styleProps = getStyleProps(this.props)
 
@@ -336,7 +337,7 @@ class MonthPicker extends React.Component {
           {this.props.children}
         </div>
         {open && (
-          <TooltipContainer {...styleProps}>
+          <TooltipContainer className={dialogClassName} {...styleProps}>
             <Header {...styleProps}>
               <ArrowLeft onClick={this.previousYear} {...styleProps} />
               <Year>{year}</Year>
