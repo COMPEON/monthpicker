@@ -25,8 +25,10 @@ export default {
   plugins: [
     commonjs({ include: 'node_modules/date-fns' }),
     babel({
+      babelrc: false,
       exclude: 'node_modules/**',
-      plugins: ['external-helpers']
+      plugins: ['transform-class-properties', 'external-helpers'],
+      presets: [['env', { modules: false }], 'react']
     })
   ],
   external
