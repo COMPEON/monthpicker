@@ -73,7 +73,8 @@ class MonthPicker extends React.Component {
     children: PropTypes.oneOfType([
       PropTypes.node,
       PropTypes.arrayOf(PropTypes.node)
-    ]).isRequired
+    ]).isRequired,
+    className: PropTypes.string
   }
 
   // Lifecycle methods
@@ -325,11 +326,12 @@ class MonthPicker extends React.Component {
 
   render () {
     const { year, open } = this.state
+    const { className, children } = this.props
 
     const styleProps = getStyleProps(this.props)
 
     return (
-      <Container tabIndex={-1} innerRef={this.setWrapperRef} onKeyDown={this.handleKeyDown}>
+      <Container className={className} tabIndex={-1} innerRef={this.setWrapperRef} onKeyDown={this.handleKeyDown}>
         <div onClick={this.handleTriggerClick}>
           {this.props.children}
         </div>
