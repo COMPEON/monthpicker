@@ -2,6 +2,7 @@
   "name": "@compeon/monthpicker",
   "version": "0.1.17",
   "description": "Simple monthpicker using react & date-fns",
+  "repository" : "COMPEON/monthpicker",
   "main": "dist/monthpicker.umd.js",
   "module": "dist/monthpicker.es.js",
   "license": "MIT",
