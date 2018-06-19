@@ -124,8 +124,8 @@ class MonthPicker extends React.Component {
 
     this.toggleOpen()
 
-    if (!open && onFocus) onFocus(event)
-    if (open && onBlur) onBlur(event)
+    if (!open && onFocus) onFocus()
+    if (open && onBlur) onBlur()
   }
 
   handleKeyDown = event => {
@@ -246,7 +246,7 @@ class MonthPicker extends React.Component {
 
     this.setState({ open: false })
 
-    if (onBlur) onBlur(event)
+    if (onBlur) onBlur()
   }
 
   setWrapperRef = node => {
@@ -254,7 +254,7 @@ class MonthPicker extends React.Component {
   }
 
   changeValue = (date, event) => {
-    const { onChange, format: dateFormat, onBlur } = this.props
+    const { onChange, format: dateFormat } = this.props
 
     const formattedDate = dateFormat
       ? format(date, dateFormat)
