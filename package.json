@@ -1,6 +1,6 @@
 {
   "name": "@compeon/monthpicker",
-  "version": "0.1.18",
+  "version": "0.1.19",
   "description": "Simple monthpicker using react & date-fns",
   "repository": "COMPEON/monthpicker",
   "main": "dist/monthpicker.umd.js",
@@ -59,7 +59,7 @@
       "<rootDir>/jestSetup.js"
     ],
     "setupTestFrameworkScriptFile": "<rootDir>/jestPlugins.js",
-    "transformIgnorePatterns": [ 
+    "transformIgnorePatterns": [
       "/node_modules/(?!date-fns).+(js|jsx)$"
     ],
     "snapshotSerializers": [
