@@ -59,9 +59,6 @@
       "<rootDir>/jestSetup.js"
     ],
     "setupTestFrameworkScriptFile": "<rootDir>/jestPlugins.js",
-    "transformIgnorePatterns": [
-      "/node_modules/(?!date-fns).+(js|jsx)$"
-    ],
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
     ],
