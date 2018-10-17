@@ -21,11 +21,6 @@ const Month = styled.div`
     outline: none;
   }
 
-  ${props => !props.selected && props.focussed && css`
-    border: 1px solid ${getPrimaryColor};
-    background-color: ${getHoverColor};
-  `}
-
   ${props => props.selected && css`
     border: 1px solid #d3d3d37a;
   `};
@@ -40,20 +35,6 @@ const Month = styled.div`
   justify-content: center;
   align-items: center;
   flex: 0 0 33.33%;
-
-  ${props => props.focussed && !props.selected && css`
-    &:nth-child(3n) {
-      border-right: 1px solid ${getSecondaryColor};
-    }
-
-    &:nth-child(3n+1) {
-      border-left: 1px solid ${getSecondaryColor};
-    }
-
-    &:nth-last-child(-n+3) {
-      border-bottom: 1px solid ${getSecondaryColor};
-    }
-  `}
 
   border-bottom-right-radius: ${props => props.index === 11 && '4px'};
   border-bottom-left-radius: ${props => props.index === 9 && '4px'};
