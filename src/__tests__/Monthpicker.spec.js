@@ -16,7 +16,7 @@ describe('<Monthpicker />', () => {
   describe('event handling: ', () => {
     it('opens the overlay when clicking on the child', () => {
       const wrapper = mount(
-        <Monthpicker initialYear={2010} month={1} year={2010} onChange={jest.fn()}>
+        <Monthpicker year={2010} month={1} year={2010} onChange={jest.fn()}>
           <div className='child'>Child</div>
         </Monthpicker>
       )
@@ -30,7 +30,7 @@ describe('<Monthpicker />', () => {
 
     it('closes the overlay when clicking anywhere outside the overlay', () => {
       const wrapper = mount(
-        <Monthpicker initialYear={2010} month={1} year={2010} onChange={jest.fn()}>
+        <Monthpicker year={2010} month={1} year={2010} onChange={jest.fn()}>
           <div className='child'>Child</div>
         </Monthpicker>
       )
@@ -41,74 +41,6 @@ describe('<Monthpicker />', () => {
       child.simulate('click')
 
       expect(wrapper).toMatchSnapshot()
-    })
-
-    it('sets the focussed date to 1 month later when hitting ArrowRight', () => {
-      const initialyFocussedMonth = 1
-      const wrapper = mount(
-        <Monthpicker initialYear={2010} month={initialyFocussedMonth} year={2010} onChange={jest.fn()}>
-          <div className='child'>Child</div>
-        </Monthpicker>
-      )
-
-      const child = wrapper.find('.child').first()
-      child.simulate('click')
-
-      wrapper.simulate('keyDown', { key: 'ArrowRight' })
-
-      const focussedMonth = wrapper.findWhere(node => node.key() === 'M02')
-      expect(focussedMonth).toMatchSnapshot()
-    })
-
-    it('sets the focussed date to 1 month earlier when hitting ArrowLeft', () => {
-      const initialyFocussedMonth = 2
-      const wrapper = mount(
-        <Monthpicker initialYear={2010} month={initialyFocussedMonth} year={2010} onChange={jest.fn()}>
-          <div className='child'>Child</div>
-        </Monthpicker>
-      )
-
-      const child = wrapper.find('.child').first()
-      child.simulate('click')
-
-      wrapper.simulate('keyDown', { key: 'ArrowLeft' })
-
-      const focussedMonth = wrapper.findWhere(node => node.key() === 'M01')
-      expect(focussedMonth).toMatchSnapshot()
-    })
-
-    it('sets the focussed date to 3 month later when hitting ArrowDown', () => {
-      const initialyFocussedMonth = 1
-      const wrapper = mount(
-        <Monthpicker initialYear={2010} month={initialyFocussedMonth} year={2010} onChange={jest.fn()}>
-          <div className='child'>Child</div>
-        </Monthpicker>
-      )
-
-      const child = wrapper.find('.child').first()
-      child.simulate('click')
-
-      wrapper.simulate('keyDown', { key: 'ArrowDown' })
-
-      const focussedMonth = wrapper.findWhere(node => node.key() === 'April')
-      expect(focussedMonth).toMatchSnapshot()
-    })
-
-    it('sets the focussed date to 3 month earlier when hitting ArrowUp', () => {
-      const initialyFocussedMonth = 4
-      const wrapper = mount(
-        <Monthpicker initialYear={2010} month={initialyFocussedMonth} year={2010} onChange={jest.fn()}>
-          <div className='child'>Child</div>
-        </Monthpicker>
-      )
-
-      const child = wrapper.find('.child').first()
-      child.simulate('click')
-
-      wrapper.simulate('keyDown', { key: 'ArrowUp' })
-
-      const focussedMonth = wrapper.findWhere(node => node.key() === 'Januar')
-      expect(focussedMonth).toMatchSnapshot()
     })
   })
 
@@ -190,7 +122,8 @@ describe('<Monthpicker />', () => {
         const wrapper = mount(
           <Monthpicker
             allowedYears={[2017]}
-            initialYear={2018}
+            month={10}
+            year={2018}
             onChange={onChange}
           >
             <div className='child'>Child</div>
@@ -202,7 +135,7 @@ describe('<Monthpicker />', () => {
 
         wrapper.find(ArrowLeft).simulate('click')
 
-        expect(wrapper.find(Year)).toMatchSnapshot()
+        expect(onChange).toHaveBeenCalledWith({ month: 10, year: 2017 }, undefined)
       })
 
       it('does not allow selecting years not in the allowedYears array', () => {
@@ -210,7 +143,7 @@ describe('<Monthpicker />', () => {
         const wrapper = mount(
           <Monthpicker
             allowedYears={[2019]}
-            initialYear={2018}
+            year={2018}
             onChange={onChange}
           >
             <div className='child'>Child</div>
@@ -222,7 +155,7 @@ describe('<Monthpicker />', () => {
 
         wrapper.find(ArrowLeft).simulate('click')
 
-        expect(wrapper.find(Year)).toMatchSnapshot()
+        expect(onChange).not.toHaveBeenCalled()
       })
 
       it('goes to the next allowed year when clicking the next button', () => {
@@ -230,7 +163,8 @@ describe('<Monthpicker />', () => {
         const wrapper = mount(
           <Monthpicker
             allowedYears={[2018, 2020]}
-            initialYear={2018}
+            month={10}
+            year={2018}
             onChange={onChange}
           >
             <div className='child'>Child</div>
@@ -242,7 +176,7 @@ describe('<Monthpicker />', () => {
 
         wrapper.find(ArrowRight).simulate('click')
 
-        expect(wrapper.find(Year)).toMatchSnapshot()
+        expect(onChange).toHaveBeenCalledWith({ month: 10, year: 2020 }, undefined)
       })
 
       it('goes to the previous allowed year when clicking the previous button', () => {
@@ -250,7 +184,8 @@ describe('<Monthpicker />', () => {
         const wrapper = mount(
           <Monthpicker
             allowedYears={[2016, 2018]}
-            initialYear={2018}
+            month={10}
+            year={2018}
             onChange={onChange}
           >
             <div className='child'>Child</div>
@@ -262,7 +197,7 @@ describe('<Monthpicker />', () => {
 
         wrapper.find(ArrowLeft).simulate('click')
 
-        expect(wrapper.find(Year)).toMatchSnapshot()
+        expect(onChange).toHaveBeenCalledWith({ month: 10, year: 2016 }, undefined)
       })
 
       it('goes to the correct year with an unsorted array', () => {
@@ -270,7 +205,8 @@ describe('<Monthpicker />', () => {
         const wrapper = mount(
           <Monthpicker
             allowedYears={[2018, 2016, 2020]}
-            initialYear={2018}
+            month={10}
+            year={2018}
             onChange={onChange}
           >
             <div className='child'>Child</div>
@@ -282,14 +218,14 @@ describe('<Monthpicker />', () => {
 
         wrapper.find(ArrowLeft).simulate('click')
 
-        expect(wrapper.find(Year)).toMatchSnapshot()
+        expect(onChange).toHaveBeenCalledWith({ month: 10, year: 2016 }, undefined)
 
         const arrowRight = wrapper.find(ArrowRight)
 
         arrowRight.simulate('click')
         arrowRight.simulate('click')
 
-        expect(wrapper.find(Year)).toMatchSnapshot()
+        expect(onChange).toHaveBeenCalledWith({ month: 10, year: 2020 }, undefined)
       })
     })
 
@@ -299,7 +235,8 @@ describe('<Monthpicker />', () => {
         const wrapper = mount(
           <Monthpicker
             allowedYears={{ before: 2019 }}
-            initialYear={2018}
+            month={10}
+            year={2018}
             onChange={onChange}
           >
             <div className='child'>Child</div>
@@ -311,7 +248,7 @@ describe('<Monthpicker />', () => {
 
         wrapper.find(ArrowLeft).simulate('click')
 
-        expect(wrapper.find(Year)).toMatchSnapshot()
+        expect(onChange).toHaveBeenCalledWith({ month: 10, year: 2017 }, undefined)
       })
 
       it('does not allow values after the before key', () => {
@@ -319,7 +256,7 @@ describe('<Monthpicker />', () => {
         const wrapper = mount(
           <Monthpicker
             allowedYears={{ before: 2019 }}
-            initialYear={2018}
+            year={2018}
             onChange={onChange}
           >
             <div className='child'>Child</div>
@@ -331,7 +268,7 @@ describe('<Monthpicker />', () => {
 
         wrapper.find(ArrowRight).simulate('click')
 
-        expect(wrapper.find(Year)).toMatchSnapshot()
+        expect(onChange).not.toHaveBeenCalled()
       })
 
       it('does allow values after the after key', () => {
@@ -339,7 +276,8 @@ describe('<Monthpicker />', () => {
         const wrapper = mount(
           <Monthpicker
             allowedYears={{ after: 2017 }}
-            initialYear={2018}
+            year={2018}
+            month={10}
             onChange={onChange}
           >
             <div className='child'>Child</div>
@@ -351,7 +289,7 @@ describe('<Monthpicker />', () => {
 
         wrapper.find(ArrowRight).simulate('click')
 
-        expect(wrapper.find(Year)).toMatchSnapshot()
+        expect(onChange).toHaveBeenCalledWith({ month: 10, year: 2019 }, undefined)
       })
 
       it('does not allow values before the after key', () => {
@@ -359,7 +297,7 @@ describe('<Monthpicker />', () => {
         const wrapper = mount(
           <Monthpicker
             allowedYears={{ after: 2017 }}
-            initialYear={2018}
+            year={2018}
             onChange={onChange}
           >
             <div className='child'>Child</div>
@@ -371,7 +309,7 @@ describe('<Monthpicker />', () => {
 
         wrapper.find(ArrowLeft).simulate('click')
 
-        expect(wrapper.find(Year)).toMatchSnapshot()
+        expect(onChange).not.toHaveBeenCalled()
       })
     })
   })
