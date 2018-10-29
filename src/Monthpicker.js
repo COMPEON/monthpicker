@@ -47,7 +47,6 @@ class MonthPicker extends React.Component {
     primaryColor: '#27718c',
     secondaryColor: 'white',
     locale: 'de',
-    initialYear: currentYear,
     month: getMonth(currentDate),
     year: currentYear
   }
@@ -66,7 +65,6 @@ class MonthPicker extends React.Component {
     month: PropTypes.number.isRequired,
     year: PropTypes.number.isRequired,
     format: PropTypes.string,
-    initialYear: PropTypes.number.isRequired,
     onBlur: PropTypes.func,
     onFocus: PropTypes.func,
     onChange: PropTypes.func.isRequired,
@@ -78,19 +76,8 @@ class MonthPicker extends React.Component {
     dialogClassName: PropTypes.string
   }
 
-  // Lifecycle methods
-  constructor(props) {
-    super(props)
-
-    const { initialYear, month, year } = props
-
-    const focussedDate = new Date(year, month - 1)
-
-    this.state = {
-      focussedDate,
-      year: initialYear,
-      open: false,
-    }
+  state = {
+    open: false,
   }
 
   componentDidMount () {
@@ -111,7 +98,7 @@ class MonthPicker extends React.Component {
 
   handleMonthChange = month => event => {
     event.persist()
-    const date = new Date(this.state.year, month)
+    const date = new Date(this.props.year, month)
 
     this.changeValue(date, event)
   }
@@ -129,10 +116,12 @@ class MonthPicker extends React.Component {
   }
 
   handleKeyDown = event => {
-    const { focussedDate, year } = this.state
+    const { open } = this.state
+    const { year, month } = this.props
 
-    const focussedYear = getYear(focussedDate)
-    const matchesCurrentYear = focussedYear === year
+    if (!open) return
+
+    const currentDate = new Date(year, month - 1)
 
     const firstMonthOfSelectedYear = new Date(year, 0)
 
@@ -140,48 +129,33 @@ class MonthPicker extends React.Component {
       case 'ArrowLeft': {
         event.preventDefault()
 
-        const nextFocussedDate = matchesCurrentYear ? subMonths(focussedDate, 1) : firstMonthOfSelectedYear
-
-        if (getYear(nextFocussedDate) < year) this.previousYear()
-
-        return this.setFocussedMonth(nextFocussedDate)
+        const nextDate = subMonths(currentDate, 1)
+        return this.changeValue(nextDate, event)
       }
 
       case 'ArrowRight': {
         event.preventDefault()
 
-        const nextFocussedDate = matchesCurrentYear ? addMonths(focussedDate, 1) : firstMonthOfSelectedYear
-
-        if (getYear(nextFocussedDate) > year) this.nextYear()
-
-        return this.setFocussedMonth(nextFocussedDate)
+        const nextDate = addMonths(currentDate, 1)
+        return this.changeValue(nextDate, event)
       }
 
       case 'ArrowUp': {
         event.preventDefault()
 
-        const nextFocussedDate = matchesCurrentYear ? subMonths(focussedDate, 3) : firstMonthOfSelectedYear
-
-        if (getYear(nextFocussedDate) < year) this.previousYear()
-
-        return this.setFocussedMonth(nextFocussedDate)
+        const nextDate = subMonths(currentDate, 3)
+        return this.changeValue(nextDate, event)
       }
 
       case 'ArrowDown': {
         event.preventDefault()
 
-        const nextFocussedDate = matchesCurrentYear ? addMonths(focussedDate, 3) : firstMonthOfSelectedYear
-
-        if (getYear(nextFocussedDate) > year) this.nextYear()
-
-        return this.setFocussedMonth(nextFocussedDate)
+        const nextDate = addMonths(currentDate, 3)
+        return this.changeValue(nextDate, event)
       }
 
       case 'Enter': {
-        event.preventDefault()
-        event.persist()
-
-        if (focussedDate) return this.changeValue(focussedDate, event)
+        this.close()
       }
 
       default: {
@@ -191,52 +165,46 @@ class MonthPicker extends React.Component {
   }
 
   // Other functions
-  nextYear = () => this.setState(({ year }) => {
-    const { allowedYears } = this.props
+  nextYear = () => {
+    const { allowedYears, year, month } = this.props
 
     if (Array.isArray(allowedYears)) {
       const sortedYears = allowedYears.sort((a,b) => a - b)
       const currentIndex = sortedYears.indexOf(year)
 
-      if (currentIndex < sortedYears.length - 1) return { year: sortedYears[currentIndex + 1] }
+      if (currentIndex < sortedYears.length - 1) {
+        return this.changeValue(new Date(sortedYears[currentIndex + 1], month - 1))
+      }
     }
 
     const nextYear = year + 1
 
     if (this.isAllowedYear(nextYear)) {
-      return { year: nextYear }
+      return this.changeValue(new Date(nextYear, month - 1))
     }
+  }
 
-    return null
-  })
-
-  previousYear = () => this.setState(({ year }) => {
-    const { allowedYears } = this.props
+  previousYear = () => {
+    const { allowedYears, year, month } = this.props
 
     if (Array.isArray(allowedYears)) {
       const sortedYears = allowedYears.sort((a,b) => a - b)
       const currentIndex = sortedYears.indexOf(year)
 
-      if (currentIndex > 0) return { year: sortedYears[currentIndex - 1] }
+      if (currentIndex > 0) {
+        return this.changeValue(new Date(sortedYears[currentIndex - 1], month - 1))
+      }
     }
 
     const previousYear = year - 1
 
     if (this.isAllowedYear(previousYear)) {
-      return { year: previousYear }
+      return this.changeValue(new Date(previousYear, month - 1))
     }
-
-    return null
-  })
+  }
 
   toggleOpen = () => {
     this.setState(({ open }) => ({ open: !open }))
-  }
-
-  setFocussedMonth = date => {
-    if (this.isAllowedYear(getYear(date))) {
-      this.setState({ focussedDate: date })
-    }
   }
 
   close = event => {
@@ -261,10 +229,6 @@ class MonthPicker extends React.Component {
       : { month: getMonth(date) + 1, year: getYear(date) }
 
     if (onChange) onChange(formattedDate, event)
-
-    this.setFocussedMonth(date)
-
-    this.close(event)
   }
 
   isAllowedYear = year => {
@@ -291,13 +255,9 @@ class MonthPicker extends React.Component {
   // Render functions
   renderMonths = () => {
     const { month, year, locale } = this.props
-    const { year: selectedYear, focussedDate } = this.state
 
     const monthNameFormatter = Intl.DateTimeFormat(locale, { month: 'short' })
     const formatDate = currentDate
-
-    const focussedMonth = getMonth(focussedDate)
-    const focussedYear = getYear(focussedDate)
 
     const months = []
 
@@ -305,12 +265,10 @@ class MonthPicker extends React.Component {
       formatDate.setMonth(index)
       const monthName = monthNameFormatter.format(formatDate)
 
-      const isSelectedMonth = month && selectedYear === year && index === month -1
-      const isFocussedMonth = focussedYear === selectedYear && index === focussedMonth
+      const isSelectedMonth = month && index === month -1
 
       months.push(
         <Month
-          focussed={isFocussedMonth}
           selected={isSelectedMonth}
           key={monthName}
           onClick={this.handleMonthChange(index)}
@@ -326,8 +284,8 @@ class MonthPicker extends React.Component {
   }
 
   render () {
-    const { year, open } = this.state
-    const { className, dialogClassName, children } = this.props
+    const { open } = this.state
+    const { className, dialogClassName, children, year } = this.props
 
     const styleProps = getStyleProps(this.props)
 

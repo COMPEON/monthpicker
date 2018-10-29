@@ -217,7 +217,6 @@ exports[`<Monthpicker /> allows specifiyng the primary and secondary colors 1`] 
 
 <MonthPicker
   hoverColor="#d3d3d330"
-  initialYear={2018}
   locale="de"
   month={1}
   onChange={[MockFunction]}
@@ -355,7 +354,6 @@ exports[`<Monthpicker /> allows specifiyng the primary and secondary colors 1`] 
               className="c7"
             >
               <styled.div
-                focussed={true}
                 hoverColor="#d3d3d330"
                 index={0}
                 key="M01"
@@ -373,7 +371,6 @@ exports[`<Monthpicker /> allows specifiyng the primary and secondary colors 1`] 
                 </div>
               </styled.div>
               <styled.div
-                focussed={false}
                 hoverColor="#d3d3d330"
                 index={1}
                 key="M02"
@@ -391,7 +388,6 @@ exports[`<Monthpicker /> allows specifiyng the primary and secondary colors 1`] 
                 </div>
               </styled.div>
               <styled.div
-                focussed={false}
                 hoverColor="#d3d3d330"
                 index={2}
                 key="M03"
@@ -409,7 +405,6 @@ exports[`<Monthpicker /> allows specifiyng the primary and secondary colors 1`] 
                 </div>
               </styled.div>
               <styled.div
-                focussed={false}
                 hoverColor="#d3d3d330"
                 index={3}
                 key="M04"
@@ -427,7 +422,6 @@ exports[`<Monthpicker /> allows specifiyng the primary and secondary colors 1`] 
                 </div>
               </styled.div>
               <styled.div
-                focussed={false}
                 hoverColor="#d3d3d330"
                 index={4}
                 key="M05"
@@ -445,7 +439,6 @@ exports[`<Monthpicker /> allows specifiyng the primary and secondary colors 1`] 
                 </div>
               </styled.div>
               <styled.div
-                focussed={false}
                 hoverColor="#d3d3d330"
                 index={5}
                 key="M06"
@@ -463,7 +456,6 @@ exports[`<Monthpicker /> allows specifiyng the primary and secondary colors 1`] 
                 </div>
               </styled.div>
               <styled.div
-                focussed={false}
                 hoverColor="#d3d3d330"
                 index={6}
                 key="M07"
@@ -481,7 +473,6 @@ exports[`<Monthpicker /> allows specifiyng the primary and secondary colors 1`] 
                 </div>
               </styled.div>
               <styled.div
-                focussed={false}
                 hoverColor="#d3d3d330"
                 index={7}
                 key="M08"
@@ -499,7 +490,6 @@ exports[`<Monthpicker /> allows specifiyng the primary and secondary colors 1`] 
                 </div>
               </styled.div>
               <styled.div
-                focussed={false}
                 hoverColor="#d3d3d330"
                 index={8}
                 key="M09"
@@ -517,7 +507,6 @@ exports[`<Monthpicker /> allows specifiyng the primary and secondary colors 1`] 
                 </div>
               </styled.div>
               <styled.div
-                focussed={false}
                 hoverColor="#d3d3d330"
                 index={9}
                 key="M10"
@@ -535,7 +524,6 @@ exports[`<Monthpicker /> allows specifiyng the primary and secondary colors 1`] 
                 </div>
               </styled.div>
               <styled.div
-                focussed={false}
                 hoverColor="#d3d3d330"
                 index={10}
                 key="M11"
@@ -553,7 +541,6 @@ exports[`<Monthpicker /> allows specifiyng the primary and secondary colors 1`] 
                 </div>
               </styled.div>
               <styled.div
-                focussed={false}
                 hoverColor="#d3d3d330"
                 index={11}
                 key="M12"
@@ -590,7 +577,6 @@ exports[`<Monthpicker /> event handling:  closes the overlay when clicking anywh
 
 <MonthPicker
   hoverColor="#d3d3d330"
-  initialYear={2010}
   locale="de"
   month={1}
   onChange={[MockFunction]}
@@ -839,7 +825,6 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
 
 <MonthPicker
   hoverColor="#d3d3d330"
-  initialYear={2010}
   locale="de"
   month={1}
   onChange={[MockFunction]}
@@ -977,7 +962,6 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
               className="c7"
             >
               <styled.div
-                focussed={true}
                 hoverColor="#d3d3d330"
                 index={0}
                 key="M01"
@@ -995,7 +979,6 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
                 </div>
               </styled.div>
               <styled.div
-                focussed={false}
                 hoverColor="#d3d3d330"
                 index={1}
                 key="M02"
@@ -1013,7 +996,6 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
                 </div>
               </styled.div>
               <styled.div
-                focussed={false}
                 hoverColor="#d3d3d330"
                 index={2}
                 key="M03"
@@ -1031,7 +1013,6 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
                 </div>
               </styled.div>
               <styled.div
-                focussed={false}
                 hoverColor="#d3d3d330"
                 index={3}
                 key="M04"
@@ -1049,7 +1030,6 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
                 </div>
               </styled.div>
               <styled.div
-                focussed={false}
                 hoverColor="#d3d3d330"
                 index={4}
                 key="M05"
@@ -1067,7 +1047,6 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
                 </div>
               </styled.div>
               <styled.div
-                focussed={false}
                 hoverColor="#d3d3d330"
                 index={5}
                 key="M06"
@@ -1085,7 +1064,6 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
                 </div>
               </styled.div>
               <styled.div
-                focussed={false}
                 hoverColor="#d3d3d330"
                 index={6}
                 key="M07"
@@ -1103,7 +1081,6 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
                 </div>
               </styled.div>
               <styled.div
-                focussed={false}
                 hoverColor="#d3d3d330"
                 index={7}
                 key="M08"
@@ -1121,7 +1098,6 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
                 </div>
               </styled.div>
               <styled.div
-                focussed={false}
                 hoverColor="#d3d3d330"
                 index={8}
                 key="M09"
@@ -1139,7 +1115,6 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
                 </div>
               </styled.div>
               <styled.div
-                focussed={false}
                 hoverColor="#d3d3d330"
                 index={9}
                 key="M10"
@@ -1157,7 +1132,6 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
                 </div>
               </styled.div>
               <styled.div
-                focussed={false}
                 hoverColor="#d3d3d330"
                 index={10}
                 key="M11"
@@ -1175,7 +1149,6 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
                 </div>
               </styled.div>
               <styled.div
-                focussed={false}
                 hoverColor="#d3d3d330"
                 index={11}
                 key="M12"
@@ -1201,148 +1174,6 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
 </MonthPicker>
 `;
 
-exports[`<Monthpicker /> event handling:  sets the focussed date to 1 month earlier when hitting ArrowLeft 1`] = `
-.c0 {
-  cursor: pointer;
-  border: 1px solid #27718c;
-  background-color: #d3d3d330;
-  padding: 12px 0;
-  -webkit-transition: background-color .1s,color .1s;
-  transition: background-color .1s,color .1s;
-  font-size: 14px;
-  background-color: white;
-  color: #27718c;
-  height: 42px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex: 0 0 33.33%;
-  -ms-flex: 0 0 33.33%;
-  flex: 0 0 33.33%;
-}
-
-.c0:hover {
-  background-color: #d3d3d330;
-}
-
-.c0:focus {
-  outline: none;
-}
-
-.c0:nth-child(3n) {
-  border-right: 1px solid white;
-}
-
-.c0:nth-child(3n+1) {
-  border-left: 1px solid white;
-}
-
-.c0:nth-last-child(-n+3) {
-  border-bottom: 1px solid white;
-}
-
-<styled.div
-  focussed={true}
-  hoverColor="#d3d3d330"
-  index={0}
-  key="M01"
-  onClick={[Function]}
-  primaryColor="#27718c"
-  secondaryColor="white"
-  selected={false}
->
-  <div
-    className="c0"
-    onClick={[Function]}
-    selected={false}
-  >
-    M01
-  </div>
-</styled.div>
-`;
-
-exports[`<Monthpicker /> event handling:  sets the focussed date to 1 month later when hitting ArrowRight 1`] = `
-.c0 {
-  cursor: pointer;
-  border: 1px solid #27718c;
-  background-color: #d3d3d330;
-  padding: 12px 0;
-  -webkit-transition: background-color .1s,color .1s;
-  transition: background-color .1s,color .1s;
-  font-size: 14px;
-  background-color: white;
-  color: #27718c;
-  height: 42px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex: 0 0 33.33%;
-  -ms-flex: 0 0 33.33%;
-  flex: 0 0 33.33%;
-}
-
-.c0:hover {
-  background-color: #d3d3d330;
-}
-
-.c0:focus {
-  outline: none;
-}
-
-.c0:nth-child(3n) {
-  border-right: 1px solid white;
-}
-
-.c0:nth-child(3n+1) {
-  border-left: 1px solid white;
-}
-
-.c0:nth-last-child(-n+3) {
-  border-bottom: 1px solid white;
-}
-
-<styled.div
-  focussed={true}
-  hoverColor="#d3d3d330"
-  index={1}
-  key="M02"
-  onClick={[Function]}
-  primaryColor="#27718c"
-  secondaryColor="white"
-  selected={false}
->
-  <div
-    className="c0"
-    onClick={[Function]}
-    selected={false}
-  >
-    M02
-  </div>
-</styled.div>
-`;
-
-exports[`<Monthpicker /> event handling:  sets the focussed date to 3 month earlier when hitting ArrowUp 1`] = `null`;
-
-exports[`<Monthpicker /> event handling:  sets the focussed date to 3 month later when hitting ArrowDown 1`] = `null`;
-
 exports[`<Monthpicker /> renders its children 1`] = `
 <styled.div
   innerRef={[Function]}
@@ -1355,176 +1186,6 @@ exports[`<Monthpicker /> renders its children 1`] = `
     Child
   </div>
 </styled.div>
-`;
-
-exports[`<Monthpicker /> with allowedYears prop set to an array allows selecting years in the allowedYears array 1`] = `
-.c0 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-<styled.span>
-  <span
-    className="c0"
-  >
-    2017
-  </span>
-</styled.span>
-`;
-
-exports[`<Monthpicker /> with allowedYears prop set to an array does not allow selecting years not in the allowedYears array 1`] = `
-.c0 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-<styled.span>
-  <span
-    className="c0"
-  >
-    2018
-  </span>
-</styled.span>
-`;
-
-exports[`<Monthpicker /> with allowedYears prop set to an array goes to the correct year with an unsorted array 1`] = `
-.c0 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-<styled.span>
-  <span
-    className="c0"
-  >
-    2016
-  </span>
-</styled.span>
-`;
-
-exports[`<Monthpicker /> with allowedYears prop set to an array goes to the correct year with an unsorted array 2`] = `
-.c0 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-<styled.span>
-  <span
-    className="c0"
-  >
-    2020
-  </span>
-</styled.span>
-`;
-
-exports[`<Monthpicker /> with allowedYears prop set to an array goes to the next allowed year when clicking the next button 1`] = `
-.c0 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-<styled.span>
-  <span
-    className="c0"
-  >
-    2020
-  </span>
-</styled.span>
-`;
-
-exports[`<Monthpicker /> with allowedYears prop set to an array goes to the previous allowed year when clicking the previous button 1`] = `
-.c0 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-<styled.span>
-  <span
-    className="c0"
-  >
-    2016
-  </span>
-</styled.span>
-`;
-
-exports[`<Monthpicker /> with allowedYears prop set to an object does allow values after the after key 1`] = `
-.c0 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-<styled.span>
-  <span
-    className="c0"
-  >
-    2019
-  </span>
-</styled.span>
-`;
-
-exports[`<Monthpicker /> with allowedYears prop set to an object does allow values before the before key 1`] = `
-.c0 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-<styled.span>
-  <span
-    className="c0"
-  >
-    2017
-  </span>
-</styled.span>
-`;
-
-exports[`<Monthpicker /> with allowedYears prop set to an object does not allow values after the before key 1`] = `
-.c0 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-<styled.span>
-  <span
-    className="c0"
-  >
-    2018
-  </span>
-</styled.span>
-`;
-
-exports[`<Monthpicker /> with allowedYears prop set to an object does not allow values before the after key 1`] = `
-.c0 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-<styled.span>
-  <span
-    className="c0"
-  >
-    2018
-  </span>
-</styled.span>
 `;
 
 exports[`<Monthpicker /> works with different locales 1`] = `
@@ -1744,7 +1405,6 @@ exports[`<Monthpicker /> works with different locales 1`] = `
 
 <MonthPicker
   hoverColor="#d3d3d330"
-  initialYear={2018}
   locale="en"
   month={1}
   onChange={[MockFunction]}
@@ -1882,7 +1542,6 @@ exports[`<Monthpicker /> works with different locales 1`] = `
               className="c7"
             >
               <styled.div
-                focussed={true}
                 hoverColor="#d3d3d330"
                 index={0}
                 key="Jan"
@@ -1900,7 +1559,6 @@ exports[`<Monthpicker /> works with different locales 1`] = `
                 </div>
               </styled.div>
               <styled.div
-                focussed={false}
                 hoverColor="#d3d3d330"
                 index={1}
                 key="Feb"
@@ -1918,7 +1576,6 @@ exports[`<Monthpicker /> works with different locales 1`] = `
                 </div>
               </styled.div>
               <styled.div
-                focussed={false}
                 hoverColor="#d3d3d330"
                 index={2}
                 key="Mar"
@@ -1936,7 +1593,6 @@ exports[`<Monthpicker /> works with different locales 1`] = `
                 </div>
               </styled.div>
               <styled.div
-                focussed={false}
                 hoverColor="#d3d3d330"
                 index={3}
                 key="Apr"
@@ -1954,7 +1610,6 @@ exports[`<Monthpicker /> works with different locales 1`] = `
                 </div>
               </styled.div>
               <styled.div
-                focussed={false}
                 hoverColor="#d3d3d330"
                 index={4}
                 key="May"
@@ -1972,7 +1627,6 @@ exports[`<Monthpicker /> works with different locales 1`] = `
                 </div>
               </styled.div>
               <styled.div
-                focussed={false}
                 hoverColor="#d3d3d330"
                 index={5}
                 key="Jun"
@@ -1990,7 +1644,6 @@ exports[`<Monthpicker /> works with different locales 1`] = `
                 </div>
               </styled.div>
               <styled.div
-                focussed={false}
                 hoverColor="#d3d3d330"
                 index={6}
                 key="Jul"
@@ -2008,7 +1661,6 @@ exports[`<Monthpicker /> works with different locales 1`] = `
                 </div>
               </styled.div>
               <styled.div
-                focussed={false}
                 hoverColor="#d3d3d330"
                 index={7}
                 key="Aug"
@@ -2026,7 +1678,6 @@ exports[`<Monthpicker /> works with different locales 1`] = `
                 </div>
               </styled.div>
               <styled.div
-                focussed={false}
                 hoverColor="#d3d3d330"
                 index={8}
                 key="Sep"
@@ -2044,7 +1695,6 @@ exports[`<Monthpicker /> works with different locales 1`] = `
                 </div>
               </styled.div>
               <styled.div
-                focussed={false}
                 hoverColor="#d3d3d330"
                 index={9}
                 key="Oct"
@@ -2062,7 +1712,6 @@ exports[`<Monthpicker /> works with different locales 1`] = `
                 </div>
               </styled.div>
               <styled.div
-                focussed={false}
                 hoverColor="#d3d3d330"
                 index={10}
                 key="Nov"
@@ -2080,7 +1729,6 @@ exports[`<Monthpicker /> works with different locales 1`] = `
                 </div>
               </styled.div>
               <styled.div
-                focussed={false}
                 hoverColor="#d3d3d330"
                 index={11}
                 key="Dec"
