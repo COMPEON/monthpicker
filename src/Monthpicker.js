@@ -48,7 +48,7 @@ class MonthPicker extends React.Component {
     secondaryColor: 'white',
     locale: 'de',
     month: getMonth(currentDate),
-    year: currentYear,
+    year: currentYear
   }
 
   static propTypes = {
