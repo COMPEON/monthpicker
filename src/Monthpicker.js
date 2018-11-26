@@ -229,6 +229,8 @@ class MonthPicker extends React.Component {
       : { month: getMonth(date) + 1, year: getYear(date) }
 
     if (onChange) onChange(formattedDate, event)
+
+    this.close(event)
   }
 
   isAllowedYear = year => {
