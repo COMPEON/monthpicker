@@ -101,6 +101,7 @@ class MonthPicker extends React.Component {
     const date = new Date(this.props.year, month)
 
     this.changeValue(date, event)
+    this.close(event)
   }
 
   handleTriggerClick = event => {
@@ -229,8 +230,6 @@ class MonthPicker extends React.Component {
       : { month: getMonth(date) + 1, year: getYear(date) }
 
     if (onChange) onChange(formattedDate, event)
-
-    this.close(event)
   }
 
   isAllowedYear = year => {
@@ -259,15 +258,13 @@ class MonthPicker extends React.Component {
     const { month, year, locale } = this.props
 
     const monthNameFormatter = Intl.DateTimeFormat(locale, { month: 'short' })
-    const formatDate = currentDate
 
     const months = []
 
     for (let index = 0; index < 12; index++) {
-      formatDate.setMonth(index)
-      const monthName = monthNameFormatter.format(formatDate)
+      const monthName = monthNameFormatter.format(new Date(year, index, 1))
 
-      const isSelectedMonth = month && index === month -1
+      const isSelectedMonth = month && index === month
 
       months.push(
         <Month
