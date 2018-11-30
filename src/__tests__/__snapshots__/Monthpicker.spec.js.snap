@@ -27,13 +27,13 @@ exports[`<Monthpicker /> allows specifiyng the primary and secondary colors 1`] 
 }
 
 .c8 {
-  cursor: pointer;
+  border: 1px solid #d3d3d37a;
   padding: 12px 0;
   -webkit-transition: background-color .1s,color .1s;
   transition: background-color .1s,color .1s;
   font-size: 14px;
-  background-color: red;
-  color: green;
+  background-color: green;
+  color: red;
   height: 42px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -50,10 +50,6 @@ exports[`<Monthpicker /> allows specifiyng the primary and secondary colors 1`] 
   -webkit-flex: 0 0 33.33%;
   -ms-flex: 0 0 33.33%;
   flex: 0 0 33.33%;
-}
-
-.c8:hover {
-  background-color: #d3d3d330;
 }
 
 .c8:focus {
@@ -84,7 +80,6 @@ exports[`<Monthpicker /> allows specifiyng the primary and secondary colors 1`] 
   -webkit-flex: 0 0 33.33%;
   -ms-flex: 0 0 33.33%;
   flex: 0 0 33.33%;
-  border-bottom-left-radius: 4px;
 }
 
 .c9:hover {
@@ -119,7 +114,7 @@ exports[`<Monthpicker /> allows specifiyng the primary and secondary colors 1`] 
   -webkit-flex: 0 0 33.33%;
   -ms-flex: 0 0 33.33%;
   flex: 0 0 33.33%;
-  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
 }
 
 .c10:hover {
@@ -127,6 +122,41 @@ exports[`<Monthpicker /> allows specifiyng the primary and secondary colors 1`] 
 }
 
 .c10:focus {
+  outline: none;
+}
+
+.c11 {
+  cursor: pointer;
+  padding: 12px 0;
+  -webkit-transition: background-color .1s,color .1s;
+  transition: background-color .1s,color .1s;
+  font-size: 14px;
+  background-color: red;
+  color: green;
+  height: 42px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex: 0 0 33.33%;
+  -ms-flex: 0 0 33.33%;
+  flex: 0 0 33.33%;
+  border-bottom-right-radius: 4px;
+}
+
+.c11:hover {
+  background-color: #d3d3d330;
+}
+
+.c11:focus {
   outline: none;
 }
 
@@ -330,12 +360,12 @@ exports[`<Monthpicker /> allows specifiyng the primary and secondary colors 1`] 
                 onClick={[Function]}
                 primaryColor="green"
                 secondaryColor="red"
-                selected={0}
+                selected={true}
               >
                 <div
                   className="c8"
                   onClick={[Function]}
-                  selected={0}
+                  selected={true}
                 >
                   M01
                 </div>
@@ -347,12 +377,12 @@ exports[`<Monthpicker /> allows specifiyng the primary and secondary colors 1`] 
                 onClick={[Function]}
                 primaryColor="green"
                 secondaryColor="red"
-                selected={0}
+                selected={false}
               >
                 <div
-                  className="c8"
+                  className="c9"
                   onClick={[Function]}
-                  selected={0}
+                  selected={false}
                 >
                   M02
                 </div>
@@ -364,12 +394,12 @@ exports[`<Monthpicker /> allows specifiyng the primary and secondary colors 1`] 
                 onClick={[Function]}
                 primaryColor="green"
                 secondaryColor="red"
-                selected={0}
+                selected={false}
               >
                 <div
-                  className="c8"
+                  className="c9"
                   onClick={[Function]}
-                  selected={0}
+                  selected={false}
                 >
                   M03
                 </div>
@@ -381,12 +411,12 @@ exports[`<Monthpicker /> allows specifiyng the primary and secondary colors 1`] 
                 onClick={[Function]}
                 primaryColor="green"
                 secondaryColor="red"
-                selected={0}
+                selected={false}
               >
                 <div
-                  className="c8"
+                  className="c9"
                   onClick={[Function]}
-                  selected={0}
+                  selected={false}
                 >
                   M04
                 </div>
@@ -398,12 +428,12 @@ exports[`<Monthpicker /> allows specifiyng the primary and secondary colors 1`] 
                 onClick={[Function]}
                 primaryColor="green"
                 secondaryColor="red"
-                selected={0}
+                selected={false}
               >
                 <div
-                  className="c8"
+                  className="c9"
                   onClick={[Function]}
-                  selected={0}
+                  selected={false}
                 >
                   M05
                 </div>
@@ -415,12 +445,12 @@ exports[`<Monthpicker /> allows specifiyng the primary and secondary colors 1`] 
                 onClick={[Function]}
                 primaryColor="green"
                 secondaryColor="red"
-                selected={0}
+                selected={false}
               >
                 <div
-                  className="c8"
+                  className="c9"
                   onClick={[Function]}
-                  selected={0}
+                  selected={false}
                 >
                   M06
                 </div>
@@ -432,12 +462,12 @@ exports[`<Monthpicker /> allows specifiyng the primary and secondary colors 1`] 
                 onClick={[Function]}
                 primaryColor="green"
                 secondaryColor="red"
-                selected={0}
+                selected={false}
               >
                 <div
-                  className="c8"
+                  className="c9"
                   onClick={[Function]}
-                  selected={0}
+                  selected={false}
                 >
                   M07
                 </div>
@@ -449,12 +479,12 @@ exports[`<Monthpicker /> allows specifiyng the primary and secondary colors 1`] 
                 onClick={[Function]}
                 primaryColor="green"
                 secondaryColor="red"
-                selected={0}
+                selected={false}
               >
                 <div
-                  className="c8"
+                  className="c9"
                   onClick={[Function]}
-                  selected={0}
+                  selected={false}
                 >
                   M08
                 </div>
@@ -466,12 +496,12 @@ exports[`<Monthpicker /> allows specifiyng the primary and secondary colors 1`] 
                 onClick={[Function]}
                 primaryColor="green"
                 secondaryColor="red"
-                selected={0}
+                selected={false}
               >
                 <div
-                  className="c8"
+                  className="c9"
                   onClick={[Function]}
-                  selected={0}
+                  selected={false}
                 >
                   M09
                 </div>
@@ -483,12 +513,12 @@ exports[`<Monthpicker /> allows specifiyng the primary and secondary colors 1`] 
                 onClick={[Function]}
                 primaryColor="green"
                 secondaryColor="red"
-                selected={0}
+                selected={false}
               >
                 <div
-                  className="c9"
+                  className="c10"
                   onClick={[Function]}
-                  selected={0}
+                  selected={false}
                 >
                   M10
                 </div>
@@ -500,12 +530,12 @@ exports[`<Monthpicker /> allows specifiyng the primary and secondary colors 1`] 
                 onClick={[Function]}
                 primaryColor="green"
                 secondaryColor="red"
-                selected={0}
+                selected={false}
               >
                 <div
-                  className="c8"
+                  className="c9"
                   onClick={[Function]}
-                  selected={0}
+                  selected={false}
                 >
                   M11
                 </div>
@@ -517,12 +547,12 @@ exports[`<Monthpicker /> allows specifiyng the primary and secondary colors 1`] 
                 onClick={[Function]}
                 primaryColor="green"
                 secondaryColor="red"
-                selected={0}
+                selected={false}
               >
                 <div
-                  className="c10"
+                  className="c11"
                   onClick={[Function]}
-                  selected={0}
+                  selected={false}
                 >
                   M12
                 </div>
@@ -605,13 +635,13 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
 }
 
 .c8 {
-  cursor: pointer;
+  border: 1px solid #d3d3d37a;
   padding: 12px 0;
   -webkit-transition: background-color .1s,color .1s;
   transition: background-color .1s,color .1s;
   font-size: 14px;
-  background-color: white;
-  color: #27718c;
+  background-color: #27718c;
+  color: white;
   height: 42px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -628,10 +658,6 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
   -webkit-flex: 0 0 33.33%;
   -ms-flex: 0 0 33.33%;
   flex: 0 0 33.33%;
-}
-
-.c8:hover {
-  background-color: #d3d3d330;
 }
 
 .c8:focus {
@@ -662,7 +688,6 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
   -webkit-flex: 0 0 33.33%;
   -ms-flex: 0 0 33.33%;
   flex: 0 0 33.33%;
-  border-bottom-left-radius: 4px;
 }
 
 .c9:hover {
@@ -697,7 +722,7 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
   -webkit-flex: 0 0 33.33%;
   -ms-flex: 0 0 33.33%;
   flex: 0 0 33.33%;
-  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
 }
 
 .c10:hover {
@@ -705,6 +730,41 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
 }
 
 .c10:focus {
+  outline: none;
+}
+
+.c11 {
+  cursor: pointer;
+  padding: 12px 0;
+  -webkit-transition: background-color .1s,color .1s;
+  transition: background-color .1s,color .1s;
+  font-size: 14px;
+  background-color: white;
+  color: #27718c;
+  height: 42px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex: 0 0 33.33%;
+  -ms-flex: 0 0 33.33%;
+  flex: 0 0 33.33%;
+  border-bottom-right-radius: 4px;
+}
+
+.c11:hover {
+  background-color: #d3d3d330;
+}
+
+.c11:focus {
   outline: none;
 }
 
@@ -908,12 +968,12 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
                 onClick={[Function]}
                 primaryColor="#27718c"
                 secondaryColor="white"
-                selected={0}
+                selected={true}
               >
                 <div
                   className="c8"
                   onClick={[Function]}
-                  selected={0}
+                  selected={true}
                 >
                   M01
                 </div>
@@ -925,12 +985,12 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
                 onClick={[Function]}
                 primaryColor="#27718c"
                 secondaryColor="white"
-                selected={0}
+                selected={false}
               >
                 <div
-                  className="c8"
+                  className="c9"
                   onClick={[Function]}
-                  selected={0}
+                  selected={false}
                 >
                   M02
                 </div>
@@ -942,12 +1002,12 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
                 onClick={[Function]}
                 primaryColor="#27718c"
                 secondaryColor="white"
-                selected={0}
+                selected={false}
               >
                 <div
-                  className="c8"
+                  className="c9"
                   onClick={[Function]}
-                  selected={0}
+                  selected={false}
                 >
                   M03
                 </div>
@@ -959,12 +1019,12 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
                 onClick={[Function]}
                 primaryColor="#27718c"
                 secondaryColor="white"
-                selected={0}
+                selected={false}
               >
                 <div
-                  className="c8"
+                  className="c9"
                   onClick={[Function]}
-                  selected={0}
+                  selected={false}
                 >
                   M04
                 </div>
@@ -976,12 +1036,12 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
                 onClick={[Function]}
                 primaryColor="#27718c"
                 secondaryColor="white"
-                selected={0}
+                selected={false}
               >
                 <div
-                  className="c8"
+                  className="c9"
                   onClick={[Function]}
-                  selected={0}
+                  selected={false}
                 >
                   M05
                 </div>
@@ -993,12 +1053,12 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
                 onClick={[Function]}
                 primaryColor="#27718c"
                 secondaryColor="white"
-                selected={0}
+                selected={false}
               >
                 <div
-                  className="c8"
+                  className="c9"
                   onClick={[Function]}
-                  selected={0}
+                  selected={false}
                 >
                   M06
                 </div>
@@ -1010,12 +1070,12 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
                 onClick={[Function]}
                 primaryColor="#27718c"
                 secondaryColor="white"
-                selected={0}
+                selected={false}
               >
                 <div
-                  className="c8"
+                  className="c9"
                   onClick={[Function]}
-                  selected={0}
+                  selected={false}
                 >
                   M07
                 </div>
@@ -1027,12 +1087,12 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
                 onClick={[Function]}
                 primaryColor="#27718c"
                 secondaryColor="white"
-                selected={0}
+                selected={false}
               >
                 <div
-                  className="c8"
+                  className="c9"
                   onClick={[Function]}
-                  selected={0}
+                  selected={false}
                 >
                   M08
                 </div>
@@ -1044,12 +1104,12 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
                 onClick={[Function]}
                 primaryColor="#27718c"
                 secondaryColor="white"
-                selected={0}
+                selected={false}
               >
                 <div
-                  className="c8"
+                  className="c9"
                   onClick={[Function]}
-                  selected={0}
+                  selected={false}
                 >
                   M09
                 </div>
@@ -1061,12 +1121,12 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
                 onClick={[Function]}
                 primaryColor="#27718c"
                 secondaryColor="white"
-                selected={0}
+                selected={false}
               >
                 <div
-                  className="c9"
+                  className="c10"
                   onClick={[Function]}
-                  selected={0}
+                  selected={false}
                 >
                   M10
                 </div>
@@ -1078,12 +1138,12 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
                 onClick={[Function]}
                 primaryColor="#27718c"
                 secondaryColor="white"
-                selected={0}
+                selected={false}
               >
                 <div
-                  className="c8"
+                  className="c9"
                   onClick={[Function]}
-                  selected={0}
+                  selected={false}
                 >
                   M11
                 </div>
@@ -1095,12 +1155,12 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
                 onClick={[Function]}
                 primaryColor="#27718c"
                 secondaryColor="white"
-                selected={0}
+                selected={false}
               >
                 <div
-                  className="c10"
+                  className="c11"
                   onClick={[Function]}
-                  selected={0}
+                  selected={false}
                 >
                   M12
                 </div>
@@ -1155,13 +1215,13 @@ exports[`<Monthpicker /> works with different locales 1`] = `
 }
 
 .c8 {
-  cursor: pointer;
+  border: 1px solid #d3d3d37a;
   padding: 12px 0;
   -webkit-transition: background-color .1s,color .1s;
   transition: background-color .1s,color .1s;
   font-size: 14px;
-  background-color: white;
-  color: #27718c;
+  background-color: #27718c;
+  color: white;
   height: 42px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1178,10 +1238,6 @@ exports[`<Monthpicker /> works with different locales 1`] = `
   -webkit-flex: 0 0 33.33%;
   -ms-flex: 0 0 33.33%;
   flex: 0 0 33.33%;
-}
-
-.c8:hover {
-  background-color: #d3d3d330;
 }
 
 .c8:focus {
@@ -1212,7 +1268,6 @@ exports[`<Monthpicker /> works with different locales 1`] = `
   -webkit-flex: 0 0 33.33%;
   -ms-flex: 0 0 33.33%;
   flex: 0 0 33.33%;
-  border-bottom-left-radius: 4px;
 }
 
 .c9:hover {
@@ -1247,7 +1302,7 @@ exports[`<Monthpicker /> works with different locales 1`] = `
   -webkit-flex: 0 0 33.33%;
   -ms-flex: 0 0 33.33%;
   flex: 0 0 33.33%;
-  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
 }
 
 .c10:hover {
@@ -1255,6 +1310,41 @@ exports[`<Monthpicker /> works with different locales 1`] = `
 }
 
 .c10:focus {
+  outline: none;
+}
+
+.c11 {
+  cursor: pointer;
+  padding: 12px 0;
+  -webkit-transition: background-color .1s,color .1s;
+  transition: background-color .1s,color .1s;
+  font-size: 14px;
+  background-color: white;
+  color: #27718c;
+  height: 42px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex: 0 0 33.33%;
+  -ms-flex: 0 0 33.33%;
+  flex: 0 0 33.33%;
+  border-bottom-right-radius: 4px;
+}
+
+.c11:hover {
+  background-color: #d3d3d330;
+}
+
+.c11:focus {
   outline: none;
 }
 
@@ -1458,12 +1548,12 @@ exports[`<Monthpicker /> works with different locales 1`] = `
                 onClick={[Function]}
                 primaryColor="#27718c"
                 secondaryColor="white"
-                selected={0}
+                selected={true}
               >
                 <div
                   className="c8"
                   onClick={[Function]}
-                  selected={0}
+                  selected={true}
                 >
                   Jan
                 </div>
@@ -1475,12 +1565,12 @@ exports[`<Monthpicker /> works with different locales 1`] = `
                 onClick={[Function]}
                 primaryColor="#27718c"
                 secondaryColor="white"
-                selected={0}
+                selected={false}
               >
                 <div
-                  className="c8"
+                  className="c9"
                   onClick={[Function]}
-                  selected={0}
+                  selected={false}
                 >
                   Feb
                 </div>
@@ -1492,12 +1582,12 @@ exports[`<Monthpicker /> works with different locales 1`] = `
                 onClick={[Function]}
                 primaryColor="#27718c"
                 secondaryColor="white"
-                selected={0}
+                selected={false}
               >
                 <div
-                  className="c8"
+                  className="c9"
                   onClick={[Function]}
-                  selected={0}
+                  selected={false}
                 >
                   Mar
                 </div>
@@ -1509,12 +1599,12 @@ exports[`<Monthpicker /> works with different locales 1`] = `
                 onClick={[Function]}
                 primaryColor="#27718c"
                 secondaryColor="white"
-                selected={0}
+                selected={false}
               >
                 <div
-                  className="c8"
+                  className="c9"
                   onClick={[Function]}
-                  selected={0}
+                  selected={false}
                 >
                   Apr
                 </div>
@@ -1526,12 +1616,12 @@ exports[`<Monthpicker /> works with different locales 1`] = `
                 onClick={[Function]}
                 primaryColor="#27718c"
                 secondaryColor="white"
-                selected={0}
+                selected={false}
               >
                 <div
-                  className="c8"
+                  className="c9"
                   onClick={[Function]}
-                  selected={0}
+                  selected={false}
                 >
                   May
                 </div>
@@ -1543,12 +1633,12 @@ exports[`<Monthpicker /> works with different locales 1`] = `
                 onClick={[Function]}
                 primaryColor="#27718c"
                 secondaryColor="white"
-                selected={0}
+                selected={false}
               >
                 <div
-                  className="c8"
+                  className="c9"
                   onClick={[Function]}
-                  selected={0}
+                  selected={false}
                 >
                   Jun
                 </div>
@@ -1560,12 +1650,12 @@ exports[`<Monthpicker /> works with different locales 1`] = `
                 onClick={[Function]}
                 primaryColor="#27718c"
                 secondaryColor="white"
-                selected={0}
+                selected={false}
               >
                 <div
-                  className="c8"
+                  className="c9"
                   onClick={[Function]}
-                  selected={0}
+                  selected={false}
                 >
                   Jul
                 </div>
@@ -1577,12 +1667,12 @@ exports[`<Monthpicker /> works with different locales 1`] = `
                 onClick={[Function]}
                 primaryColor="#27718c"
                 secondaryColor="white"
-                selected={0}
+                selected={false}
               >
                 <div
-                  className="c8"
+                  className="c9"
                   onClick={[Function]}
-                  selected={0}
+                  selected={false}
                 >
                   Aug
                 </div>
@@ -1594,12 +1684,12 @@ exports[`<Monthpicker /> works with different locales 1`] = `
                 onClick={[Function]}
                 primaryColor="#27718c"
                 secondaryColor="white"
-                selected={0}
+                selected={false}
               >
                 <div
-                  className="c8"
+                  className="c9"
                   onClick={[Function]}
-                  selected={0}
+                  selected={false}
                 >
                   Sep
                 </div>
@@ -1611,12 +1701,12 @@ exports[`<Monthpicker /> works with different locales 1`] = `
                 onClick={[Function]}
                 primaryColor="#27718c"
                 secondaryColor="white"
-                selected={0}
+                selected={false}
               >
                 <div
-                  className="c9"
+                  className="c10"
                   onClick={[Function]}
-                  selected={0}
+                  selected={false}
                 >
                   Oct
                 </div>
@@ -1628,12 +1718,12 @@ exports[`<Monthpicker /> works with different locales 1`] = `
                 onClick={[Function]}
                 primaryColor="#27718c"
                 secondaryColor="white"
-                selected={0}
+                selected={false}
               >
                 <div
-                  className="c8"
+                  className="c9"
                   onClick={[Function]}
-                  selected={0}
+                  selected={false}
                 >
                   Nov
                 </div>
@@ -1645,12 +1735,12 @@ exports[`<Monthpicker /> works with different locales 1`] = `
                 onClick={[Function]}
                 primaryColor="#27718c"
                 secondaryColor="white"
-                selected={0}
+                selected={false}
               >
                 <div
-                  className="c10"
+                  className="c11"
                   onClick={[Function]}
-                  selected={0}
+                  selected={false}
                 >
                   Dec
                 </div>

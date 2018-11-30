@@ -257,6 +257,8 @@ class MonthPicker extends React.Component {
   renderMonths = () => {
     const { month, year, locale } = this.props
 
+    const selectedMonth = month - 1
+
     const monthNameFormatter = Intl.DateTimeFormat(locale, { month: 'short' })
 
     const months = []
@@ -264,7 +266,7 @@ class MonthPicker extends React.Component {
     for (let index = 0; index < 12; index++) {
       const monthName = monthNameFormatter.format(new Date(year, index, 1))
 
-      const isSelectedMonth = month - 1 && index === month - 1
+      const isSelectedMonth = selectedMonth !== undefined && index === selectedMonth
 
       months.push(
         <Month
