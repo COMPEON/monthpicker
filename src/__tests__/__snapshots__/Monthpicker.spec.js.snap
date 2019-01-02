@@ -225,343 +225,1443 @@ exports[`<Monthpicker /> allows specifiyng the primary and secondary colors 1`] 
   year={2018}
 >
   <styled.div
-    innerRef={[Function]}
     onKeyDown={[Function]}
     tabIndex={-1}
   >
-    <div
-      className="c0"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bZQynM",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  * {
+    box-sizing: border-box;
+  }
+
+  &:focus {
+    outline: none;
+  }
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bZQynM",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={[Function]}
       onKeyDown={[Function]}
       tabIndex={-1}
     >
       <div
-        onClick={[Function]}
+        className="c0"
+        onKeyDown={[Function]}
+        tabIndex={-1}
       >
         <div
-          className="child"
+          onClick={[Function]}
         >
-          Child
+          <div
+            className="child"
+          >
+            Child
+          </div>
         </div>
+        <styled.div
+          hoverColor="#d3d3d330"
+          primaryColor="green"
+          secondaryColor="red"
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-htpNat",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  margin-top: 8px;
+  transform-origin: top center;
+  animation: ",
+                    Keyframes {
+                      "id": "sc-keyframes-dXhcnZ",
+                      "inject": [Function],
+                      "name": "dXhcnZ",
+                      "rules": Array [
+                        "@-webkit-keyframes dXhcnZ{from{-webkit-transform:scaleY(0.95);-ms-transform:scaleY(0.95);transform:scaleY(0.95);opacity:0;}to{-webkit-transform:scaleY(1);-ms-transform:scaleY(1);transform:scaleY(1);opacity:1;}}",
+                        "@keyframes dXhcnZ{from{-webkit-transform:scaleY(0.95);-ms-transform:scaleY(0.95);transform:scaleY(0.95);opacity:0;}to{-webkit-transform:scaleY(1);-ms-transform:scaleY(1);transform:scaleY(1);opacity:1;}}",
+                      ],
+                      "toString": [Function],
+                    },
+                    " .2s;
+  position: absolute;
+  box-shadow: 0 1px 3px #d3d3d380, 0 1px 3px #d3d3d380;
+  border: 1px solid ",
+                    [Function],
+                    ";
+  border-radius: 4px;
+  z-index: 10;
+",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-htpNat",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            hoverColor="#d3d3d330"
+            primaryColor="green"
+            secondaryColor="red"
+          >
+            <div
+              className="c1"
+            >
+              <styled.div
+                hoverColor="#d3d3d330"
+                primaryColor="green"
+                secondaryColor="red"
+              >
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-ifAKCX",
+                        "isStatic": false,
+                        "lastClassName": "c2",
+                        "rules": Array [
+                          "
+  padding: 16px 8px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: ",
+                          [Function],
+                          ";
+  color: ",
+                          [Function],
+                          ";
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+",
+                        ],
+                      },
+                      "displayName": "styled.div",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "sc-ifAKCX",
+                      "target": "div",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  hoverColor="#d3d3d330"
+                  primaryColor="green"
+                  secondaryColor="red"
+                >
+                  <div
+                    className="c2"
+                  >
+                    <_default
+                      hoverColor="#d3d3d330"
+                      onClick={[Function]}
+                      primaryColor="green"
+                      secondaryColor="red"
+                    >
+                      <styled.svg
+                        height="24"
+                        hoverColor="#d3d3d330"
+                        onClick={[Function]}
+                        primaryColor="green"
+                        secondaryColor="red"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "sc-bwzfXH",
+                                "isStatic": false,
+                                "lastClassName": "c3",
+                                "rules": Array [
+                                  "
+  cursor: pointer;
+  fill: white;
+  fill: ",
+                                  [Function],
+                                  ";
+",
+                                ],
+                              },
+                              "displayName": "styled.svg",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "sc-bwzfXH",
+                              "target": "svg",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                          height="24"
+                          hoverColor="#d3d3d330"
+                          onClick={[Function]}
+                          primaryColor="green"
+                          secondaryColor="red"
+                          viewBox="0 0 24 24"
+                          width="24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <svg
+                            className="c3"
+                            height="24"
+                            onClick={[Function]}
+                            viewBox="0 0 24 24"
+                            width="24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z"
+                            />
+                            <path
+                              d="M0-.5h24v24H0z"
+                              fill="none"
+                            />
+                          </svg>
+                        </StyledComponent>
+                      </styled.svg>
+                    </_default>
+                    <styled.span>
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-EHOje",
+                              "isStatic": true,
+                              "lastClassName": "c4",
+                              "rules": Array [
+                                "
+  user-select: none;
+",
+                              ],
+                            },
+                            "displayName": "styled.span",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-EHOje",
+                            "target": "span",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                      >
+                        <span
+                          className="c4"
+                        >
+                          2018
+                        </span>
+                      </StyledComponent>
+                    </styled.span>
+                    <_default
+                      hoverColor="#d3d3d330"
+                      onClick={[Function]}
+                      primaryColor="green"
+                      secondaryColor="red"
+                    >
+                      <styled.svg
+                        height="24"
+                        hoverColor="#d3d3d330"
+                        onClick={[Function]}
+                        primaryColor="green"
+                        secondaryColor="red"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "sc-bdVaJa",
+                                "isStatic": false,
+                                "lastClassName": "c5",
+                                "rules": Array [
+                                  "
+  cursor: pointer;
+  fill: ",
+                                  [Function],
+                                  ";
+",
+                                ],
+                              },
+                              "displayName": "styled.svg",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "sc-bdVaJa",
+                              "target": "svg",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                          height="24"
+                          hoverColor="#d3d3d330"
+                          onClick={[Function]}
+                          primaryColor="green"
+                          secondaryColor="red"
+                          viewBox="0 0 24 24"
+                          width="24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <svg
+                            className="c5"
+                            height="24"
+                            onClick={[Function]}
+                            viewBox="0 0 24 24"
+                            width="24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"
+                            />
+                            <path
+                              d="M0-.25h24v24H0z"
+                              fill="none"
+                            />
+                          </svg>
+                        </StyledComponent>
+                      </styled.svg>
+                    </_default>
+                  </div>
+                </StyledComponent>
+              </styled.div>
+              <styled.div
+                hoverColor="#d3d3d330"
+                primaryColor="green"
+                secondaryColor="red"
+              >
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-htoDjs",
+                        "isStatic": false,
+                        "lastClassName": "c6",
+                        "rules": Array [
+                          "
+  height: 8px;
+  background-color: ",
+                          [Function],
+                          ";
+  width: 100%;
+",
+                        ],
+                      },
+                      "displayName": "styled.div",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "sc-htoDjs",
+                      "target": "div",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  hoverColor="#d3d3d330"
+                  primaryColor="green"
+                  secondaryColor="red"
+                >
+                  <div
+                    className="c6"
+                  />
+                </StyledComponent>
+              </styled.div>
+              <styled.div
+                hoverColor="#d3d3d330"
+                primaryColor="green"
+                secondaryColor="red"
+              >
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-gzVnrw",
+                        "isStatic": false,
+                        "lastClassName": "c7",
+                        "rules": Array [
+                          "
+  background-color: ",
+                          [Function],
+                          ";
+  border-radius: 4px;
+  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+",
+                        ],
+                      },
+                      "displayName": "styled.div",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "sc-gzVnrw",
+                      "target": "div",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  hoverColor="#d3d3d330"
+                  primaryColor="green"
+                  secondaryColor="red"
+                >
+                  <div
+                    className="c7"
+                  >
+                    <styled.div
+                      hoverColor="#d3d3d330"
+                      index={0}
+                      key="M01"
+                      onClick={[Function]}
+                      primaryColor="green"
+                      secondaryColor="red"
+                      selected={true}
+                    >
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-bxivhb",
+                              "isStatic": false,
+                              "lastClassName": "c11",
+                              "rules": Array [
+                                "
+  ",
+                                [Function],
+                                "
+
+  &:focus {
+    outline: none;
+  }
+
+  ",
+                                [Function],
+                                ";
+
+  padding: 12px 0;
+  transition: background-color .1s, color .1s;
+  font-size: 14px;
+  background-color: ",
+                                [Function],
+                                ";
+  color: ",
+                                [Function],
+                                ";
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 33.33%;
+
+  border-bottom-right-radius: ",
+                                [Function],
+                                ";
+  border-bottom-left-radius: ",
+                                [Function],
+                                ";
+",
+                              ],
+                            },
+                            "displayName": "styled.div",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-bxivhb",
+                            "target": "div",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        hoverColor="#d3d3d330"
+                        index={0}
+                        onClick={[Function]}
+                        primaryColor="green"
+                        secondaryColor="red"
+                        selected={true}
+                      >
+                        <div
+                          className="c8"
+                          onClick={[Function]}
+                          selected={true}
+                        >
+                          M01
+                        </div>
+                      </StyledComponent>
+                    </styled.div>
+                    <styled.div
+                      hoverColor="#d3d3d330"
+                      index={1}
+                      key="M02"
+                      onClick={[Function]}
+                      primaryColor="green"
+                      secondaryColor="red"
+                      selected={false}
+                    >
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-bxivhb",
+                              "isStatic": false,
+                              "lastClassName": "c11",
+                              "rules": Array [
+                                "
+  ",
+                                [Function],
+                                "
+
+  &:focus {
+    outline: none;
+  }
+
+  ",
+                                [Function],
+                                ";
+
+  padding: 12px 0;
+  transition: background-color .1s, color .1s;
+  font-size: 14px;
+  background-color: ",
+                                [Function],
+                                ";
+  color: ",
+                                [Function],
+                                ";
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 33.33%;
+
+  border-bottom-right-radius: ",
+                                [Function],
+                                ";
+  border-bottom-left-radius: ",
+                                [Function],
+                                ";
+",
+                              ],
+                            },
+                            "displayName": "styled.div",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-bxivhb",
+                            "target": "div",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        hoverColor="#d3d3d330"
+                        index={1}
+                        onClick={[Function]}
+                        primaryColor="green"
+                        secondaryColor="red"
+                        selected={false}
+                      >
+                        <div
+                          className="c9"
+                          onClick={[Function]}
+                          selected={false}
+                        >
+                          M02
+                        </div>
+                      </StyledComponent>
+                    </styled.div>
+                    <styled.div
+                      hoverColor="#d3d3d330"
+                      index={2}
+                      key="M03"
+                      onClick={[Function]}
+                      primaryColor="green"
+                      secondaryColor="red"
+                      selected={false}
+                    >
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-bxivhb",
+                              "isStatic": false,
+                              "lastClassName": "c11",
+                              "rules": Array [
+                                "
+  ",
+                                [Function],
+                                "
+
+  &:focus {
+    outline: none;
+  }
+
+  ",
+                                [Function],
+                                ";
+
+  padding: 12px 0;
+  transition: background-color .1s, color .1s;
+  font-size: 14px;
+  background-color: ",
+                                [Function],
+                                ";
+  color: ",
+                                [Function],
+                                ";
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 33.33%;
+
+  border-bottom-right-radius: ",
+                                [Function],
+                                ";
+  border-bottom-left-radius: ",
+                                [Function],
+                                ";
+",
+                              ],
+                            },
+                            "displayName": "styled.div",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-bxivhb",
+                            "target": "div",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        hoverColor="#d3d3d330"
+                        index={2}
+                        onClick={[Function]}
+                        primaryColor="green"
+                        secondaryColor="red"
+                        selected={false}
+                      >
+                        <div
+                          className="c9"
+                          onClick={[Function]}
+                          selected={false}
+                        >
+                          M03
+                        </div>
+                      </StyledComponent>
+                    </styled.div>
+                    <styled.div
+                      hoverColor="#d3d3d330"
+                      index={3}
+                      key="M04"
+                      onClick={[Function]}
+                      primaryColor="green"
+                      secondaryColor="red"
+                      selected={false}
+                    >
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-bxivhb",
+                              "isStatic": false,
+                              "lastClassName": "c11",
+                              "rules": Array [
+                                "
+  ",
+                                [Function],
+                                "
+
+  &:focus {
+    outline: none;
+  }
+
+  ",
+                                [Function],
+                                ";
+
+  padding: 12px 0;
+  transition: background-color .1s, color .1s;
+  font-size: 14px;
+  background-color: ",
+                                [Function],
+                                ";
+  color: ",
+                                [Function],
+                                ";
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 33.33%;
+
+  border-bottom-right-radius: ",
+                                [Function],
+                                ";
+  border-bottom-left-radius: ",
+                                [Function],
+                                ";
+",
+                              ],
+                            },
+                            "displayName": "styled.div",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-bxivhb",
+                            "target": "div",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        hoverColor="#d3d3d330"
+                        index={3}
+                        onClick={[Function]}
+                        primaryColor="green"
+                        secondaryColor="red"
+                        selected={false}
+                      >
+                        <div
+                          className="c9"
+                          onClick={[Function]}
+                          selected={false}
+                        >
+                          M04
+                        </div>
+                      </StyledComponent>
+                    </styled.div>
+                    <styled.div
+                      hoverColor="#d3d3d330"
+                      index={4}
+                      key="M05"
+                      onClick={[Function]}
+                      primaryColor="green"
+                      secondaryColor="red"
+                      selected={false}
+                    >
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-bxivhb",
+                              "isStatic": false,
+                              "lastClassName": "c11",
+                              "rules": Array [
+                                "
+  ",
+                                [Function],
+                                "
+
+  &:focus {
+    outline: none;
+  }
+
+  ",
+                                [Function],
+                                ";
+
+  padding: 12px 0;
+  transition: background-color .1s, color .1s;
+  font-size: 14px;
+  background-color: ",
+                                [Function],
+                                ";
+  color: ",
+                                [Function],
+                                ";
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 33.33%;
+
+  border-bottom-right-radius: ",
+                                [Function],
+                                ";
+  border-bottom-left-radius: ",
+                                [Function],
+                                ";
+",
+                              ],
+                            },
+                            "displayName": "styled.div",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-bxivhb",
+                            "target": "div",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        hoverColor="#d3d3d330"
+                        index={4}
+                        onClick={[Function]}
+                        primaryColor="green"
+                        secondaryColor="red"
+                        selected={false}
+                      >
+                        <div
+                          className="c9"
+                          onClick={[Function]}
+                          selected={false}
+                        >
+                          M05
+                        </div>
+                      </StyledComponent>
+                    </styled.div>
+                    <styled.div
+                      hoverColor="#d3d3d330"
+                      index={5}
+                      key="M06"
+                      onClick={[Function]}
+                      primaryColor="green"
+                      secondaryColor="red"
+                      selected={false}
+                    >
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-bxivhb",
+                              "isStatic": false,
+                              "lastClassName": "c11",
+                              "rules": Array [
+                                "
+  ",
+                                [Function],
+                                "
+
+  &:focus {
+    outline: none;
+  }
+
+  ",
+                                [Function],
+                                ";
+
+  padding: 12px 0;
+  transition: background-color .1s, color .1s;
+  font-size: 14px;
+  background-color: ",
+                                [Function],
+                                ";
+  color: ",
+                                [Function],
+                                ";
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 33.33%;
+
+  border-bottom-right-radius: ",
+                                [Function],
+                                ";
+  border-bottom-left-radius: ",
+                                [Function],
+                                ";
+",
+                              ],
+                            },
+                            "displayName": "styled.div",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-bxivhb",
+                            "target": "div",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        hoverColor="#d3d3d330"
+                        index={5}
+                        onClick={[Function]}
+                        primaryColor="green"
+                        secondaryColor="red"
+                        selected={false}
+                      >
+                        <div
+                          className="c9"
+                          onClick={[Function]}
+                          selected={false}
+                        >
+                          M06
+                        </div>
+                      </StyledComponent>
+                    </styled.div>
+                    <styled.div
+                      hoverColor="#d3d3d330"
+                      index={6}
+                      key="M07"
+                      onClick={[Function]}
+                      primaryColor="green"
+                      secondaryColor="red"
+                      selected={false}
+                    >
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-bxivhb",
+                              "isStatic": false,
+                              "lastClassName": "c11",
+                              "rules": Array [
+                                "
+  ",
+                                [Function],
+                                "
+
+  &:focus {
+    outline: none;
+  }
+
+  ",
+                                [Function],
+                                ";
+
+  padding: 12px 0;
+  transition: background-color .1s, color .1s;
+  font-size: 14px;
+  background-color: ",
+                                [Function],
+                                ";
+  color: ",
+                                [Function],
+                                ";
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 33.33%;
+
+  border-bottom-right-radius: ",
+                                [Function],
+                                ";
+  border-bottom-left-radius: ",
+                                [Function],
+                                ";
+",
+                              ],
+                            },
+                            "displayName": "styled.div",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-bxivhb",
+                            "target": "div",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        hoverColor="#d3d3d330"
+                        index={6}
+                        onClick={[Function]}
+                        primaryColor="green"
+                        secondaryColor="red"
+                        selected={false}
+                      >
+                        <div
+                          className="c9"
+                          onClick={[Function]}
+                          selected={false}
+                        >
+                          M07
+                        </div>
+                      </StyledComponent>
+                    </styled.div>
+                    <styled.div
+                      hoverColor="#d3d3d330"
+                      index={7}
+                      key="M08"
+                      onClick={[Function]}
+                      primaryColor="green"
+                      secondaryColor="red"
+                      selected={false}
+                    >
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-bxivhb",
+                              "isStatic": false,
+                              "lastClassName": "c11",
+                              "rules": Array [
+                                "
+  ",
+                                [Function],
+                                "
+
+  &:focus {
+    outline: none;
+  }
+
+  ",
+                                [Function],
+                                ";
+
+  padding: 12px 0;
+  transition: background-color .1s, color .1s;
+  font-size: 14px;
+  background-color: ",
+                                [Function],
+                                ";
+  color: ",
+                                [Function],
+                                ";
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 33.33%;
+
+  border-bottom-right-radius: ",
+                                [Function],
+                                ";
+  border-bottom-left-radius: ",
+                                [Function],
+                                ";
+",
+                              ],
+                            },
+                            "displayName": "styled.div",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-bxivhb",
+                            "target": "div",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        hoverColor="#d3d3d330"
+                        index={7}
+                        onClick={[Function]}
+                        primaryColor="green"
+                        secondaryColor="red"
+                        selected={false}
+                      >
+                        <div
+                          className="c9"
+                          onClick={[Function]}
+                          selected={false}
+                        >
+                          M08
+                        </div>
+                      </StyledComponent>
+                    </styled.div>
+                    <styled.div
+                      hoverColor="#d3d3d330"
+                      index={8}
+                      key="M09"
+                      onClick={[Function]}
+                      primaryColor="green"
+                      secondaryColor="red"
+                      selected={false}
+                    >
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-bxivhb",
+                              "isStatic": false,
+                              "lastClassName": "c11",
+                              "rules": Array [
+                                "
+  ",
+                                [Function],
+                                "
+
+  &:focus {
+    outline: none;
+  }
+
+  ",
+                                [Function],
+                                ";
+
+  padding: 12px 0;
+  transition: background-color .1s, color .1s;
+  font-size: 14px;
+  background-color: ",
+                                [Function],
+                                ";
+  color: ",
+                                [Function],
+                                ";
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 33.33%;
+
+  border-bottom-right-radius: ",
+                                [Function],
+                                ";
+  border-bottom-left-radius: ",
+                                [Function],
+                                ";
+",
+                              ],
+                            },
+                            "displayName": "styled.div",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-bxivhb",
+                            "target": "div",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        hoverColor="#d3d3d330"
+                        index={8}
+                        onClick={[Function]}
+                        primaryColor="green"
+                        secondaryColor="red"
+                        selected={false}
+                      >
+                        <div
+                          className="c9"
+                          onClick={[Function]}
+                          selected={false}
+                        >
+                          M09
+                        </div>
+                      </StyledComponent>
+                    </styled.div>
+                    <styled.div
+                      hoverColor="#d3d3d330"
+                      index={9}
+                      key="M10"
+                      onClick={[Function]}
+                      primaryColor="green"
+                      secondaryColor="red"
+                      selected={false}
+                    >
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-bxivhb",
+                              "isStatic": false,
+                              "lastClassName": "c11",
+                              "rules": Array [
+                                "
+  ",
+                                [Function],
+                                "
+
+  &:focus {
+    outline: none;
+  }
+
+  ",
+                                [Function],
+                                ";
+
+  padding: 12px 0;
+  transition: background-color .1s, color .1s;
+  font-size: 14px;
+  background-color: ",
+                                [Function],
+                                ";
+  color: ",
+                                [Function],
+                                ";
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 33.33%;
+
+  border-bottom-right-radius: ",
+                                [Function],
+                                ";
+  border-bottom-left-radius: ",
+                                [Function],
+                                ";
+",
+                              ],
+                            },
+                            "displayName": "styled.div",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-bxivhb",
+                            "target": "div",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        hoverColor="#d3d3d330"
+                        index={9}
+                        onClick={[Function]}
+                        primaryColor="green"
+                        secondaryColor="red"
+                        selected={false}
+                      >
+                        <div
+                          className="c10"
+                          onClick={[Function]}
+                          selected={false}
+                        >
+                          M10
+                        </div>
+                      </StyledComponent>
+                    </styled.div>
+                    <styled.div
+                      hoverColor="#d3d3d330"
+                      index={10}
+                      key="M11"
+                      onClick={[Function]}
+                      primaryColor="green"
+                      secondaryColor="red"
+                      selected={false}
+                    >
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-bxivhb",
+                              "isStatic": false,
+                              "lastClassName": "c11",
+                              "rules": Array [
+                                "
+  ",
+                                [Function],
+                                "
+
+  &:focus {
+    outline: none;
+  }
+
+  ",
+                                [Function],
+                                ";
+
+  padding: 12px 0;
+  transition: background-color .1s, color .1s;
+  font-size: 14px;
+  background-color: ",
+                                [Function],
+                                ";
+  color: ",
+                                [Function],
+                                ";
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 33.33%;
+
+  border-bottom-right-radius: ",
+                                [Function],
+                                ";
+  border-bottom-left-radius: ",
+                                [Function],
+                                ";
+",
+                              ],
+                            },
+                            "displayName": "styled.div",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-bxivhb",
+                            "target": "div",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        hoverColor="#d3d3d330"
+                        index={10}
+                        onClick={[Function]}
+                        primaryColor="green"
+                        secondaryColor="red"
+                        selected={false}
+                      >
+                        <div
+                          className="c9"
+                          onClick={[Function]}
+                          selected={false}
+                        >
+                          M11
+                        </div>
+                      </StyledComponent>
+                    </styled.div>
+                    <styled.div
+                      hoverColor="#d3d3d330"
+                      index={11}
+                      key="M12"
+                      onClick={[Function]}
+                      primaryColor="green"
+                      secondaryColor="red"
+                      selected={false}
+                    >
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-bxivhb",
+                              "isStatic": false,
+                              "lastClassName": "c11",
+                              "rules": Array [
+                                "
+  ",
+                                [Function],
+                                "
+
+  &:focus {
+    outline: none;
+  }
+
+  ",
+                                [Function],
+                                ";
+
+  padding: 12px 0;
+  transition: background-color .1s, color .1s;
+  font-size: 14px;
+  background-color: ",
+                                [Function],
+                                ";
+  color: ",
+                                [Function],
+                                ";
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 33.33%;
+
+  border-bottom-right-radius: ",
+                                [Function],
+                                ";
+  border-bottom-left-radius: ",
+                                [Function],
+                                ";
+",
+                              ],
+                            },
+                            "displayName": "styled.div",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-bxivhb",
+                            "target": "div",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        hoverColor="#d3d3d330"
+                        index={11}
+                        onClick={[Function]}
+                        primaryColor="green"
+                        secondaryColor="red"
+                        selected={false}
+                      >
+                        <div
+                          className="c11"
+                          onClick={[Function]}
+                          selected={false}
+                        >
+                          M12
+                        </div>
+                      </StyledComponent>
+                    </styled.div>
+                  </div>
+                </StyledComponent>
+              </styled.div>
+            </div>
+          </StyledComponent>
+        </styled.div>
       </div>
-      <styled.div
-        hoverColor="#d3d3d330"
-        primaryColor="green"
-        secondaryColor="red"
-      >
-        <div
-          className="c1"
-        >
-          <styled.div
-            hoverColor="#d3d3d330"
-            primaryColor="green"
-            secondaryColor="red"
-          >
-            <div
-              className="c2"
-            >
-              <Component
-                hoverColor="#d3d3d330"
-                onClick={[Function]}
-                primaryColor="green"
-                secondaryColor="red"
-              >
-                <styled.svg
-                  height="24"
-                  hoverColor="#d3d3d330"
-                  onClick={[Function]}
-                  primaryColor="green"
-                  secondaryColor="red"
-                  viewBox="0 0 24 24"
-                  width="24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <svg
-                    className="c3"
-                    height="24"
-                    onClick={[Function]}
-                    viewBox="0 0 24 24"
-                    width="24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z"
-                    />
-                    <path
-                      d="M0-.5h24v24H0z"
-                      fill="none"
-                    />
-                  </svg>
-                </styled.svg>
-              </Component>
-              <styled.span>
-                <span
-                  className="c4"
-                >
-                  2018
-                </span>
-              </styled.span>
-              <Component
-                hoverColor="#d3d3d330"
-                onClick={[Function]}
-                primaryColor="green"
-                secondaryColor="red"
-              >
-                <styled.svg
-                  height="24"
-                  hoverColor="#d3d3d330"
-                  onClick={[Function]}
-                  primaryColor="green"
-                  secondaryColor="red"
-                  viewBox="0 0 24 24"
-                  width="24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <svg
-                    className="c5"
-                    height="24"
-                    onClick={[Function]}
-                    viewBox="0 0 24 24"
-                    width="24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"
-                    />
-                    <path
-                      d="M0-.25h24v24H0z"
-                      fill="none"
-                    />
-                  </svg>
-                </styled.svg>
-              </Component>
-            </div>
-          </styled.div>
-          <styled.div
-            hoverColor="#d3d3d330"
-            primaryColor="green"
-            secondaryColor="red"
-          >
-            <div
-              className="c6"
-            />
-          </styled.div>
-          <styled.div
-            hoverColor="#d3d3d330"
-            primaryColor="green"
-            secondaryColor="red"
-          >
-            <div
-              className="c7"
-            >
-              <styled.div
-                hoverColor="#d3d3d330"
-                index={0}
-                key="M01"
-                onClick={[Function]}
-                primaryColor="green"
-                secondaryColor="red"
-                selected={true}
-              >
-                <div
-                  className="c8"
-                  onClick={[Function]}
-                  selected={true}
-                >
-                  M01
-                </div>
-              </styled.div>
-              <styled.div
-                hoverColor="#d3d3d330"
-                index={1}
-                key="M02"
-                onClick={[Function]}
-                primaryColor="green"
-                secondaryColor="red"
-                selected={false}
-              >
-                <div
-                  className="c9"
-                  onClick={[Function]}
-                  selected={false}
-                >
-                  M02
-                </div>
-              </styled.div>
-              <styled.div
-                hoverColor="#d3d3d330"
-                index={2}
-                key="M03"
-                onClick={[Function]}
-                primaryColor="green"
-                secondaryColor="red"
-                selected={false}
-              >
-                <div
-                  className="c9"
-                  onClick={[Function]}
-                  selected={false}
-                >
-                  M03
-                </div>
-              </styled.div>
-              <styled.div
-                hoverColor="#d3d3d330"
-                index={3}
-                key="M04"
-                onClick={[Function]}
-                primaryColor="green"
-                secondaryColor="red"
-                selected={false}
-              >
-                <div
-                  className="c9"
-                  onClick={[Function]}
-                  selected={false}
-                >
-                  M04
-                </div>
-              </styled.div>
-              <styled.div
-                hoverColor="#d3d3d330"
-                index={4}
-                key="M05"
-                onClick={[Function]}
-                primaryColor="green"
-                secondaryColor="red"
-                selected={false}
-              >
-                <div
-                  className="c9"
-                  onClick={[Function]}
-                  selected={false}
-                >
-                  M05
-                </div>
-              </styled.div>
-              <styled.div
-                hoverColor="#d3d3d330"
-                index={5}
-                key="M06"
-                onClick={[Function]}
-                primaryColor="green"
-                secondaryColor="red"
-                selected={false}
-              >
-                <div
-                  className="c9"
-                  onClick={[Function]}
-                  selected={false}
-                >
-                  M06
-                </div>
-              </styled.div>
-              <styled.div
-                hoverColor="#d3d3d330"
-                index={6}
-                key="M07"
-                onClick={[Function]}
-                primaryColor="green"
-                secondaryColor="red"
-                selected={false}
-              >
-                <div
-                  className="c9"
-                  onClick={[Function]}
-                  selected={false}
-                >
-                  M07
-                </div>
-              </styled.div>
-              <styled.div
-                hoverColor="#d3d3d330"
-                index={7}
-                key="M08"
-                onClick={[Function]}
-                primaryColor="green"
-                secondaryColor="red"
-                selected={false}
-              >
-                <div
-                  className="c9"
-                  onClick={[Function]}
-                  selected={false}
-                >
-                  M08
-                </div>
-              </styled.div>
-              <styled.div
-                hoverColor="#d3d3d330"
-                index={8}
-                key="M09"
-                onClick={[Function]}
-                primaryColor="green"
-                secondaryColor="red"
-                selected={false}
-              >
-                <div
-                  className="c9"
-                  onClick={[Function]}
-                  selected={false}
-                >
-                  M09
-                </div>
-              </styled.div>
-              <styled.div
-                hoverColor="#d3d3d330"
-                index={9}
-                key="M10"
-                onClick={[Function]}
-                primaryColor="green"
-                secondaryColor="red"
-                selected={false}
-              >
-                <div
-                  className="c10"
-                  onClick={[Function]}
-                  selected={false}
-                >
-                  M10
-                </div>
-              </styled.div>
-              <styled.div
-                hoverColor="#d3d3d330"
-                index={10}
-                key="M11"
-                onClick={[Function]}
-                primaryColor="green"
-                secondaryColor="red"
-                selected={false}
-              >
-                <div
-                  className="c9"
-                  onClick={[Function]}
-                  selected={false}
-                >
-                  M11
-                </div>
-              </styled.div>
-              <styled.div
-                hoverColor="#d3d3d330"
-                index={11}
-                key="M12"
-                onClick={[Function]}
-                primaryColor="green"
-                secondaryColor="red"
-                selected={false}
-              >
-                <div
-                  className="c11"
-                  onClick={[Function]}
-                  selected={false}
-                >
-                  M12
-                </div>
-              </styled.div>
-            </div>
-          </styled.div>
-        </div>
-      </styled.div>
-    </div>
+    </StyledComponent>
   </styled.div>
 </MonthPicker>
 `;
@@ -585,25 +1685,60 @@ exports[`<Monthpicker /> event handling:  closes the overlay when clicking anywh
   year={2010}
 >
   <styled.div
-    innerRef={[Function]}
     onKeyDown={[Function]}
     tabIndex={-1}
   >
-    <div
-      className="c0"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bZQynM",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  * {
+    box-sizing: border-box;
+  }
+
+  &:focus {
+    outline: none;
+  }
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bZQynM",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={[Function]}
       onKeyDown={[Function]}
       tabIndex={-1}
     >
       <div
-        onClick={[Function]}
+        className="c0"
+        onKeyDown={[Function]}
+        tabIndex={-1}
       >
         <div
-          className="child"
+          onClick={[Function]}
         >
-          Child
+          <div
+            className="child"
+          >
+            Child
+          </div>
         </div>
       </div>
-    </div>
+    </StyledComponent>
   </styled.div>
 </MonthPicker>
 `;
@@ -833,350 +1968,1449 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
   year={2010}
 >
   <styled.div
-    innerRef={[Function]}
     onKeyDown={[Function]}
     tabIndex={-1}
   >
-    <div
-      className="c0"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bZQynM",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  * {
+    box-sizing: border-box;
+  }
+
+  &:focus {
+    outline: none;
+  }
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bZQynM",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={[Function]}
       onKeyDown={[Function]}
       tabIndex={-1}
     >
       <div
-        onClick={[Function]}
+        className="c0"
+        onKeyDown={[Function]}
+        tabIndex={-1}
       >
         <div
-          className="child"
+          onClick={[Function]}
         >
-          Child
+          <div
+            className="child"
+          >
+            Child
+          </div>
         </div>
+        <styled.div
+          hoverColor="#d3d3d330"
+          primaryColor="#27718c"
+          secondaryColor="white"
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-htpNat",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  margin-top: 8px;
+  transform-origin: top center;
+  animation: ",
+                    Keyframes {
+                      "id": "sc-keyframes-dXhcnZ",
+                      "inject": [Function],
+                      "name": "dXhcnZ",
+                      "rules": Array [
+                        "@-webkit-keyframes dXhcnZ{from{-webkit-transform:scaleY(0.95);-ms-transform:scaleY(0.95);transform:scaleY(0.95);opacity:0;}to{-webkit-transform:scaleY(1);-ms-transform:scaleY(1);transform:scaleY(1);opacity:1;}}",
+                        "@keyframes dXhcnZ{from{-webkit-transform:scaleY(0.95);-ms-transform:scaleY(0.95);transform:scaleY(0.95);opacity:0;}to{-webkit-transform:scaleY(1);-ms-transform:scaleY(1);transform:scaleY(1);opacity:1;}}",
+                      ],
+                      "toString": [Function],
+                    },
+                    " .2s;
+  position: absolute;
+  box-shadow: 0 1px 3px #d3d3d380, 0 1px 3px #d3d3d380;
+  border: 1px solid ",
+                    [Function],
+                    ";
+  border-radius: 4px;
+  z-index: 10;
+",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-htpNat",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            hoverColor="#d3d3d330"
+            primaryColor="#27718c"
+            secondaryColor="white"
+          >
+            <div
+              className="c1"
+            >
+              <styled.div
+                hoverColor="#d3d3d330"
+                primaryColor="#27718c"
+                secondaryColor="white"
+              >
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-ifAKCX",
+                        "isStatic": false,
+                        "lastClassName": "c2",
+                        "rules": Array [
+                          "
+  padding: 16px 8px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: ",
+                          [Function],
+                          ";
+  color: ",
+                          [Function],
+                          ";
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+",
+                        ],
+                      },
+                      "displayName": "styled.div",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "sc-ifAKCX",
+                      "target": "div",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  hoverColor="#d3d3d330"
+                  primaryColor="#27718c"
+                  secondaryColor="white"
+                >
+                  <div
+                    className="c2"
+                  >
+                    <_default
+                      hoverColor="#d3d3d330"
+                      onClick={[Function]}
+                      primaryColor="#27718c"
+                      secondaryColor="white"
+                    >
+                      <styled.svg
+                        height="24"
+                        hoverColor="#d3d3d330"
+                        onClick={[Function]}
+                        primaryColor="#27718c"
+                        secondaryColor="white"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "sc-bwzfXH",
+                                "isStatic": false,
+                                "lastClassName": "c3",
+                                "rules": Array [
+                                  "
+  cursor: pointer;
+  fill: white;
+  fill: ",
+                                  [Function],
+                                  ";
+",
+                                ],
+                              },
+                              "displayName": "styled.svg",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "sc-bwzfXH",
+                              "target": "svg",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                          height="24"
+                          hoverColor="#d3d3d330"
+                          onClick={[Function]}
+                          primaryColor="#27718c"
+                          secondaryColor="white"
+                          viewBox="0 0 24 24"
+                          width="24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <svg
+                            className="c3"
+                            height="24"
+                            onClick={[Function]}
+                            viewBox="0 0 24 24"
+                            width="24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z"
+                            />
+                            <path
+                              d="M0-.5h24v24H0z"
+                              fill="none"
+                            />
+                          </svg>
+                        </StyledComponent>
+                      </styled.svg>
+                    </_default>
+                    <styled.span>
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-EHOje",
+                              "isStatic": true,
+                              "lastClassName": "c4",
+                              "rules": Array [
+                                "
+  user-select: none;
+",
+                              ],
+                            },
+                            "displayName": "styled.span",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-EHOje",
+                            "target": "span",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                      >
+                        <span
+                          className="c4"
+                        >
+                          2010
+                        </span>
+                      </StyledComponent>
+                    </styled.span>
+                    <_default
+                      hoverColor="#d3d3d330"
+                      onClick={[Function]}
+                      primaryColor="#27718c"
+                      secondaryColor="white"
+                    >
+                      <styled.svg
+                        height="24"
+                        hoverColor="#d3d3d330"
+                        onClick={[Function]}
+                        primaryColor="#27718c"
+                        secondaryColor="white"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "sc-bdVaJa",
+                                "isStatic": false,
+                                "lastClassName": "c5",
+                                "rules": Array [
+                                  "
+  cursor: pointer;
+  fill: ",
+                                  [Function],
+                                  ";
+",
+                                ],
+                              },
+                              "displayName": "styled.svg",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "sc-bdVaJa",
+                              "target": "svg",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                          height="24"
+                          hoverColor="#d3d3d330"
+                          onClick={[Function]}
+                          primaryColor="#27718c"
+                          secondaryColor="white"
+                          viewBox="0 0 24 24"
+                          width="24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <svg
+                            className="c5"
+                            height="24"
+                            onClick={[Function]}
+                            viewBox="0 0 24 24"
+                            width="24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"
+                            />
+                            <path
+                              d="M0-.25h24v24H0z"
+                              fill="none"
+                            />
+                          </svg>
+                        </StyledComponent>
+                      </styled.svg>
+                    </_default>
+                  </div>
+                </StyledComponent>
+              </styled.div>
+              <styled.div
+                hoverColor="#d3d3d330"
+                primaryColor="#27718c"
+                secondaryColor="white"
+              >
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-htoDjs",
+                        "isStatic": false,
+                        "lastClassName": "c6",
+                        "rules": Array [
+                          "
+  height: 8px;
+  background-color: ",
+                          [Function],
+                          ";
+  width: 100%;
+",
+                        ],
+                      },
+                      "displayName": "styled.div",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "sc-htoDjs",
+                      "target": "div",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  hoverColor="#d3d3d330"
+                  primaryColor="#27718c"
+                  secondaryColor="white"
+                >
+                  <div
+                    className="c6"
+                  />
+                </StyledComponent>
+              </styled.div>
+              <styled.div
+                hoverColor="#d3d3d330"
+                primaryColor="#27718c"
+                secondaryColor="white"
+              >
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-gzVnrw",
+                        "isStatic": false,
+                        "lastClassName": "c7",
+                        "rules": Array [
+                          "
+  background-color: ",
+                          [Function],
+                          ";
+  border-radius: 4px;
+  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+",
+                        ],
+                      },
+                      "displayName": "styled.div",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "sc-gzVnrw",
+                      "target": "div",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  hoverColor="#d3d3d330"
+                  primaryColor="#27718c"
+                  secondaryColor="white"
+                >
+                  <div
+                    className="c7"
+                  >
+                    <styled.div
+                      hoverColor="#d3d3d330"
+                      index={0}
+                      key="M01"
+                      onClick={[Function]}
+                      primaryColor="#27718c"
+                      secondaryColor="white"
+                      selected={true}
+                    >
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-bxivhb",
+                              "isStatic": false,
+                              "lastClassName": "c11",
+                              "rules": Array [
+                                "
+  ",
+                                [Function],
+                                "
+
+  &:focus {
+    outline: none;
+  }
+
+  ",
+                                [Function],
+                                ";
+
+  padding: 12px 0;
+  transition: background-color .1s, color .1s;
+  font-size: 14px;
+  background-color: ",
+                                [Function],
+                                ";
+  color: ",
+                                [Function],
+                                ";
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 33.33%;
+
+  border-bottom-right-radius: ",
+                                [Function],
+                                ";
+  border-bottom-left-radius: ",
+                                [Function],
+                                ";
+",
+                              ],
+                            },
+                            "displayName": "styled.div",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-bxivhb",
+                            "target": "div",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        hoverColor="#d3d3d330"
+                        index={0}
+                        onClick={[Function]}
+                        primaryColor="#27718c"
+                        secondaryColor="white"
+                        selected={true}
+                      >
+                        <div
+                          className="c8"
+                          onClick={[Function]}
+                          selected={true}
+                        >
+                          M01
+                        </div>
+                      </StyledComponent>
+                    </styled.div>
+                    <styled.div
+                      hoverColor="#d3d3d330"
+                      index={1}
+                      key="M02"
+                      onClick={[Function]}
+                      primaryColor="#27718c"
+                      secondaryColor="white"
+                      selected={false}
+                    >
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-bxivhb",
+                              "isStatic": false,
+                              "lastClassName": "c11",
+                              "rules": Array [
+                                "
+  ",
+                                [Function],
+                                "
+
+  &:focus {
+    outline: none;
+  }
+
+  ",
+                                [Function],
+                                ";
+
+  padding: 12px 0;
+  transition: background-color .1s, color .1s;
+  font-size: 14px;
+  background-color: ",
+                                [Function],
+                                ";
+  color: ",
+                                [Function],
+                                ";
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 33.33%;
+
+  border-bottom-right-radius: ",
+                                [Function],
+                                ";
+  border-bottom-left-radius: ",
+                                [Function],
+                                ";
+",
+                              ],
+                            },
+                            "displayName": "styled.div",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-bxivhb",
+                            "target": "div",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        hoverColor="#d3d3d330"
+                        index={1}
+                        onClick={[Function]}
+                        primaryColor="#27718c"
+                        secondaryColor="white"
+                        selected={false}
+                      >
+                        <div
+                          className="c9"
+                          onClick={[Function]}
+                          selected={false}
+                        >
+                          M02
+                        </div>
+                      </StyledComponent>
+                    </styled.div>
+                    <styled.div
+                      hoverColor="#d3d3d330"
+                      index={2}
+                      key="M03"
+                      onClick={[Function]}
+                      primaryColor="#27718c"
+                      secondaryColor="white"
+                      selected={false}
+                    >
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-bxivhb",
+                              "isStatic": false,
+                              "lastClassName": "c11",
+                              "rules": Array [
+                                "
+  ",
+                                [Function],
+                                "
+
+  &:focus {
+    outline: none;
+  }
+
+  ",
+                                [Function],
+                                ";
+
+  padding: 12px 0;
+  transition: background-color .1s, color .1s;
+  font-size: 14px;
+  background-color: ",
+                                [Function],
+                                ";
+  color: ",
+                                [Function],
+                                ";
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 33.33%;
+
+  border-bottom-right-radius: ",
+                                [Function],
+                                ";
+  border-bottom-left-radius: ",
+                                [Function],
+                                ";
+",
+                              ],
+                            },
+                            "displayName": "styled.div",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-bxivhb",
+                            "target": "div",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        hoverColor="#d3d3d330"
+                        index={2}
+                        onClick={[Function]}
+                        primaryColor="#27718c"
+                        secondaryColor="white"
+                        selected={false}
+                      >
+                        <div
+                          className="c9"
+                          onClick={[Function]}
+                          selected={false}
+                        >
+                          M03
+                        </div>
+                      </StyledComponent>
+                    </styled.div>
+                    <styled.div
+                      hoverColor="#d3d3d330"
+                      index={3}
+                      key="M04"
+                      onClick={[Function]}
+                      primaryColor="#27718c"
+                      secondaryColor="white"
+                      selected={false}
+                    >
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-bxivhb",
+                              "isStatic": false,
+                              "lastClassName": "c11",
+                              "rules": Array [
+                                "
+  ",
+                                [Function],
+                                "
+
+  &:focus {
+    outline: none;
+  }
+
+  ",
+                                [Function],
+                                ";
+
+  padding: 12px 0;
+  transition: background-color .1s, color .1s;
+  font-size: 14px;
+  background-color: ",
+                                [Function],
+                                ";
+  color: ",
+                                [Function],
+                                ";
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 33.33%;
+
+  border-bottom-right-radius: ",
+                                [Function],
+                                ";
+  border-bottom-left-radius: ",
+                                [Function],
+                                ";
+",
+                              ],
+                            },
+                            "displayName": "styled.div",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-bxivhb",
+                            "target": "div",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        hoverColor="#d3d3d330"
+                        index={3}
+                        onClick={[Function]}
+                        primaryColor="#27718c"
+                        secondaryColor="white"
+                        selected={false}
+                      >
+                        <div
+                          className="c9"
+                          onClick={[Function]}
+                          selected={false}
+                        >
+                          M04
+                        </div>
+                      </StyledComponent>
+                    </styled.div>
+                    <styled.div
+                      hoverColor="#d3d3d330"
+                      index={4}
+                      key="M05"
+                      onClick={[Function]}
+                      primaryColor="#27718c"
+                      secondaryColor="white"
+                      selected={false}
+                    >
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-bxivhb",
+                              "isStatic": false,
+                              "lastClassName": "c11",
+                              "rules": Array [
+                                "
+  ",
+                                [Function],
+                                "
+
+  &:focus {
+    outline: none;
+  }
+
+  ",
+                                [Function],
+                                ";
+
+  padding: 12px 0;
+  transition: background-color .1s, color .1s;
+  font-size: 14px;
+  background-color: ",
+                                [Function],
+                                ";
+  color: ",
+                                [Function],
+                                ";
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 33.33%;
+
+  border-bottom-right-radius: ",
+                                [Function],
+                                ";
+  border-bottom-left-radius: ",
+                                [Function],
+                                ";
+",
+                              ],
+                            },
+                            "displayName": "styled.div",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-bxivhb",
+                            "target": "div",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        hoverColor="#d3d3d330"
+                        index={4}
+                        onClick={[Function]}
+                        primaryColor="#27718c"
+                        secondaryColor="white"
+                        selected={false}
+                      >
+                        <div
+                          className="c9"
+                          onClick={[Function]}
+                          selected={false}
+                        >
+                          M05
+                        </div>
+                      </StyledComponent>
+                    </styled.div>
+                    <styled.div
+                      hoverColor="#d3d3d330"
+                      index={5}
+                      key="M06"
+                      onClick={[Function]}
+                      primaryColor="#27718c"
+                      secondaryColor="white"
+                      selected={false}
+                    >
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-bxivhb",
+                              "isStatic": false,
+                              "lastClassName": "c11",
+                              "rules": Array [
+                                "
+  ",
+                                [Function],
+                                "
+
+  &:focus {
+    outline: none;
+  }
+
+  ",
+                                [Function],
+                                ";
+
+  padding: 12px 0;
+  transition: background-color .1s, color .1s;
+  font-size: 14px;
+  background-color: ",
+                                [Function],
+                                ";
+  color: ",
+                                [Function],
+                                ";
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 33.33%;
+
+  border-bottom-right-radius: ",
+                                [Function],
+                                ";
+  border-bottom-left-radius: ",
+                                [Function],
+                                ";
+",
+                              ],
+                            },
+                            "displayName": "styled.div",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-bxivhb",
+                            "target": "div",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        hoverColor="#d3d3d330"
+                        index={5}
+                        onClick={[Function]}
+                        primaryColor="#27718c"
+                        secondaryColor="white"
+                        selected={false}
+                      >
+                        <div
+                          className="c9"
+                          onClick={[Function]}
+                          selected={false}
+                        >
+                          M06
+                        </div>
+                      </StyledComponent>
+                    </styled.div>
+                    <styled.div
+                      hoverColor="#d3d3d330"
+                      index={6}
+                      key="M07"
+                      onClick={[Function]}
+                      primaryColor="#27718c"
+                      secondaryColor="white"
+                      selected={false}
+                    >
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-bxivhb",
+                              "isStatic": false,
+                              "lastClassName": "c11",
+                              "rules": Array [
+                                "
+  ",
+                                [Function],
+                                "
+
+  &:focus {
+    outline: none;
+  }
+
+  ",
+                                [Function],
+                                ";
+
+  padding: 12px 0;
+  transition: background-color .1s, color .1s;
+  font-size: 14px;
+  background-color: ",
+                                [Function],
+                                ";
+  color: ",
+                                [Function],
+                                ";
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 33.33%;
+
+  border-bottom-right-radius: ",
+                                [Function],
+                                ";
+  border-bottom-left-radius: ",
+                                [Function],
+                                ";
+",
+                              ],
+                            },
+                            "displayName": "styled.div",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-bxivhb",
+                            "target": "div",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        hoverColor="#d3d3d330"
+                        index={6}
+                        onClick={[Function]}
+                        primaryColor="#27718c"
+                        secondaryColor="white"
+                        selected={false}
+                      >
+                        <div
+                          className="c9"
+                          onClick={[Function]}
+                          selected={false}
+                        >
+                          M07
+                        </div>
+                      </StyledComponent>
+                    </styled.div>
+                    <styled.div
+                      hoverColor="#d3d3d330"
+                      index={7}
+                      key="M08"
+                      onClick={[Function]}
+                      primaryColor="#27718c"
+                      secondaryColor="white"
+                      selected={false}
+                    >
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-bxivhb",
+                              "isStatic": false,
+                              "lastClassName": "c11",
+                              "rules": Array [
+                                "
+  ",
+                                [Function],
+                                "
+
+  &:focus {
+    outline: none;
+  }
+
+  ",
+                                [Function],
+                                ";
+
+  padding: 12px 0;
+  transition: background-color .1s, color .1s;
+  font-size: 14px;
+  background-color: ",
+                                [Function],
+                                ";
+  color: ",
+                                [Function],
+                                ";
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 33.33%;
+
+  border-bottom-right-radius: ",
+                                [Function],
+                                ";
+  border-bottom-left-radius: ",
+                                [Function],
+                                ";
+",
+                              ],
+                            },
+                            "displayName": "styled.div",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-bxivhb",
+                            "target": "div",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        hoverColor="#d3d3d330"
+                        index={7}
+                        onClick={[Function]}
+                        primaryColor="#27718c"
+                        secondaryColor="white"
+                        selected={false}
+                      >
+                        <div
+                          className="c9"
+                          onClick={[Function]}
+                          selected={false}
+                        >
+                          M08
+                        </div>
+                      </StyledComponent>
+                    </styled.div>
+                    <styled.div
+                      hoverColor="#d3d3d330"
+                      index={8}
+                      key="M09"
+                      onClick={[Function]}
+                      primaryColor="#27718c"
+                      secondaryColor="white"
+                      selected={false}
+                    >
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-bxivhb",
+                              "isStatic": false,
+                              "lastClassName": "c11",
+                              "rules": Array [
+                                "
+  ",
+                                [Function],
+                                "
+
+  &:focus {
+    outline: none;
+  }
+
+  ",
+                                [Function],
+                                ";
+
+  padding: 12px 0;
+  transition: background-color .1s, color .1s;
+  font-size: 14px;
+  background-color: ",
+                                [Function],
+                                ";
+  color: ",
+                                [Function],
+                                ";
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 33.33%;
+
+  border-bottom-right-radius: ",
+                                [Function],
+                                ";
+  border-bottom-left-radius: ",
+                                [Function],
+                                ";
+",
+                              ],
+                            },
+                            "displayName": "styled.div",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-bxivhb",
+                            "target": "div",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        hoverColor="#d3d3d330"
+                        index={8}
+                        onClick={[Function]}
+                        primaryColor="#27718c"
+                        secondaryColor="white"
+                        selected={false}
+                      >
+                        <div
+                          className="c9"
+                          onClick={[Function]}
+                          selected={false}
+                        >
+                          M09
+                        </div>
+                      </StyledComponent>
+                    </styled.div>
+                    <styled.div
+                      hoverColor="#d3d3d330"
+                      index={9}
+                      key="M10"
+                      onClick={[Function]}
+                      primaryColor="#27718c"
+                      secondaryColor="white"
+                      selected={false}
+                    >
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-bxivhb",
+                              "isStatic": false,
+                              "lastClassName": "c11",
+                              "rules": Array [
+                                "
+  ",
+                                [Function],
+                                "
+
+  &:focus {
+    outline: none;
+  }
+
+  ",
+                                [Function],
+                                ";
+
+  padding: 12px 0;
+  transition: background-color .1s, color .1s;
+  font-size: 14px;
+  background-color: ",
+                                [Function],
+                                ";
+  color: ",
+                                [Function],
+                                ";
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 33.33%;
+
+  border-bottom-right-radius: ",
+                                [Function],
+                                ";
+  border-bottom-left-radius: ",
+                                [Function],
+                                ";
+",
+                              ],
+                            },
+                            "displayName": "styled.div",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-bxivhb",
+                            "target": "div",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        hoverColor="#d3d3d330"
+                        index={9}
+                        onClick={[Function]}
+                        primaryColor="#27718c"
+                        secondaryColor="white"
+                        selected={false}
+                      >
+                        <div
+                          className="c10"
+                          onClick={[Function]}
+                          selected={false}
+                        >
+                          M10
+                        </div>
+                      </StyledComponent>
+                    </styled.div>
+                    <styled.div
+                      hoverColor="#d3d3d330"
+                      index={10}
+                      key="M11"
+                      onClick={[Function]}
+                      primaryColor="#27718c"
+                      secondaryColor="white"
+                      selected={false}
+                    >
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-bxivhb",
+                              "isStatic": false,
+                              "lastClassName": "c11",
+                              "rules": Array [
+                                "
+  ",
+                                [Function],
+                                "
+
+  &:focus {
+    outline: none;
+  }
+
+  ",
+                                [Function],
+                                ";
+
+  padding: 12px 0;
+  transition: background-color .1s, color .1s;
+  font-size: 14px;
+  background-color: ",
+                                [Function],
+                                ";
+  color: ",
+                                [Function],
+                                ";
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 33.33%;
+
+  border-bottom-right-radius: ",
+                                [Function],
+                                ";
+  border-bottom-left-radius: ",
+                                [Function],
+                                ";
+",
+                              ],
+                            },
+                            "displayName": "styled.div",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-bxivhb",
+                            "target": "div",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        hoverColor="#d3d3d330"
+                        index={10}
+                        onClick={[Function]}
+                        primaryColor="#27718c"
+                        secondaryColor="white"
+                        selected={false}
+                      >
+                        <div
+                          className="c9"
+                          onClick={[Function]}
+                          selected={false}
+                        >
+                          M11
+                        </div>
+                      </StyledComponent>
+                    </styled.div>
+                    <styled.div
+                      hoverColor="#d3d3d330"
+                      index={11}
+                      key="M12"
+                      onClick={[Function]}
+                      primaryColor="#27718c"
+                      secondaryColor="white"
+                      selected={false}
+                    >
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-bxivhb",
+                              "isStatic": false,
+                              "lastClassName": "c11",
+                              "rules": Array [
+                                "
+  ",
+                                [Function],
+                                "
+
+  &:focus {
+    outline: none;
+  }
+
+  ",
+                                [Function],
+                                ";
+
+  padding: 12px 0;
+  transition: background-color .1s, color .1s;
+  font-size: 14px;
+  background-color: ",
+                                [Function],
+                                ";
+  color: ",
+                                [Function],
+                                ";
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 33.33%;
+
+  border-bottom-right-radius: ",
+                                [Function],
+                                ";
+  border-bottom-left-radius: ",
+                                [Function],
+                                ";
+",
+                              ],
+                            },
+                            "displayName": "styled.div",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-bxivhb",
+                            "target": "div",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        hoverColor="#d3d3d330"
+                        index={11}
+                        onClick={[Function]}
+                        primaryColor="#27718c"
+                        secondaryColor="white"
+                        selected={false}
+                      >
+                        <div
+                          className="c11"
+                          onClick={[Function]}
+                          selected={false}
+                        >
+                          M12
+                        </div>
+                      </StyledComponent>
+                    </styled.div>
+                  </div>
+                </StyledComponent>
+              </styled.div>
+            </div>
+          </StyledComponent>
+        </styled.div>
       </div>
-      <styled.div
-        hoverColor="#d3d3d330"
-        primaryColor="#27718c"
-        secondaryColor="white"
-      >
-        <div
-          className="c1"
-        >
-          <styled.div
-            hoverColor="#d3d3d330"
-            primaryColor="#27718c"
-            secondaryColor="white"
-          >
-            <div
-              className="c2"
-            >
-              <Component
-                hoverColor="#d3d3d330"
-                onClick={[Function]}
-                primaryColor="#27718c"
-                secondaryColor="white"
-              >
-                <styled.svg
-                  height="24"
-                  hoverColor="#d3d3d330"
-                  onClick={[Function]}
-                  primaryColor="#27718c"
-                  secondaryColor="white"
-                  viewBox="0 0 24 24"
-                  width="24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <svg
-                    className="c3"
-                    height="24"
-                    onClick={[Function]}
-                    viewBox="0 0 24 24"
-                    width="24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z"
-                    />
-                    <path
-                      d="M0-.5h24v24H0z"
-                      fill="none"
-                    />
-                  </svg>
-                </styled.svg>
-              </Component>
-              <styled.span>
-                <span
-                  className="c4"
-                >
-                  2010
-                </span>
-              </styled.span>
-              <Component
-                hoverColor="#d3d3d330"
-                onClick={[Function]}
-                primaryColor="#27718c"
-                secondaryColor="white"
-              >
-                <styled.svg
-                  height="24"
-                  hoverColor="#d3d3d330"
-                  onClick={[Function]}
-                  primaryColor="#27718c"
-                  secondaryColor="white"
-                  viewBox="0 0 24 24"
-                  width="24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <svg
-                    className="c5"
-                    height="24"
-                    onClick={[Function]}
-                    viewBox="0 0 24 24"
-                    width="24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"
-                    />
-                    <path
-                      d="M0-.25h24v24H0z"
-                      fill="none"
-                    />
-                  </svg>
-                </styled.svg>
-              </Component>
-            </div>
-          </styled.div>
-          <styled.div
-            hoverColor="#d3d3d330"
-            primaryColor="#27718c"
-            secondaryColor="white"
-          >
-            <div
-              className="c6"
-            />
-          </styled.div>
-          <styled.div
-            hoverColor="#d3d3d330"
-            primaryColor="#27718c"
-            secondaryColor="white"
-          >
-            <div
-              className="c7"
-            >
-              <styled.div
-                hoverColor="#d3d3d330"
-                index={0}
-                key="M01"
-                onClick={[Function]}
-                primaryColor="#27718c"
-                secondaryColor="white"
-                selected={true}
-              >
-                <div
-                  className="c8"
-                  onClick={[Function]}
-                  selected={true}
-                >
-                  M01
-                </div>
-              </styled.div>
-              <styled.div
-                hoverColor="#d3d3d330"
-                index={1}
-                key="M02"
-                onClick={[Function]}
-                primaryColor="#27718c"
-                secondaryColor="white"
-                selected={false}
-              >
-                <div
-                  className="c9"
-                  onClick={[Function]}
-                  selected={false}
-                >
-                  M02
-                </div>
-              </styled.div>
-              <styled.div
-                hoverColor="#d3d3d330"
-                index={2}
-                key="M03"
-                onClick={[Function]}
-                primaryColor="#27718c"
-                secondaryColor="white"
-                selected={false}
-              >
-                <div
-                  className="c9"
-                  onClick={[Function]}
-                  selected={false}
-                >
-                  M03
-                </div>
-              </styled.div>
-              <styled.div
-                hoverColor="#d3d3d330"
-                index={3}
-                key="M04"
-                onClick={[Function]}
-                primaryColor="#27718c"
-                secondaryColor="white"
-                selected={false}
-              >
-                <div
-                  className="c9"
-                  onClick={[Function]}
-                  selected={false}
-                >
-                  M04
-                </div>
-              </styled.div>
-              <styled.div
-                hoverColor="#d3d3d330"
-                index={4}
-                key="M05"
-                onClick={[Function]}
-                primaryColor="#27718c"
-                secondaryColor="white"
-                selected={false}
-              >
-                <div
-                  className="c9"
-                  onClick={[Function]}
-                  selected={false}
-                >
-                  M05
-                </div>
-              </styled.div>
-              <styled.div
-                hoverColor="#d3d3d330"
-                index={5}
-                key="M06"
-                onClick={[Function]}
-                primaryColor="#27718c"
-                secondaryColor="white"
-                selected={false}
-              >
-                <div
-                  className="c9"
-                  onClick={[Function]}
-                  selected={false}
-                >
-                  M06
-                </div>
-              </styled.div>
-              <styled.div
-                hoverColor="#d3d3d330"
-                index={6}
-                key="M07"
-                onClick={[Function]}
-                primaryColor="#27718c"
-                secondaryColor="white"
-                selected={false}
-              >
-                <div
-                  className="c9"
-                  onClick={[Function]}
-                  selected={false}
-                >
-                  M07
-                </div>
-              </styled.div>
-              <styled.div
-                hoverColor="#d3d3d330"
-                index={7}
-                key="M08"
-                onClick={[Function]}
-                primaryColor="#27718c"
-                secondaryColor="white"
-                selected={false}
-              >
-                <div
-                  className="c9"
-                  onClick={[Function]}
-                  selected={false}
-                >
-                  M08
-                </div>
-              </styled.div>
-              <styled.div
-                hoverColor="#d3d3d330"
-                index={8}
-                key="M09"
-                onClick={[Function]}
-                primaryColor="#27718c"
-                secondaryColor="white"
-                selected={false}
-              >
-                <div
-                  className="c9"
-                  onClick={[Function]}
-                  selected={false}
-                >
-                  M09
-                </div>
-              </styled.div>
-              <styled.div
-                hoverColor="#d3d3d330"
-                index={9}
-                key="M10"
-                onClick={[Function]}
-                primaryColor="#27718c"
-                secondaryColor="white"
-                selected={false}
-              >
-                <div
-                  className="c10"
-                  onClick={[Function]}
-                  selected={false}
-                >
-                  M10
-                </div>
-              </styled.div>
-              <styled.div
-                hoverColor="#d3d3d330"
-                index={10}
-                key="M11"
-                onClick={[Function]}
-                primaryColor="#27718c"
-                secondaryColor="white"
-                selected={false}
-              >
-                <div
-                  className="c9"
-                  onClick={[Function]}
-                  selected={false}
-                >
-                  M11
-                </div>
-              </styled.div>
-              <styled.div
-                hoverColor="#d3d3d330"
-                index={11}
-                key="M12"
-                onClick={[Function]}
-                primaryColor="#27718c"
-                secondaryColor="white"
-                selected={false}
-              >
-                <div
-                  className="c11"
-                  onClick={[Function]}
-                  selected={false}
-                >
-                  M12
-                </div>
-              </styled.div>
-            </div>
-          </styled.div>
-        </div>
-      </styled.div>
-    </div>
+    </StyledComponent>
   </styled.div>
 </MonthPicker>
 `;
 
 exports[`<Monthpicker /> renders its children 1`] = `
 <styled.div
-  innerRef={[Function]}
   onKeyDown={[Function]}
   tabIndex={-1}
 >
@@ -1413,343 +3647,1443 @@ exports[`<Monthpicker /> works with different locales 1`] = `
   year={2018}
 >
   <styled.div
-    innerRef={[Function]}
     onKeyDown={[Function]}
     tabIndex={-1}
   >
-    <div
-      className="c0"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bZQynM",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  * {
+    box-sizing: border-box;
+  }
+
+  &:focus {
+    outline: none;
+  }
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bZQynM",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={[Function]}
       onKeyDown={[Function]}
       tabIndex={-1}
     >
       <div
-        onClick={[Function]}
+        className="c0"
+        onKeyDown={[Function]}
+        tabIndex={-1}
       >
         <div
-          className="child"
+          onClick={[Function]}
         >
-          Child
+          <div
+            className="child"
+          >
+            Child
+          </div>
         </div>
+        <styled.div
+          hoverColor="#d3d3d330"
+          primaryColor="#27718c"
+          secondaryColor="white"
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-htpNat",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  margin-top: 8px;
+  transform-origin: top center;
+  animation: ",
+                    Keyframes {
+                      "id": "sc-keyframes-dXhcnZ",
+                      "inject": [Function],
+                      "name": "dXhcnZ",
+                      "rules": Array [
+                        "@-webkit-keyframes dXhcnZ{from{-webkit-transform:scaleY(0.95);-ms-transform:scaleY(0.95);transform:scaleY(0.95);opacity:0;}to{-webkit-transform:scaleY(1);-ms-transform:scaleY(1);transform:scaleY(1);opacity:1;}}",
+                        "@keyframes dXhcnZ{from{-webkit-transform:scaleY(0.95);-ms-transform:scaleY(0.95);transform:scaleY(0.95);opacity:0;}to{-webkit-transform:scaleY(1);-ms-transform:scaleY(1);transform:scaleY(1);opacity:1;}}",
+                      ],
+                      "toString": [Function],
+                    },
+                    " .2s;
+  position: absolute;
+  box-shadow: 0 1px 3px #d3d3d380, 0 1px 3px #d3d3d380;
+  border: 1px solid ",
+                    [Function],
+                    ";
+  border-radius: 4px;
+  z-index: 10;
+",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-htpNat",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            hoverColor="#d3d3d330"
+            primaryColor="#27718c"
+            secondaryColor="white"
+          >
+            <div
+              className="c1"
+            >
+              <styled.div
+                hoverColor="#d3d3d330"
+                primaryColor="#27718c"
+                secondaryColor="white"
+              >
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-ifAKCX",
+                        "isStatic": false,
+                        "lastClassName": "c2",
+                        "rules": Array [
+                          "
+  padding: 16px 8px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: ",
+                          [Function],
+                          ";
+  color: ",
+                          [Function],
+                          ";
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+",
+                        ],
+                      },
+                      "displayName": "styled.div",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "sc-ifAKCX",
+                      "target": "div",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  hoverColor="#d3d3d330"
+                  primaryColor="#27718c"
+                  secondaryColor="white"
+                >
+                  <div
+                    className="c2"
+                  >
+                    <_default
+                      hoverColor="#d3d3d330"
+                      onClick={[Function]}
+                      primaryColor="#27718c"
+                      secondaryColor="white"
+                    >
+                      <styled.svg
+                        height="24"
+                        hoverColor="#d3d3d330"
+                        onClick={[Function]}
+                        primaryColor="#27718c"
+                        secondaryColor="white"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "sc-bwzfXH",
+                                "isStatic": false,
+                                "lastClassName": "c3",
+                                "rules": Array [
+                                  "
+  cursor: pointer;
+  fill: white;
+  fill: ",
+                                  [Function],
+                                  ";
+",
+                                ],
+                              },
+                              "displayName": "styled.svg",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "sc-bwzfXH",
+                              "target": "svg",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                          height="24"
+                          hoverColor="#d3d3d330"
+                          onClick={[Function]}
+                          primaryColor="#27718c"
+                          secondaryColor="white"
+                          viewBox="0 0 24 24"
+                          width="24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <svg
+                            className="c3"
+                            height="24"
+                            onClick={[Function]}
+                            viewBox="0 0 24 24"
+                            width="24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z"
+                            />
+                            <path
+                              d="M0-.5h24v24H0z"
+                              fill="none"
+                            />
+                          </svg>
+                        </StyledComponent>
+                      </styled.svg>
+                    </_default>
+                    <styled.span>
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-EHOje",
+                              "isStatic": true,
+                              "lastClassName": "c4",
+                              "rules": Array [
+                                "
+  user-select: none;
+",
+                              ],
+                            },
+                            "displayName": "styled.span",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-EHOje",
+                            "target": "span",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                      >
+                        <span
+                          className="c4"
+                        >
+                          2018
+                        </span>
+                      </StyledComponent>
+                    </styled.span>
+                    <_default
+                      hoverColor="#d3d3d330"
+                      onClick={[Function]}
+                      primaryColor="#27718c"
+                      secondaryColor="white"
+                    >
+                      <styled.svg
+                        height="24"
+                        hoverColor="#d3d3d330"
+                        onClick={[Function]}
+                        primaryColor="#27718c"
+                        secondaryColor="white"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "sc-bdVaJa",
+                                "isStatic": false,
+                                "lastClassName": "c5",
+                                "rules": Array [
+                                  "
+  cursor: pointer;
+  fill: ",
+                                  [Function],
+                                  ";
+",
+                                ],
+                              },
+                              "displayName": "styled.svg",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "sc-bdVaJa",
+                              "target": "svg",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                          height="24"
+                          hoverColor="#d3d3d330"
+                          onClick={[Function]}
+                          primaryColor="#27718c"
+                          secondaryColor="white"
+                          viewBox="0 0 24 24"
+                          width="24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <svg
+                            className="c5"
+                            height="24"
+                            onClick={[Function]}
+                            viewBox="0 0 24 24"
+                            width="24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"
+                            />
+                            <path
+                              d="M0-.25h24v24H0z"
+                              fill="none"
+                            />
+                          </svg>
+                        </StyledComponent>
+                      </styled.svg>
+                    </_default>
+                  </div>
+                </StyledComponent>
+              </styled.div>
+              <styled.div
+                hoverColor="#d3d3d330"
+                primaryColor="#27718c"
+                secondaryColor="white"
+              >
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-htoDjs",
+                        "isStatic": false,
+                        "lastClassName": "c6",
+                        "rules": Array [
+                          "
+  height: 8px;
+  background-color: ",
+                          [Function],
+                          ";
+  width: 100%;
+",
+                        ],
+                      },
+                      "displayName": "styled.div",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "sc-htoDjs",
+                      "target": "div",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  hoverColor="#d3d3d330"
+                  primaryColor="#27718c"
+                  secondaryColor="white"
+                >
+                  <div
+                    className="c6"
+                  />
+                </StyledComponent>
+              </styled.div>
+              <styled.div
+                hoverColor="#d3d3d330"
+                primaryColor="#27718c"
+                secondaryColor="white"
+              >
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-gzVnrw",
+                        "isStatic": false,
+                        "lastClassName": "c7",
+                        "rules": Array [
+                          "
+  background-color: ",
+                          [Function],
+                          ";
+  border-radius: 4px;
+  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+",
+                        ],
+                      },
+                      "displayName": "styled.div",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "sc-gzVnrw",
+                      "target": "div",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  hoverColor="#d3d3d330"
+                  primaryColor="#27718c"
+                  secondaryColor="white"
+                >
+                  <div
+                    className="c7"
+                  >
+                    <styled.div
+                      hoverColor="#d3d3d330"
+                      index={0}
+                      key="Jan"
+                      onClick={[Function]}
+                      primaryColor="#27718c"
+                      secondaryColor="white"
+                      selected={true}
+                    >
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-bxivhb",
+                              "isStatic": false,
+                              "lastClassName": "c11",
+                              "rules": Array [
+                                "
+  ",
+                                [Function],
+                                "
+
+  &:focus {
+    outline: none;
+  }
+
+  ",
+                                [Function],
+                                ";
+
+  padding: 12px 0;
+  transition: background-color .1s, color .1s;
+  font-size: 14px;
+  background-color: ",
+                                [Function],
+                                ";
+  color: ",
+                                [Function],
+                                ";
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 33.33%;
+
+  border-bottom-right-radius: ",
+                                [Function],
+                                ";
+  border-bottom-left-radius: ",
+                                [Function],
+                                ";
+",
+                              ],
+                            },
+                            "displayName": "styled.div",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-bxivhb",
+                            "target": "div",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        hoverColor="#d3d3d330"
+                        index={0}
+                        onClick={[Function]}
+                        primaryColor="#27718c"
+                        secondaryColor="white"
+                        selected={true}
+                      >
+                        <div
+                          className="c8"
+                          onClick={[Function]}
+                          selected={true}
+                        >
+                          Jan
+                        </div>
+                      </StyledComponent>
+                    </styled.div>
+                    <styled.div
+                      hoverColor="#d3d3d330"
+                      index={1}
+                      key="Feb"
+                      onClick={[Function]}
+                      primaryColor="#27718c"
+                      secondaryColor="white"
+                      selected={false}
+                    >
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-bxivhb",
+                              "isStatic": false,
+                              "lastClassName": "c11",
+                              "rules": Array [
+                                "
+  ",
+                                [Function],
+                                "
+
+  &:focus {
+    outline: none;
+  }
+
+  ",
+                                [Function],
+                                ";
+
+  padding: 12px 0;
+  transition: background-color .1s, color .1s;
+  font-size: 14px;
+  background-color: ",
+                                [Function],
+                                ";
+  color: ",
+                                [Function],
+                                ";
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 33.33%;
+
+  border-bottom-right-radius: ",
+                                [Function],
+                                ";
+  border-bottom-left-radius: ",
+                                [Function],
+                                ";
+",
+                              ],
+                            },
+                            "displayName": "styled.div",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-bxivhb",
+                            "target": "div",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        hoverColor="#d3d3d330"
+                        index={1}
+                        onClick={[Function]}
+                        primaryColor="#27718c"
+                        secondaryColor="white"
+                        selected={false}
+                      >
+                        <div
+                          className="c9"
+                          onClick={[Function]}
+                          selected={false}
+                        >
+                          Feb
+                        </div>
+                      </StyledComponent>
+                    </styled.div>
+                    <styled.div
+                      hoverColor="#d3d3d330"
+                      index={2}
+                      key="Mar"
+                      onClick={[Function]}
+                      primaryColor="#27718c"
+                      secondaryColor="white"
+                      selected={false}
+                    >
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-bxivhb",
+                              "isStatic": false,
+                              "lastClassName": "c11",
+                              "rules": Array [
+                                "
+  ",
+                                [Function],
+                                "
+
+  &:focus {
+    outline: none;
+  }
+
+  ",
+                                [Function],
+                                ";
+
+  padding: 12px 0;
+  transition: background-color .1s, color .1s;
+  font-size: 14px;
+  background-color: ",
+                                [Function],
+                                ";
+  color: ",
+                                [Function],
+                                ";
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 33.33%;
+
+  border-bottom-right-radius: ",
+                                [Function],
+                                ";
+  border-bottom-left-radius: ",
+                                [Function],
+                                ";
+",
+                              ],
+                            },
+                            "displayName": "styled.div",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-bxivhb",
+                            "target": "div",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        hoverColor="#d3d3d330"
+                        index={2}
+                        onClick={[Function]}
+                        primaryColor="#27718c"
+                        secondaryColor="white"
+                        selected={false}
+                      >
+                        <div
+                          className="c9"
+                          onClick={[Function]}
+                          selected={false}
+                        >
+                          Mar
+                        </div>
+                      </StyledComponent>
+                    </styled.div>
+                    <styled.div
+                      hoverColor="#d3d3d330"
+                      index={3}
+                      key="Apr"
+                      onClick={[Function]}
+                      primaryColor="#27718c"
+                      secondaryColor="white"
+                      selected={false}
+                    >
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-bxivhb",
+                              "isStatic": false,
+                              "lastClassName": "c11",
+                              "rules": Array [
+                                "
+  ",
+                                [Function],
+                                "
+
+  &:focus {
+    outline: none;
+  }
+
+  ",
+                                [Function],
+                                ";
+
+  padding: 12px 0;
+  transition: background-color .1s, color .1s;
+  font-size: 14px;
+  background-color: ",
+                                [Function],
+                                ";
+  color: ",
+                                [Function],
+                                ";
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 33.33%;
+
+  border-bottom-right-radius: ",
+                                [Function],
+                                ";
+  border-bottom-left-radius: ",
+                                [Function],
+                                ";
+",
+                              ],
+                            },
+                            "displayName": "styled.div",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-bxivhb",
+                            "target": "div",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        hoverColor="#d3d3d330"
+                        index={3}
+                        onClick={[Function]}
+                        primaryColor="#27718c"
+                        secondaryColor="white"
+                        selected={false}
+                      >
+                        <div
+                          className="c9"
+                          onClick={[Function]}
+                          selected={false}
+                        >
+                          Apr
+                        </div>
+                      </StyledComponent>
+                    </styled.div>
+                    <styled.div
+                      hoverColor="#d3d3d330"
+                      index={4}
+                      key="May"
+                      onClick={[Function]}
+                      primaryColor="#27718c"
+                      secondaryColor="white"
+                      selected={false}
+                    >
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-bxivhb",
+                              "isStatic": false,
+                              "lastClassName": "c11",
+                              "rules": Array [
+                                "
+  ",
+                                [Function],
+                                "
+
+  &:focus {
+    outline: none;
+  }
+
+  ",
+                                [Function],
+                                ";
+
+  padding: 12px 0;
+  transition: background-color .1s, color .1s;
+  font-size: 14px;
+  background-color: ",
+                                [Function],
+                                ";
+  color: ",
+                                [Function],
+                                ";
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 33.33%;
+
+  border-bottom-right-radius: ",
+                                [Function],
+                                ";
+  border-bottom-left-radius: ",
+                                [Function],
+                                ";
+",
+                              ],
+                            },
+                            "displayName": "styled.div",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-bxivhb",
+                            "target": "div",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        hoverColor="#d3d3d330"
+                        index={4}
+                        onClick={[Function]}
+                        primaryColor="#27718c"
+                        secondaryColor="white"
+                        selected={false}
+                      >
+                        <div
+                          className="c9"
+                          onClick={[Function]}
+                          selected={false}
+                        >
+                          May
+                        </div>
+                      </StyledComponent>
+                    </styled.div>
+                    <styled.div
+                      hoverColor="#d3d3d330"
+                      index={5}
+                      key="Jun"
+                      onClick={[Function]}
+                      primaryColor="#27718c"
+                      secondaryColor="white"
+                      selected={false}
+                    >
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-bxivhb",
+                              "isStatic": false,
+                              "lastClassName": "c11",
+                              "rules": Array [
+                                "
+  ",
+                                [Function],
+                                "
+
+  &:focus {
+    outline: none;
+  }
+
+  ",
+                                [Function],
+                                ";
+
+  padding: 12px 0;
+  transition: background-color .1s, color .1s;
+  font-size: 14px;
+  background-color: ",
+                                [Function],
+                                ";
+  color: ",
+                                [Function],
+                                ";
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 33.33%;
+
+  border-bottom-right-radius: ",
+                                [Function],
+                                ";
+  border-bottom-left-radius: ",
+                                [Function],
+                                ";
+",
+                              ],
+                            },
+                            "displayName": "styled.div",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-bxivhb",
+                            "target": "div",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        hoverColor="#d3d3d330"
+                        index={5}
+                        onClick={[Function]}
+                        primaryColor="#27718c"
+                        secondaryColor="white"
+                        selected={false}
+                      >
+                        <div
+                          className="c9"
+                          onClick={[Function]}
+                          selected={false}
+                        >
+                          Jun
+                        </div>
+                      </StyledComponent>
+                    </styled.div>
+                    <styled.div
+                      hoverColor="#d3d3d330"
+                      index={6}
+                      key="Jul"
+                      onClick={[Function]}
+                      primaryColor="#27718c"
+                      secondaryColor="white"
+                      selected={false}
+                    >
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-bxivhb",
+                              "isStatic": false,
+                              "lastClassName": "c11",
+                              "rules": Array [
+                                "
+  ",
+                                [Function],
+                                "
+
+  &:focus {
+    outline: none;
+  }
+
+  ",
+                                [Function],
+                                ";
+
+  padding: 12px 0;
+  transition: background-color .1s, color .1s;
+  font-size: 14px;
+  background-color: ",
+                                [Function],
+                                ";
+  color: ",
+                                [Function],
+                                ";
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 33.33%;
+
+  border-bottom-right-radius: ",
+                                [Function],
+                                ";
+  border-bottom-left-radius: ",
+                                [Function],
+                                ";
+",
+                              ],
+                            },
+                            "displayName": "styled.div",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-bxivhb",
+                            "target": "div",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        hoverColor="#d3d3d330"
+                        index={6}
+                        onClick={[Function]}
+                        primaryColor="#27718c"
+                        secondaryColor="white"
+                        selected={false}
+                      >
+                        <div
+                          className="c9"
+                          onClick={[Function]}
+                          selected={false}
+                        >
+                          Jul
+                        </div>
+                      </StyledComponent>
+                    </styled.div>
+                    <styled.div
+                      hoverColor="#d3d3d330"
+                      index={7}
+                      key="Aug"
+                      onClick={[Function]}
+                      primaryColor="#27718c"
+                      secondaryColor="white"
+                      selected={false}
+                    >
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-bxivhb",
+                              "isStatic": false,
+                              "lastClassName": "c11",
+                              "rules": Array [
+                                "
+  ",
+                                [Function],
+                                "
+
+  &:focus {
+    outline: none;
+  }
+
+  ",
+                                [Function],
+                                ";
+
+  padding: 12px 0;
+  transition: background-color .1s, color .1s;
+  font-size: 14px;
+  background-color: ",
+                                [Function],
+                                ";
+  color: ",
+                                [Function],
+                                ";
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 33.33%;
+
+  border-bottom-right-radius: ",
+                                [Function],
+                                ";
+  border-bottom-left-radius: ",
+                                [Function],
+                                ";
+",
+                              ],
+                            },
+                            "displayName": "styled.div",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-bxivhb",
+                            "target": "div",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        hoverColor="#d3d3d330"
+                        index={7}
+                        onClick={[Function]}
+                        primaryColor="#27718c"
+                        secondaryColor="white"
+                        selected={false}
+                      >
+                        <div
+                          className="c9"
+                          onClick={[Function]}
+                          selected={false}
+                        >
+                          Aug
+                        </div>
+                      </StyledComponent>
+                    </styled.div>
+                    <styled.div
+                      hoverColor="#d3d3d330"
+                      index={8}
+                      key="Sep"
+                      onClick={[Function]}
+                      primaryColor="#27718c"
+                      secondaryColor="white"
+                      selected={false}
+                    >
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-bxivhb",
+                              "isStatic": false,
+                              "lastClassName": "c11",
+                              "rules": Array [
+                                "
+  ",
+                                [Function],
+                                "
+
+  &:focus {
+    outline: none;
+  }
+
+  ",
+                                [Function],
+                                ";
+
+  padding: 12px 0;
+  transition: background-color .1s, color .1s;
+  font-size: 14px;
+  background-color: ",
+                                [Function],
+                                ";
+  color: ",
+                                [Function],
+                                ";
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 33.33%;
+
+  border-bottom-right-radius: ",
+                                [Function],
+                                ";
+  border-bottom-left-radius: ",
+                                [Function],
+                                ";
+",
+                              ],
+                            },
+                            "displayName": "styled.div",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-bxivhb",
+                            "target": "div",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        hoverColor="#d3d3d330"
+                        index={8}
+                        onClick={[Function]}
+                        primaryColor="#27718c"
+                        secondaryColor="white"
+                        selected={false}
+                      >
+                        <div
+                          className="c9"
+                          onClick={[Function]}
+                          selected={false}
+                        >
+                          Sep
+                        </div>
+                      </StyledComponent>
+                    </styled.div>
+                    <styled.div
+                      hoverColor="#d3d3d330"
+                      index={9}
+                      key="Oct"
+                      onClick={[Function]}
+                      primaryColor="#27718c"
+                      secondaryColor="white"
+                      selected={false}
+                    >
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-bxivhb",
+                              "isStatic": false,
+                              "lastClassName": "c11",
+                              "rules": Array [
+                                "
+  ",
+                                [Function],
+                                "
+
+  &:focus {
+    outline: none;
+  }
+
+  ",
+                                [Function],
+                                ";
+
+  padding: 12px 0;
+  transition: background-color .1s, color .1s;
+  font-size: 14px;
+  background-color: ",
+                                [Function],
+                                ";
+  color: ",
+                                [Function],
+                                ";
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 33.33%;
+
+  border-bottom-right-radius: ",
+                                [Function],
+                                ";
+  border-bottom-left-radius: ",
+                                [Function],
+                                ";
+",
+                              ],
+                            },
+                            "displayName": "styled.div",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-bxivhb",
+                            "target": "div",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        hoverColor="#d3d3d330"
+                        index={9}
+                        onClick={[Function]}
+                        primaryColor="#27718c"
+                        secondaryColor="white"
+                        selected={false}
+                      >
+                        <div
+                          className="c10"
+                          onClick={[Function]}
+                          selected={false}
+                        >
+                          Oct
+                        </div>
+                      </StyledComponent>
+                    </styled.div>
+                    <styled.div
+                      hoverColor="#d3d3d330"
+                      index={10}
+                      key="Nov"
+                      onClick={[Function]}
+                      primaryColor="#27718c"
+                      secondaryColor="white"
+                      selected={false}
+                    >
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-bxivhb",
+                              "isStatic": false,
+                              "lastClassName": "c11",
+                              "rules": Array [
+                                "
+  ",
+                                [Function],
+                                "
+
+  &:focus {
+    outline: none;
+  }
+
+  ",
+                                [Function],
+                                ";
+
+  padding: 12px 0;
+  transition: background-color .1s, color .1s;
+  font-size: 14px;
+  background-color: ",
+                                [Function],
+                                ";
+  color: ",
+                                [Function],
+                                ";
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 33.33%;
+
+  border-bottom-right-radius: ",
+                                [Function],
+                                ";
+  border-bottom-left-radius: ",
+                                [Function],
+                                ";
+",
+                              ],
+                            },
+                            "displayName": "styled.div",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-bxivhb",
+                            "target": "div",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        hoverColor="#d3d3d330"
+                        index={10}
+                        onClick={[Function]}
+                        primaryColor="#27718c"
+                        secondaryColor="white"
+                        selected={false}
+                      >
+                        <div
+                          className="c9"
+                          onClick={[Function]}
+                          selected={false}
+                        >
+                          Nov
+                        </div>
+                      </StyledComponent>
+                    </styled.div>
+                    <styled.div
+                      hoverColor="#d3d3d330"
+                      index={11}
+                      key="Dec"
+                      onClick={[Function]}
+                      primaryColor="#27718c"
+                      secondaryColor="white"
+                      selected={false}
+                    >
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-bxivhb",
+                              "isStatic": false,
+                              "lastClassName": "c11",
+                              "rules": Array [
+                                "
+  ",
+                                [Function],
+                                "
+
+  &:focus {
+    outline: none;
+  }
+
+  ",
+                                [Function],
+                                ";
+
+  padding: 12px 0;
+  transition: background-color .1s, color .1s;
+  font-size: 14px;
+  background-color: ",
+                                [Function],
+                                ";
+  color: ",
+                                [Function],
+                                ";
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 33.33%;
+
+  border-bottom-right-radius: ",
+                                [Function],
+                                ";
+  border-bottom-left-radius: ",
+                                [Function],
+                                ";
+",
+                              ],
+                            },
+                            "displayName": "styled.div",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-bxivhb",
+                            "target": "div",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        hoverColor="#d3d3d330"
+                        index={11}
+                        onClick={[Function]}
+                        primaryColor="#27718c"
+                        secondaryColor="white"
+                        selected={false}
+                      >
+                        <div
+                          className="c11"
+                          onClick={[Function]}
+                          selected={false}
+                        >
+                          Dec
+                        </div>
+                      </StyledComponent>
+                    </styled.div>
+                  </div>
+                </StyledComponent>
+              </styled.div>
+            </div>
+          </StyledComponent>
+        </styled.div>
       </div>
-      <styled.div
-        hoverColor="#d3d3d330"
-        primaryColor="#27718c"
-        secondaryColor="white"
-      >
-        <div
-          className="c1"
-        >
-          <styled.div
-            hoverColor="#d3d3d330"
-            primaryColor="#27718c"
-            secondaryColor="white"
-          >
-            <div
-              className="c2"
-            >
-              <Component
-                hoverColor="#d3d3d330"
-                onClick={[Function]}
-                primaryColor="#27718c"
-                secondaryColor="white"
-              >
-                <styled.svg
-                  height="24"
-                  hoverColor="#d3d3d330"
-                  onClick={[Function]}
-                  primaryColor="#27718c"
-                  secondaryColor="white"
-                  viewBox="0 0 24 24"
-                  width="24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <svg
-                    className="c3"
-                    height="24"
-                    onClick={[Function]}
-                    viewBox="0 0 24 24"
-                    width="24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z"
-                    />
-                    <path
-                      d="M0-.5h24v24H0z"
-                      fill="none"
-                    />
-                  </svg>
-                </styled.svg>
-              </Component>
-              <styled.span>
-                <span
-                  className="c4"
-                >
-                  2018
-                </span>
-              </styled.span>
-              <Component
-                hoverColor="#d3d3d330"
-                onClick={[Function]}
-                primaryColor="#27718c"
-                secondaryColor="white"
-              >
-                <styled.svg
-                  height="24"
-                  hoverColor="#d3d3d330"
-                  onClick={[Function]}
-                  primaryColor="#27718c"
-                  secondaryColor="white"
-                  viewBox="0 0 24 24"
-                  width="24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <svg
-                    className="c5"
-                    height="24"
-                    onClick={[Function]}
-                    viewBox="0 0 24 24"
-                    width="24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"
-                    />
-                    <path
-                      d="M0-.25h24v24H0z"
-                      fill="none"
-                    />
-                  </svg>
-                </styled.svg>
-              </Component>
-            </div>
-          </styled.div>
-          <styled.div
-            hoverColor="#d3d3d330"
-            primaryColor="#27718c"
-            secondaryColor="white"
-          >
-            <div
-              className="c6"
-            />
-          </styled.div>
-          <styled.div
-            hoverColor="#d3d3d330"
-            primaryColor="#27718c"
-            secondaryColor="white"
-          >
-            <div
-              className="c7"
-            >
-              <styled.div
-                hoverColor="#d3d3d330"
-                index={0}
-                key="Jan"
-                onClick={[Function]}
-                primaryColor="#27718c"
-                secondaryColor="white"
-                selected={true}
-              >
-                <div
-                  className="c8"
-                  onClick={[Function]}
-                  selected={true}
-                >
-                  Jan
-                </div>
-              </styled.div>
-              <styled.div
-                hoverColor="#d3d3d330"
-                index={1}
-                key="Feb"
-                onClick={[Function]}
-                primaryColor="#27718c"
-                secondaryColor="white"
-                selected={false}
-              >
-                <div
-                  className="c9"
-                  onClick={[Function]}
-                  selected={false}
-                >
-                  Feb
-                </div>
-              </styled.div>
-              <styled.div
-                hoverColor="#d3d3d330"
-                index={2}
-                key="Mar"
-                onClick={[Function]}
-                primaryColor="#27718c"
-                secondaryColor="white"
-                selected={false}
-              >
-                <div
-                  className="c9"
-                  onClick={[Function]}
-                  selected={false}
-                >
-                  Mar
-                </div>
-              </styled.div>
-              <styled.div
-                hoverColor="#d3d3d330"
-                index={3}
-                key="Apr"
-                onClick={[Function]}
-                primaryColor="#27718c"
-                secondaryColor="white"
-                selected={false}
-              >
-                <div
-                  className="c9"
-                  onClick={[Function]}
-                  selected={false}
-                >
-                  Apr
-                </div>
-              </styled.div>
-              <styled.div
-                hoverColor="#d3d3d330"
-                index={4}
-                key="May"
-                onClick={[Function]}
-                primaryColor="#27718c"
-                secondaryColor="white"
-                selected={false}
-              >
-                <div
-                  className="c9"
-                  onClick={[Function]}
-                  selected={false}
-                >
-                  May
-                </div>
-              </styled.div>
-              <styled.div
-                hoverColor="#d3d3d330"
-                index={5}
-                key="Jun"
-                onClick={[Function]}
-                primaryColor="#27718c"
-                secondaryColor="white"
-                selected={false}
-              >
-                <div
-                  className="c9"
-                  onClick={[Function]}
-                  selected={false}
-                >
-                  Jun
-                </div>
-              </styled.div>
-              <styled.div
-                hoverColor="#d3d3d330"
-                index={6}
-                key="Jul"
-                onClick={[Function]}
-                primaryColor="#27718c"
-                secondaryColor="white"
-                selected={false}
-              >
-                <div
-                  className="c9"
-                  onClick={[Function]}
-                  selected={false}
-                >
-                  Jul
-                </div>
-              </styled.div>
-              <styled.div
-                hoverColor="#d3d3d330"
-                index={7}
-                key="Aug"
-                onClick={[Function]}
-                primaryColor="#27718c"
-                secondaryColor="white"
-                selected={false}
-              >
-                <div
-                  className="c9"
-                  onClick={[Function]}
-                  selected={false}
-                >
-                  Aug
-                </div>
-              </styled.div>
-              <styled.div
-                hoverColor="#d3d3d330"
-                index={8}
-                key="Sep"
-                onClick={[Function]}
-                primaryColor="#27718c"
-                secondaryColor="white"
-                selected={false}
-              >
-                <div
-                  className="c9"
-                  onClick={[Function]}
-                  selected={false}
-                >
-                  Sep
-                </div>
-              </styled.div>
-              <styled.div
-                hoverColor="#d3d3d330"
-                index={9}
-                key="Oct"
-                onClick={[Function]}
-                primaryColor="#27718c"
-                secondaryColor="white"
-                selected={false}
-              >
-                <div
-                  className="c10"
-                  onClick={[Function]}
-                  selected={false}
-                >
-                  Oct
-                </div>
-              </styled.div>
-              <styled.div
-                hoverColor="#d3d3d330"
-                index={10}
-                key="Nov"
-                onClick={[Function]}
-                primaryColor="#27718c"
-                secondaryColor="white"
-                selected={false}
-              >
-                <div
-                  className="c9"
-                  onClick={[Function]}
-                  selected={false}
-                >
-                  Nov
-                </div>
-              </styled.div>
-              <styled.div
-                hoverColor="#d3d3d330"
-                index={11}
-                key="Dec"
-                onClick={[Function]}
-                primaryColor="#27718c"
-                secondaryColor="white"
-                selected={false}
-              >
-                <div
-                  className="c11"
-                  onClick={[Function]}
-                  selected={false}
-                >
-                  Dec
-                </div>
-              </styled.div>
-            </div>
-          </styled.div>
-        </div>
-      </styled.div>
-    </div>
+    </StyledComponent>
   </styled.div>
 </MonthPicker>
 `;

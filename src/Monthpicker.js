@@ -291,7 +291,7 @@ class MonthPicker extends React.Component {
     const styleProps = getStyleProps(this.props)
 
     return (
-      <Container className={className} tabIndex={-1} innerRef={this.setWrapperRef} onKeyDown={this.handleKeyDown}>
+      <Container className={className} tabIndex={-1} ref={this.setWrapperRef} onKeyDown={this.handleKeyDown}>
         <div onClick={this.handleTriggerClick}>
           {this.props.children}
         </div>
