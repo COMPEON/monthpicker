@@ -24,18 +24,6 @@ storiesOf('Monthpicker', module)
       Test
     </Monthpicker>
   ))
-  .add('with an initial year set', () => (
-    <Monthpicker
-      initialYear={2017}
-      month={2}
-      year={2018}
-      onBlur={action('blur')}
-      onChange={action('change')}
-      onFocus={action('focus')}
-    >
-      Test
-    </Monthpicker>
-  ))
   .add('with content below', () => (
     <div>
       <Monthpicker
