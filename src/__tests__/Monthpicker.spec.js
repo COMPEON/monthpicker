@@ -135,7 +135,8 @@ describe('<Monthpicker />', () => {
 
         wrapper.find(ArrowLeft).simulate('click')
 
-        expect(onChange).toHaveBeenCalledWith({ month: 10, year: 2017 }, undefined)
+        expect(wrapper.find(Year).text()).toBe('2017')
+        expect(onChange).not.toHaveBeenCalled()
       })
 
       it('does not allow selecting years not in the allowedYears array', () => {
@@ -155,6 +156,7 @@ describe('<Monthpicker />', () => {
 
         wrapper.find(ArrowLeft).simulate('click')
 
+        expect(wrapper.find(Year).text()).toBe('2018')
         expect(onChange).not.toHaveBeenCalled()
       })
 
@@ -176,7 +178,8 @@ describe('<Monthpicker />', () => {
 
         wrapper.find(ArrowRight).simulate('click')
 
-        expect(onChange).toHaveBeenCalledWith({ month: 10, year: 2020 }, undefined)
+        expect(wrapper.find(Year).text()).toBe('2020')
+        expect(onChange).not.toHaveBeenCalled()
       })
 
       it('goes to the previous allowed year when clicking the previous button', () => {
@@ -197,7 +200,8 @@ describe('<Monthpicker />', () => {
 
         wrapper.find(ArrowLeft).simulate('click')
 
-        expect(onChange).toHaveBeenCalledWith({ month: 10, year: 2016 }, undefined)
+        expect(wrapper.find(Year).text()).toBe('2016')
+        expect(onChange).not.toHaveBeenCalled()
       })
 
       it('goes to the correct year with an unsorted array', () => {
@@ -218,14 +222,15 @@ describe('<Monthpicker />', () => {
 
         wrapper.find(ArrowLeft).simulate('click')
 
-        expect(onChange).toHaveBeenCalledWith({ month: 10, year: 2016 }, undefined)
+        expect(wrapper.find(Year).text()).toBe('2016')
 
         const arrowRight = wrapper.find(ArrowRight)
 
         arrowRight.simulate('click')
         arrowRight.simulate('click')
 
-        expect(onChange).toHaveBeenCalledWith({ month: 10, year: 2020 }, undefined)
+        expect(wrapper.find(Year).text()).toBe('2020')
+        expect(onChange).not.toHaveBeenCalled()
       })
     })
 
@@ -248,7 +253,8 @@ describe('<Monthpicker />', () => {
 
         wrapper.find(ArrowLeft).simulate('click')
 
-        expect(onChange).toHaveBeenCalledWith({ month: 10, year: 2017 }, undefined)
+        expect(wrapper.find(Year).text()).toBe('2017')
+        expect(onChange).not.toHaveBeenCalled()
       })
 
       it('does not allow values after the before key', () => {
@@ -268,6 +274,7 @@ describe('<Monthpicker />', () => {
 
         wrapper.find(ArrowRight).simulate('click')
 
+        expect(wrapper.find(Year).text()).toBe('2018')
         expect(onChange).not.toHaveBeenCalled()
       })
 
@@ -289,7 +296,8 @@ describe('<Monthpicker />', () => {
 
         wrapper.find(ArrowRight).simulate('click')
 
-        expect(onChange).toHaveBeenCalledWith({ month: 10, year: 2019 }, undefined)
+        expect(wrapper.find(Year).text()).toBe('2019')
+        expect(onChange).not.toHaveBeenCalled()
       })
 
       it('does not allow values before the after key', () => {
@@ -309,6 +317,7 @@ describe('<Monthpicker />', () => {
 
         wrapper.find(ArrowLeft).simulate('click')
 
+        expect(wrapper.find(Year).text()).toBe('2018')
         expect(onChange).not.toHaveBeenCalled()
       })
     })
