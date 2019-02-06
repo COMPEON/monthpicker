@@ -76,8 +76,13 @@ class MonthPicker extends React.Component {
     dialogClassName: PropTypes.string
   }
 
-  state = {
-    open: false,
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      year: props.year,
+      open: false,
+    }
   }
 
   componentDidMount () {
@@ -98,7 +103,7 @@ class MonthPicker extends React.Component {
 
   handleMonthChange = month => event => {
     event.persist()
-    const date = new Date(this.props.year, month)
+    const date = new Date(this.state.year, month)
 
     this.changeValue(date, event)
     this.close(event)
@@ -117,8 +122,8 @@ class MonthPicker extends React.Component {
   }
 
   handleKeyDown = event => {
-    const { open } = this.state
-    const { year, month } = this.props
+    const { open, year } = this.state
+    const { month } = this.props
 
     if (!open) return
 
@@ -167,40 +172,44 @@ class MonthPicker extends React.Component {
 
   // Other functions
   nextYear = () => {
-    const { allowedYears, year, month } = this.props
+    const { allowedYears, month } = this.props
+    const { year } = this.state
 
     if (Array.isArray(allowedYears)) {
       const sortedYears = allowedYears.sort((a,b) => a - b)
       const currentIndex = sortedYears.indexOf(year)
 
       if (currentIndex < sortedYears.length - 1) {
-        return this.changeValue(new Date(sortedYears[currentIndex + 1], month - 1))
+        const nextYear = sortedYears[currentIndex + 1]
+        this.setState({ year: nextYear })
       }
     }
 
     const nextYear = year + 1
 
     if (this.isAllowedYear(nextYear)) {
-      return this.changeValue(new Date(nextYear, month - 1))
+      this.setState({ year: nextYear })
     }
   }
 
   previousYear = () => {
-    const { allowedYears, year, month } = this.props
+    const { allowedYears, month } = this.props
+    const { year } = this.state
 
     if (Array.isArray(allowedYears)) {
       const sortedYears = allowedYears.sort((a,b) => a - b)
       const currentIndex = sortedYears.indexOf(year)
 
       if (currentIndex > 0) {
-        return this.changeValue(new Date(sortedYears[currentIndex - 1], month - 1))
+        const previousYear = sortedYears[currentIndex - 1]
+        this.setState({ year: previousYear })
       }
     }
 
     const previousYear = year - 1
 
     if (this.isAllowedYear(previousYear)) {
-      return this.changeValue(new Date(previousYear, month - 1))
+      this.setState({ year: previousYear })
     }
   }
 
@@ -255,7 +264,8 @@ class MonthPicker extends React.Component {
 
   // Render functions
   renderMonths = () => {
-    const { month, year, locale } = this.props
+    const { month, year: selectedYear, locale } = this.props
+    const { year } = this.state
 
     const selectedMonth = month - 1
 
@@ -266,7 +276,11 @@ class MonthPicker extends React.Component {
     for (let index = 0; index < 12; index++) {
       const monthName = monthNameFormatter.format(new Date(year, index, 1))
 
-      const isSelectedMonth = selectedMonth !== undefined && index === selectedMonth
+      const isSelectedMonth = (
+        selectedMonth !== undefined &&
+        index === selectedMonth &&
+        year === selectedYear
+      )
 
       months.push(
         <Month
@@ -285,8 +299,8 @@ class MonthPicker extends React.Component {
   }
 
   render () {
-    const { open } = this.state
-    const { className, dialogClassName, children, year } = this.props
+    const { open, year } = this.state
+    const { className, dialogClassName, children } = this.props
 
     const styleProps = getStyleProps(this.props)
 

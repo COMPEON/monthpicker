@@ -29,7 +29,6 @@ prop | description | default
 ------------ | ------------- | -------------
 month | the currently selected month | `new Date().getMonth()`
 year | the currently selected year | `new Date().getFullYear()`
-initialYear | the initially shown year | `new Date().getFullYear()`
 locale | the locale that is used for displaying monthnames | `de`
 format | format the `onChange` function is called with. Can be anything from [this](https://date-fns.org/v1.29.0/docs/format) list | `MM.YYYY`
 onBlur | function that is called when the picker is blurred | `-`
