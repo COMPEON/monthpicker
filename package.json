@@ -4,6 +4,7 @@
   "description": "Simple monthpicker using react & date-fns",
   "repository": "COMPEON/monthpicker",
   "main": "dist/monthpicker.umd.js",
+  "sideEffects": false,
   "module": "dist/monthpicker.es.js",
   "license": "MIT",
   "keywords": [
