@@ -55,7 +55,7 @@ describe('<Monthpicker />', () => {
     const child = wrapper.find('.child').first()
     child.simulate('click')
 
-    wrapper.findWhere(node => node.key() === 'M05').simulate('click')
+    wrapper.findWhere(node => node.key() === 'Mai').simulate('click')
 
     expect(handleChange).toHaveBeenCalledWith({ month: 5, year: 2018 }, expect.anything())
   })
@@ -73,7 +73,7 @@ describe('<Monthpicker />', () => {
     const child = wrapper.find('.child').first()
     child.simulate('click')
 
-    wrapper.findWhere(node => node.key() === 'M05').simulate('click')
+    wrapper.findWhere(node => node.key() === 'Mai').simulate('click')
 
     expect(handleChange).toHaveBeenCalledWith('05.2018', expect.anything())
   })
