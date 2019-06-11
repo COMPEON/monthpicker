@@ -21,8 +21,10 @@
   ],
   "scripts": {
     "compile": "rollup -c",
+    "prepublishOnly": "yarn test && yarn compile",
     "start": "start-storybook -p 9001 -c .storybook",
-    "test": "jest --watch"
+    "test": "jest",
+    "testWatch": "jest --watch"
   },
   "peerDependencies": {
     "react": "^16.6.0",
