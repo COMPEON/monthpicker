@@ -21,6 +21,7 @@
   ],
   "scripts": {
     "compile": "rollup -c",
+    "prepublishOnly": "yarn test && yarn compile",
     "start": "start-storybook -p 9001 -c .storybook",
     "test": "jest --watch"
   },
