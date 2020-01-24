@@ -62,7 +62,7 @@ describe('<Monthpicker />', () => {
 
   it('calls onChange with the given format', () => {
     const handleChange = jest.fn()
-    const targetFormat = 'MM.YYYY'
+    const targetFormat = 'MM.yyyy'
 
     const wrapper = mount(
       <Monthpicker format={targetFormat} month={1} year={2018} onChange={handleChange}>
