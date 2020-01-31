@@ -235,7 +235,7 @@ exports[`<Monthpicker /> allows specifiyng the primary and secondary colors 1`] 
           "attrs": Array [],
           "componentStyle": ComponentStyle {
             "componentId": "sc-bZQynM",
-            "isStatic": true,
+            "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
               "
@@ -467,7 +467,7 @@ exports[`<Monthpicker /> allows specifiyng the primary and secondary colors 1`] 
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
                               "componentId": "sc-EHOje",
-                              "isStatic": true,
+                              "isStatic": false,
                               "lastClassName": "c4",
                               "rules": Array [
                                 "
@@ -1695,7 +1695,7 @@ exports[`<Monthpicker /> event handling:  closes the overlay when clicking anywh
           "attrs": Array [],
           "componentStyle": ComponentStyle {
             "componentId": "sc-bZQynM",
-            "isStatic": true,
+            "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
               "
@@ -1978,7 +1978,7 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
           "attrs": Array [],
           "componentStyle": ComponentStyle {
             "componentId": "sc-bZQynM",
-            "isStatic": true,
+            "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
               "
@@ -2210,7 +2210,7 @@ exports[`<Monthpicker /> event handling:  opens the overlay when clicking on the
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
                               "componentId": "sc-EHOje",
-                              "isStatic": true,
+                              "isStatic": false,
                               "lastClassName": "c4",
                               "rules": Array [
                                 "
@@ -3657,7 +3657,7 @@ exports[`<Monthpicker /> works with different locales 1`] = `
           "attrs": Array [],
           "componentStyle": ComponentStyle {
             "componentId": "sc-bZQynM",
-            "isStatic": true,
+            "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
               "
@@ -3889,7 +3889,7 @@ exports[`<Monthpicker /> works with different locales 1`] = `
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
                               "componentId": "sc-EHOje",
-                              "isStatic": true,
+                              "isStatic": false,
                               "lastClassName": "c4",
                               "rules": Array [
                                 "
