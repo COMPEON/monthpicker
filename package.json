@@ -1,6 +1,6 @@
 {
   "name": "@compeon/monthpicker",
-  "version": "0.4.4",
+  "version": "0.4.5",
   "description": "Simple monthpicker using react & date-fns",
   "repository": "COMPEON/monthpicker",
   "main": "dist/monthpicker.umd.js",
