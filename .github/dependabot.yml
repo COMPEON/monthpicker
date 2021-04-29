@@ -1,0 +1,29 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: weekly
+    day: tuesday
+    time: "04:00"
+    timezone: Europe/Berlin
+  ignore:
+  - dependency-name: "@storybook/addon-actions"
+    versions:
+    - 6.1.21
+    - 6.2.8
+  - dependency-name: "@storybook/react"
+    versions:
+    - 6.2.8
+  - dependency-name: rollup
+    versions:
+    - 2.38.2
+    - 2.40.0
+    - 2.41.2
+    - 2.45.1
+  - dependency-name: "@babel/preset-env"
+    versions:
+    - 7.13.0
+  - dependency-name: "@babel/plugin-proposal-class-properties"
+    versions:
+    - 7.12.13
