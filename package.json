@@ -73,6 +73,7 @@
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
     ],
+    "testEnvironment": "jsdom",
     "testMatch": [
       "<rootDir>/src/**/?(*.)spec.js"
     ]
