@@ -14,11 +14,23 @@ export default {
       file: 'dist/monthpicker.umd.js',
       name: 'monthpicker',
       format: 'umd',
+      globals: {
+        react: "React",
+        "prop-types": "PropTypes",
+        "styled-components": "styled",
+        "date-fns" :"dateFns"
+      }
     },
     {
       file: 'dist/monthpicker.es.js',
       name: 'monthpicker',
       format: 'es',
+      globals: {
+        react: "React",
+        "prop-types": "PropTypes",
+        "styled-components": "styled",
+        "date-fns" :"dateFns"
+      }
     }
   ],
   plugins: [
