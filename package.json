@@ -1,5 +1,5 @@
 {
-  "name": "@compeon/monthpicker",
+  "name": "@compeon-os/monthpicker",
   "version": "0.5.1",
   "description": "Simple monthpicker using react & date-fns",
   "repository": "COMPEON/monthpicker",
