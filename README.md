@@ -5,7 +5,7 @@ Simple, clean monthpicker component built with react, styled-components and date
 # Installation
 
 ```bash
-yarn add @compeon/monthpicker
+yarn add @compeon-os/monthpicker
 ```
 
 You also need to have `styled-components` installed, so if that's not the case already
@@ -16,7 +16,7 @@ yarn add styled-components
 # Usage
 
 ```js
-import Monthpicker from '@compeon/monthpicker'
+import Monthpicker from '@compeon-os/monthpicker'
 
 <Monthpicker format='MM.yyyy' onChange={this.handleChange}>
   <div>Click me</div>
